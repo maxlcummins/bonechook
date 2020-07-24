@@ -1,0 +1,24 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH176.fasta	contig00006	589	825	-	cvi	1-237/237	===============	0/0	100.00	98.73	colV_zoetis		cvi	
+FH176.fasta	contig00006	803	1114	-	cvaC	1-312/312	===============	0/0	100.00	97.76	colV_zoetis		cvaC	
+FH176.fasta	contig00114	410	1324	+	sitA	1-915/915	===============	0/0	100.00	99.13	colV_zoetis		sitA	
+FH176.fasta	contig00114	1324	2151	+	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+FH176.fasta	contig00114	2148	2983	+	sitC	1-837/837	========/======	1/1	99.88	99.52	colV_zoetis		sitC	
+FH176.fasta	contig00114	3002	3859	+	sitD	1-858/858	===============	0/0	100.00	99.65	colV_zoetis		sitD	
+FH176.fasta	contig00114	7134	8915	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+FH176.fasta	contig00114	8916	9863	+	iucB	1-948/948	===============	0/0	100.00	100.00	colV_zoetis		iucB	
+FH176.fasta	contig00114	9863	11605	+	iucC	1-1743/1743	===============	0/0	100.00	99.89	colV_zoetis		iucC	
+FH176.fasta	contig00114	11602	12879	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+FH176.fasta	contig00114	12961	15162	+	iutA	1-2202/2202	===============	0/0	100.00	99.95	colV_zoetis		iutA	
+FH176.fasta	contig00129	3806	4969	+	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+FH176.fasta	contig00129	4983	8768	+	iroC	1-3786/3786	===============	0/0	100.00	99.87	colV_zoetis		iroC	
+FH176.fasta	contig00129	8872	10101	+	iroD	1-1230/1230	===============	0/0	100.00	100.00	colV_zoetis		iroD	
+FH176.fasta	contig00129	10186	11142	+	iroE	1-957/957	===============	0/0	100.00	99.90	colV_zoetis		iroE	
+FH176.fasta	contig00129	11187	13364	+	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+FH176.fasta	contig00153	612	753	-	sitB	1-141/828	===...../......	1/1	17.03	92.25	colV_zoetis		sitB	
+FH176.fasta	contig00153	753	1667	-	sitA	1-915/915	===============	0/0	100.00	95.85	colV_zoetis		sitA	
+FH176.fasta	contig00197	3460	4413	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+FH176.fasta	contig00197	5174	6926	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.43	colV_zoetis		hlyF	
+FH176.fasta	contig00274	206	277	-	ompT	305-376/954	....==.........	0/0	7.55	95.83	colV_zoetis		ompT	
+FH176.fasta	contig00473	112	268	+	cvaC	156-312/312	.......========	0/0	50.32	99.36	colV_zoetis		cvaC	
+FH176.fasta	contig00473	246	482	+	cvi	1-237/237	===============	0/0	100.00	99.16	colV_zoetis		cvi	

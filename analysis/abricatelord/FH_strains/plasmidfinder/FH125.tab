@@ -1,0 +1,15 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH125.fasta	contig00036	11053	11324	+	IncFIC(FII)_1	1-271/499	========/......	1/1	54.31	95.96	plasmidfinder	AP001918	IncFIC(FII)_1__AP001918	
+FH125.fasta	contig00049	8309	8951	-	IncFIB(pB171)_1_pB171	1-643/643	===============	0/0	100.00	99.38	plasmidfinder	AB024946	IncFIB(pB171)_1_pB171_AB024946	
+FH125.fasta	contig00071	3589	3740	-	Col156_1	1-152/154	===============	0/0	98.70	90.79	plasmidfinder	NC_009781	Col156_1__NC_009781	
+FH125.fasta	contig00077	171	427	+	Col(MG828)_1	3-262/262	========/======	2/3	98.09	86.54	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00077	1792	1902	+	ColRNAI_1	19-128/130	..======/======	3/3	83.85	84.82	plasmidfinder	DQ298019	ColRNAI_1__DQ298019	
+FH125.fasta	contig00081	3311	3441	-	ColRNAI_1	1-130/130	========/======	1/1	100.00	88.55	plasmidfinder	DQ298019	ColRNAI_1__DQ298019	
+FH125.fasta	contig00086	1291	1442	-	Col156_1	1-152/154	===============	0/0	98.70	98.03	plasmidfinder	NC_009781	Col156_1__NC_009781	
+FH125.fasta	contig00095	209	410	-	Col(MG828)_1	60-262/262	...=====/======	1/1	77.10	87.69	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00097	1265	1526	-	Col(MG828)_1	1-262/262	===============	0/0	100.00	93.51	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00098	804	1065	-	Col(MG828)_1	1-262/262	===============	0/0	100.00	93.13	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00098	2314	2407	-	Col(MG828)_1	165-258/262	.........======	0/0	35.88	96.81	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00099	1888	2080	-	ColpVC_1	1-193/193	===============	0/0	100.00	98.45	plasmidfinder	JX133088	ColpVC_1__JX133088	
+FH125.fasta	contig00101	71	330	-	Col(MG828)_1	1-262/262	========/======	5/6	98.47	84.09	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH125.fasta	contig00113	562	820	+	Col(MG828)_1	1-260/262	========/======	1/1	98.85	95.39	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	

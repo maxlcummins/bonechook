@@ -1,0 +1,10 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH150.fasta	contig00055	540	2741	-	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+FH150.fasta	contig00055	2823	4100	-	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+FH150.fasta	contig00055	4097	5839	-	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+FH150.fasta	contig00055	5839	6786	-	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+FH150.fasta	contig00055	6787	8568	-	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+FH150.fasta	contig00055	11843	12700	-	sitD	1-858/858	===============	0/0	100.00	99.88	colV_zoetis		sitD	
+FH150.fasta	contig00055	12719	13554	-	sitC	1-837/837	========/======	1/1	99.88	99.64	colV_zoetis		sitC	
+FH150.fasta	contig00055	13551	14378	-	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+FH150.fasta	contig00055	14378	15292	-	sitA	1-915/915	===============	0/0	100.00	99.13	colV_zoetis		sitA	

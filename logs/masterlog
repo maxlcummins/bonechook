@@ -1,0 +1,6 @@
+#Shuvlord used to generate assemblies for FH collection (207 strains - some removed for crappy sequence data)
+
+#abricatelord used to genotype strains
+#/home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/snakemake/abricatelord/Snakefile was copied to the abricatelord directory as Snakefile_FH
+nohup snakemake -j -s Snakefile_FH --use-conda  -p > /home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/logs/abricate/nohup_abricatelord.out &
+#Job ID = 21103

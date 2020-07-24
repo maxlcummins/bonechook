@@ -1,0 +1,25 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH144.fasta	contig00007	1	623	-	sitA	1-623/915	===========....	0/0	68.09	98.23	colV_zoetis		sitA	
+FH144.fasta	contig00018	65119	65355	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+FH144.fasta	contig00018	65333	65644	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+FH144.fasta	contig00018	65814	67928	-	cvaB	1-2115/2115	===============	0/0	100.00	99.91	colV_zoetis		cvaB	
+FH144.fasta	contig00018	67903	68814	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+FH144.fasta	contig00018	73091	75268	-	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+FH144.fasta	contig00018	75313	76269	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+FH144.fasta	contig00018	76354	77583	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+FH144.fasta	contig00018	77687	81472	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+FH144.fasta	contig00018	81486	82649	-	iroB	1-1164/1164	===============	0/0	100.00	100.00	colV_zoetis		iroB	
+FH144.fasta	contig00018	94311	95681	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+FH144.fasta	contig00018	95685	97625	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+FH144.fasta	contig00018	97622	97999	-	etsA	1-378/378	===============	0/0	100.00	98.94	colV_zoetis		etsA	
+FH144.fasta	contig00018	103091	104044	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+FH144.fasta	contig00018	104805	106557	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+FH144.fasta	contig00043	9903	9974	+	ompT	305-376/954	....==.........	0/0	7.55	95.83	colV_zoetis		ompT	
+FH144.fasta	contig00050	1	578	+	sitD	281-858/858	....===========	0/0	67.37	99.65	colV_zoetis		sitD	
+FH144.fasta	contig00054	3577	4154	-	sitD	281-858/858	....===========	0/0	67.37	94.64	colV_zoetis		sitD	
+FH144.fasta	contig00061	1	359	-	sitD	1-359/858	=======........	0/0	41.84	99.72	colV_zoetis		sitD	
+FH144.fasta	contig00061	378	1213	-	sitC	1-837/837	========/======	1/1	99.88	99.52	colV_zoetis		sitC	
+FH144.fasta	contig00061	1210	2037	-	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+FH144.fasta	contig00061	2037	2407	-	sitA	545-915/915	........=======	0/0	40.55	100.00	colV_zoetis		sitA	
+FH144.fasta	contig00094	378	597	+	sitA	1-220/915	====...........	0/0	24.04	96.36	colV_zoetis		sitA	
+FH144.fasta	contig00128	1	361	+	sitA	263-623/915	....=======....	0/0	39.45	100.00	colV_zoetis		sitA	

@@ -1,0 +1,24 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH204.fasta	contig00029	3480	3716	-	cvi	1-237/237	===============	0/0	100.00	100.00	colV_zoetis		cvi	
+FH204.fasta	contig00029	3694	4005	-	cvaC	1-312/312	===============	0/0	100.00	100.00	colV_zoetis		cvaC	
+FH204.fasta	contig00029	4175	6289	-	cvaB	1-2115/2115	===============	0/0	100.00	99.81	colV_zoetis		cvaB	
+FH204.fasta	contig00029	6264	7175	-	cvaA	1-912/912	===============	0/0	100.00	100.00	colV_zoetis		cvaA	
+FH204.fasta	contig00029	11451	13628	-	iroN	1-2178/2178	===============	0/0	100.00	99.95	colV_zoetis		iroN	
+FH204.fasta	contig00029	13673	14629	-	iroE	1-957/957	===============	0/0	100.00	100.00	colV_zoetis		iroE	
+FH204.fasta	contig00029	14714	15943	-	iroD	1-1230/1230	===============	0/0	100.00	99.92	colV_zoetis		iroD	
+FH204.fasta	contig00029	16047	19832	-	iroC	1-3786/3786	===============	0/0	100.00	99.84	colV_zoetis		iroC	
+FH204.fasta	contig00029	19846	21009	-	iroB	1-1164/1164	===============	0/0	100.00	99.91	colV_zoetis		iroB	
+FH204.fasta	contig00029	32671	34041	-	etsC	1-1371/1371	===============	0/0	100.00	100.00	colV_zoetis		etsC	
+FH204.fasta	contig00029	34045	35985	-	etsB	1-1941/1941	===============	0/0	100.00	99.95	colV_zoetis		etsB	
+FH204.fasta	contig00029	35982	36359	-	etsA	1-378/378	===============	0/0	100.00	98.68	colV_zoetis		etsA	
+FH204.fasta	contig00029	41451	42404	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+FH204.fasta	contig00029	43165	44917	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.37	colV_zoetis		hlyF	
+FH204.fasta	contig00047	412	1326	+	sitA	1-915/915	===============	0/0	100.00	99.13	colV_zoetis		sitA	
+FH204.fasta	contig00047	1326	2153	+	sitB	1-828/828	===============	0/0	100.00	100.00	colV_zoetis		sitB	
+FH204.fasta	contig00047	2150	2985	+	sitC	1-837/837	========/======	1/1	99.88	99.52	colV_zoetis		sitC	
+FH204.fasta	contig00047	3004	3861	+	sitD	1-858/858	===============	0/0	100.00	99.88	colV_zoetis		sitD	
+FH204.fasta	contig00047	7136	8917	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+FH204.fasta	contig00047	8918	9865	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+FH204.fasta	contig00047	9865	11607	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+FH204.fasta	contig00047	11604	12881	+	iucD	1-1278/1278	===============	0/0	100.00	99.92	colV_zoetis		iucD	
+FH204.fasta	contig00047	12963	15164	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
