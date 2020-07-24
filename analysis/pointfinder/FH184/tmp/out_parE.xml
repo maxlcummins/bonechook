@@ -1,0 +1,3231 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.8.1+</BlastOutput_version>
+  <BlastOutput_reference>Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), &quot;A greedy algorithm for aligning DNA sequences&quot;, J Comput Biol 2000; 7(1-2):203-14.</BlastOutput_reference>
+  <BlastOutput_db></BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>contig00001 len=404292 cov=22.9 corr=0 origname=NODE_1_length_404292_cov_22.854651_pilon sw=shovill-spades/1.0.4 date=20191204</BlastOutput_query-def>
+  <BlastOutput_query-len>404292</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>1</Parameters_sc-match>
+      <Parameters_sc-mismatch>-2</Parameters_sc-mismatch>
+      <Parameters_gap-open>0</Parameters_gap-open>
+      <Parameters_gap-extend>0</Parameters_gap-extend>
+      <Parameters_filter>m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>contig00001 len=404292 cov=22.9 corr=0 origname=NODE_1_length_404292_cov_22.854651_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>404292</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>21</Statistics_hsp-len>
+      <Statistics_eff-space>756795312</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>2</Iteration_iter-num>
+  <Iteration_query-ID>Query_2</Iteration_query-ID>
+  <Iteration_query-def>contig00002 len=330981 cov=23.6 corr=0 origname=NODE_2_length_330981_cov_23.623369_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>330981</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>parE</Hit_id>
+  <Hit_def>parE</Hit_def>
+  <Hit_accession>Subject_1</Hit_accession>
+  <Hit_len>1893</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>3118.26</Hsp_bit-score>
+      <Hsp_score>1688</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>231717</Hsp_query-from>
+      <Hsp_query-to>233605</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>1889</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>1822</Hsp_identity>
+      <Hsp_positive>1822</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>1889</Hsp_align-len>
+      <Hsp_qseq>ATGACGCAAACTTATAACGCTGATGCCATTGAGGTACTCACTGGGCTTGAGCCGGTTCGCCGCCGTCCGGGGATGTATACCGATACCACTCGCCCTAACCATTTGGGGCAAGAAGTTATTGATAACAGTGTCGATGAAGCACTGGCGGGTCACGCAAAACGCGTGGACGTAATCTTACATGCTGACCAGTCGTTAGAAGTGATTGACGATGGGCGCGGGATGCCGGTGGATATTCACCCGGAAGAGGGGGTACCGGCGGTTGAACTGATTCTTTGCCGTCTGCATGCAGGCGGTAAATTCTCTAACAAAAATTACCAGTTCTCTGGCGGCCTGCATGGCGTGGGGATTTCGGTGGTTAACGCCCTTTCGAAGCGCGTAGAAGTTAACGTACGCCGCGATGGTCAGGTTTATAACATCGCCTTTGAAAATGGCGAAAAGGTGCAGGATTTACAGGTTGTCGGCACTTGCGGTAAGCGCAATACCGGTACCAGCGTGCACTTCTGGCCGGATGAAACCTTCTTTGACAGCCCGCGTTTTTCTGTTTCACGCCTGACGCATGTGCTGAAGGCCAAAGCAGTACTGTGCCCTGGTGTTGAGATCACCTTTAAAGATGAGATCAACAACACCGAACAGCGCTGGTGCTATCAGGACGGTCTGAATGATTACCTGGCGGAAGCGGTAAACGGTTTACCGACGCTGCCAGAAAAACCGTTTATCGGTAATTTCGCTGGCGATACTGAAGCGGTGGACTGGGCGCTACTGTGGCTACCGGAAGGCGGTGAACTGCTGACCGAAAGCTACGTCAACCTGATCCCAACGATGCAGGGCGGTACCCATGTTAATGGCCTGCGTCAGGGCCTGCTGGACGCGATGCGTGAGTTCTGTGAATACCGCAACATTCTGCCGCGCGGTGTAAAGCTGTCGGCGGAAGATATCTGGGATCGCTGCGCCTATGTGCTGTCAGTAAAAATGCAGGATCCGCAGTTTGCCGGGCAGACCAAAGAACGTCTCTCTTCGCGTCAGTGTGCGGCATTCGTTTCGGGCGTGGTGAAAGATGCCTTCATCCTGTGGCTGAACCAGAACGTTCAGGCGGCGGAGCTGTTGGCAGAGATGGCGATTTCCAGCGCCCAGCGTCGTATGCGTGCGGCTAAAAAAGTGGTGCGTAAAAAGCTAACCAGCGGCCCGGCGCTGCCTGGTAAATTGGCTGACTGTACCGCGCAGGATCTTAACCGTACCGAACTATTCCTTGTGGAAGGTGACTCCGCAGGCGGATCTGCCAAGCAGGCGCGCGATCGCGAATATCAGGCGATCATGCCACTGAAAGGTAAGATCCTTAACACCTGGGAAGTCTCTTCCGACGAAGTGCTGGCTTCGCAGGAAGTGCACGATATTTCGGTAGCTATCGGTATCGATCCTGACAGCGACGATTTGAGCCAGCTTCGTTACGGCAAGATCTGTATCCTGGCGGATGCTGACTCCGATGGTCTGCACATTGCCACGCTGCTCTGCGCTTTGTTTGTAAAACACTTCCGCGCATTGGTGAAACACGGTCACGTTTACGTTGCACTGCCACCGCTCTACCGTATTGACCTCGGGAAAGAGGTTTATTACGCGCTGACGGAAGAAGAGAAAGAGGGCGTACTTGAGCAATTAAAACGCAAGAAAGGCAAGCCAAACGTTCAGCGTTTTAAAGGTCTCGGGGAAATGAACCCGATGCAATTGCGCGAAACCACGCTTGATCCGAACACTCGCCGTCTGGTGCAGTTGACTATCGATGATGAAGACGATCAGCGTACTGACGCGATGATGGATATGCTGCTGGCGAAGAAACGCTCGGAAGATCGCCGCAACTGGTTGCAAGAGAAAGGCGACATGGCAGAGATTGAGGT</Hsp_qseq>
+      <Hsp_hseq>ATGACGCAAACTTATAACGCTGATGCCATTGAGGTACTCACCGGGCTTGAGCCGGTTCGCCGCCGTCCGGGGATGTATACCGATACCACTCGCCCTAACCATTTGGGGCAAGAAGTCATTGATAACAGTGTGGATGAAGCACTGGCGGGTCACGCAAAACGCGTGGACGTTATTTTACATGCTGACCAGTCGTTAGAAGTTATTGACGATGGGCGCGGGATGCCGGTGGATATTCACCCGGAAGAGGGTGTACCGGCGGTTGAACTGATTCTTTGCCGTCTGCATGCAGGCGGTAAATTCTCTAACAAAAATTACCAGTTCTCTGGCGGCCTGCATGGCGTGGGGATTTCGGTGGTTAACGCCCTGTCGAAGCGCGTAGAAGTTAACGTGCGCCGCGATGGTCAGGTTTATAACATCGCCTTTGAAAATGGCGAAAAGGTGCAGGATTTACAGGTTGTCGGCACTTGCGGTAAACGCAATACTGGTACCAGTGTGCACTTCTGGCCGGATGAAACCTTCTTTGACAGCCCGCGATTTTCTGTTTCACGCCTGACGCATGTGCTGAAAGCCAAAGCGGTATTGTGCCCTGGCGTTGAGATCACTTTTAAAGATGAGATCAACAATACCGAACAACGCTGGTGCTATCAGGACGGTCTGAATGATTACCTGGCGGAAGCGGTAAATGGTCTGCCGACGCTGCCGGAAAAACCGTTTATCGGTAATTTCGCTGGTGATACTGAAGCTGTGGACTGGGCGCTACTGTGGCTGCCGGAAGGCGGTGAACTGCTGACCGAAAGCTACGTCAACCTTATCCCAACGATGCAGGGCGGTACCCATGTTAATGGTCTGCGTCAGGGCCTGTTGGACGCGATGCGTGAGTTCTGTGAATACCGCAATATTCTGCCGCGCGGTGTAAAGCTGTCGGCGGAAGATATCTGGGATCGCTGCGCCTATGTGCTGTCAGTAAAAATGCAGGATCCGCAGTTTGCCGGGCAGACGAAAGAGCGTCTCTCTTCGCGTCAATGCGCGGCATTCGTTTCTGGCGTGGTGAAAGATGCCTTTATCCTGTGGCTGAACCAGAACGTTCAGGCGGCTGAACTGCTGGCGGAGATGGCGATTTCCAGCGCCCAGCGCCGTATGCGTGCGGCCAAAAAAGTGGTGCGTAAAAAGCTGACCAGCGGCCCGGCGTTGCCTGGCAAACTGGCTGATTGTACCGCGCAGGACCTTAACCGTACCGAGCTGTTCCTTGTGGAAGGTGACTCCGCAGGCGGATCTGCCAAGCAGGCGCGCGATCGCGAATATCAGGCGATCATGCCACTGAAAGGTAAGATCCTTAACACCTGGGAAGTCTCTTCCGACGAAGTGCTGGCTTCGCAGGAAGTGCACGATATTTCGGTAGCGATCGGTATCGATCCTGACAGCGACGATCTGAGCCAGCTTCGTTATGGCAAAATCTGTATCCTCGCGGATGCGGACTCTGATGGTCTGCACATTGCCACGCTGCTCTGCGCTTTGTTCGTAAAACATTTCCGCGCGTTGGTGAAACACGGTCACGTTTACGTCGCACTGCCACCGCTCTACCGTATTGATCTCGGGAAAGAGGTTTATTACGCGCTGACGGAAGAAGAGAAAGAGGGCGTACTTGAGCAATTAAAACGCAAGAAAGGCAAGCCGAACGTCCAGCGTTTTAAAGGTCTGGGGGAAATGAACCCGATGCAATTGCGCGAAACCACGCTTGATCCGAACACTCGCCGTCTGGTGCAGTTGACTATCGATGATGAAGACGATCAGCGTACTGACGCGATGATGGATATGCTGCTGGCGAAGAAACGCTCGGAAGATCGCCGCAACTGGTTGCAAGAGAAAGGCGACATGGCGGAGATTGAGGT</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| |||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||| |||||||| ||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| |||||||| ||| |||||||||| ||||||||||| |||||||||||||||||||| |||||||| |||||||||||||||||||||||||||||||||||||||||||||||||| ||| | ||||||||||| ||||||||||||||||||||||||||||| ||||||||||| ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| ||||||||||||||| |||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| ||||||||||||||||| || |||||||||||||| |||||||||||||||||||| |||||||||||||||||||||||||||||||| || ||| |||| |||||||||||||||||||||||||| |||||||||||||| ||||||||||||||||||||||| ||||||||||||||| ||||||| ||| ||||||| |||||||||||||| |||||||||||||| || |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||| |||||||||||||||| ||||| ||||||||||| |||||||| ||||| |||||||||||||||||||||||||||||||||||||| |||||||| |||||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>619889953</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>3</Iteration_iter-num>
+  <Iteration_query-ID>Query_3</Iteration_query-ID>
+  <Iteration_query-def>contig00003 len=284071 cov=22.6 corr=0 origname=NODE_3_length_284071_cov_22.618239_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>284071</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>532027523</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>4</Iteration_iter-num>
+  <Iteration_query-ID>Query_4</Iteration_query-ID>
+  <Iteration_query-def>contig00004 len=264783 cov=23.4 corr=0 origname=NODE_4_length_264783_cov_23.369998_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>264783</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>495901099</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>5</Iteration_iter-num>
+  <Iteration_query-ID>Query_5</Iteration_query-ID>
+  <Iteration_query-def>contig00005 len=249627 cov=22.6 corr=0 origname=NODE_5_length_249627_cov_22.628793_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>249627</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>467513911</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>6</Iteration_iter-num>
+  <Iteration_query-ID>Query_6</Iteration_query-ID>
+  <Iteration_query-def>contig00006 len=232151 cov=23.3 corr=0 origname=NODE_6_length_232151_cov_23.256968_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>232151</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>434781363</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>7</Iteration_iter-num>
+  <Iteration_query-ID>Query_7</Iteration_query-ID>
+  <Iteration_query-def>contig00007 len=224542 cov=24.6 corr=2 origname=NODE_7_length_224542_cov_24.601257_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>224542</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>420529706</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>8</Iteration_iter-num>
+  <Iteration_query-ID>Query_8</Iteration_query-ID>
+  <Iteration_query-def>contig00008 len=195197 cov=20.7 corr=0 origname=NODE_8_length_195197_cov_20.749511_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>195197</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>365566521</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>9</Iteration_iter-num>
+  <Iteration_query-ID>Query_9</Iteration_query-ID>
+  <Iteration_query-def>contig00009 len=182752 cov=23.4 corr=0 origname=NODE_9_length_182752_cov_23.448271_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>182752</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>342257036</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>10</Iteration_iter-num>
+  <Iteration_query-ID>Query_10</Iteration_query-ID>
+  <Iteration_query-def>contig00010 len=171449 cov=24.2 corr=0 origname=NODE_10_length_171449_cov_24.209745_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>171449</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>20</Statistics_hsp-len>
+      <Statistics_eff-space>321086517</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>11</Iteration_iter-num>
+  <Iteration_query-ID>Query_11</Iteration_query-ID>
+  <Iteration_query-def>contig00011 len=142270 cov=23.2 corr=0 origname=NODE_11_length_142270_cov_23.185546_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>142270</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>266578374</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>12</Iteration_iter-num>
+  <Iteration_query-ID>Query_12</Iteration_query-ID>
+  <Iteration_query-def>contig00012 len=130956 cov=21.9 corr=0 origname=NODE_12_length_130956_cov_21.909358_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>130956</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>245375938</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>13</Iteration_iter-num>
+  <Iteration_query-ID>Query_13</Iteration_query-ID>
+  <Iteration_query-def>contig00013 len=128531 cov=22.6 corr=0 origname=NODE_13_length_128531_cov_22.603346_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>128531</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>240831488</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>14</Iteration_iter-num>
+  <Iteration_query-ID>Query_14</Iteration_query-ID>
+  <Iteration_query-def>contig00014 len=120766 cov=21.0 corr=0 origname=NODE_14_length_120766_cov_21.018080_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>120766</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>226279878</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>15</Iteration_iter-num>
+  <Iteration_query-ID>Query_15</Iteration_query-ID>
+  <Iteration_query-def>contig00015 len=111223 cov=22.0 corr=0 origname=NODE_15_length_111223_cov_22.016825_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>111223</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>208396296</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>16</Iteration_iter-num>
+  <Iteration_query-ID>Query_16</Iteration_query-ID>
+  <Iteration_query-def>contig00016 len=97727 cov=21.6 corr=0 origname=NODE_16_length_97727_cov_21.591789_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>97727</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>183104792</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>17</Iteration_iter-num>
+  <Iteration_query-ID>Query_17</Iteration_query-ID>
+  <Iteration_query-def>contig00017 len=88631 cov=31.0 corr=0 origname=NODE_17_length_88631_cov_30.999040_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>88631</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>166058888</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>18</Iteration_iter-num>
+  <Iteration_query-ID>Query_18</Iteration_query-ID>
+  <Iteration_query-def>contig00018 len=79496 cov=22.0 corr=0 origname=NODE_18_length_79496_cov_22.048969_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>79496</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>148939898</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>19</Iteration_iter-num>
+  <Iteration_query-ID>Query_19</Iteration_query-ID>
+  <Iteration_query-def>contig00019 len=79436 cov=22.4 corr=0 origname=NODE_19_length_79436_cov_22.374233_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>79436</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>148827458</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>20</Iteration_iter-num>
+  <Iteration_query-ID>Query_20</Iteration_query-ID>
+  <Iteration_query-def>contig00020 len=75134 cov=22.9 corr=0 origname=NODE_20_length_75134_cov_22.916261_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>75134</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>140765510</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>21</Iteration_iter-num>
+  <Iteration_query-ID>Query_21</Iteration_query-ID>
+  <Iteration_query-def>contig00021 len=72947 cov=24.7 corr=0 origname=NODE_21_length_72947_cov_24.668565_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>72947</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>19</Statistics_hsp-len>
+      <Statistics_eff-space>136667072</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>22</Iteration_iter-num>
+  <Iteration_query-ID>Query_22</Iteration_query-ID>
+  <Iteration_query-def>contig00022 len=69405 cov=24.6 corr=2 origname=NODE_22_length_69405_cov_24.578830_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>69405</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>130100625</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>23</Iteration_iter-num>
+  <Iteration_query-ID>Query_23</Iteration_query-ID>
+  <Iteration_query-def>contig00023 len=66156 cov=23.6 corr=0 origname=NODE_23_length_66156_cov_23.635395_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>66156</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>124008750</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>24</Iteration_iter-num>
+  <Iteration_query-ID>Query_24</Iteration_query-ID>
+  <Iteration_query-def>contig00024 len=63269 cov=26.1 corr=0 origname=NODE_24_length_63269_cov_26.124197_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>63269</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>118595625</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>25</Iteration_iter-num>
+  <Iteration_query-ID>Query_25</Iteration_query-ID>
+  <Iteration_query-def>contig00025 len=59509 cov=24.6 corr=0 origname=NODE_25_length_59509_cov_24.593286_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>59509</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>111545625</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>26</Iteration_iter-num>
+  <Iteration_query-ID>Query_26</Iteration_query-ID>
+  <Iteration_query-def>contig00026 len=56822 cov=22.1 corr=0 origname=NODE_26_length_56822_cov_22.055549_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>56822</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>106507500</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>27</Iteration_iter-num>
+  <Iteration_query-ID>Query_27</Iteration_query-ID>
+  <Iteration_query-def>contig00027 len=53912 cov=22.4 corr=0 origname=NODE_27_length_53912_cov_22.391266_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>53912</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>101051250</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>28</Iteration_iter-num>
+  <Iteration_query-ID>Query_28</Iteration_query-ID>
+  <Iteration_query-def>contig00028 len=53150 cov=23.6 corr=1 origname=NODE_28_length_53150_cov_23.586912_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>53150</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>99622500</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>29</Iteration_iter-num>
+  <Iteration_query-ID>Query_29</Iteration_query-ID>
+  <Iteration_query-def>contig00029 len=48770 cov=23.8 corr=0 origname=NODE_29_length_48770_cov_23.817872_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>48770</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>91410000</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>30</Iteration_iter-num>
+  <Iteration_query-ID>Query_30</Iteration_query-ID>
+  <Iteration_query-def>contig00030 len=48715 cov=23.0 corr=0 origname=NODE_30_length_48715_cov_22.984209_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>48715</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>91306875</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>31</Iteration_iter-num>
+  <Iteration_query-ID>Query_31</Iteration_query-ID>
+  <Iteration_query-def>contig00031 len=45636 cov=23.6 corr=0 origname=NODE_31_length_45636_cov_23.628597_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>45636</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>85533750</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>32</Iteration_iter-num>
+  <Iteration_query-ID>Query_32</Iteration_query-ID>
+  <Iteration_query-def>contig00032 len=44279 cov=27.3 corr=0 origname=NODE_32_length_44279_cov_27.255204_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>44279</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>82989375</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>33</Iteration_iter-num>
+  <Iteration_query-ID>Query_33</Iteration_query-ID>
+  <Iteration_query-def>contig00033 len=43384 cov=21.9 corr=0 origname=NODE_33_length_43384_cov_21.866413_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>43384</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>81311250</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>34</Iteration_iter-num>
+  <Iteration_query-ID>Query_34</Iteration_query-ID>
+  <Iteration_query-def>contig00034 len=43226 cov=17.6 corr=0 origname=NODE_34_length_43226_cov_17.648226_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>43226</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>81015000</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>35</Iteration_iter-num>
+  <Iteration_query-ID>Query_35</Iteration_query-ID>
+  <Iteration_query-def>contig00035 len=41824 cov=34.5 corr=0 origname=NODE_35_length_41824_cov_34.541478_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>41824</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>78386250</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>36</Iteration_iter-num>
+  <Iteration_query-ID>Query_36</Iteration_query-ID>
+  <Iteration_query-def>contig00036 len=41381 cov=26.0 corr=0 origname=NODE_36_length_41381_cov_26.032880_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>41381</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>77555625</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>37</Iteration_iter-num>
+  <Iteration_query-ID>Query_37</Iteration_query-ID>
+  <Iteration_query-def>contig00037 len=40671 cov=28.1 corr=0 origname=NODE_37_length_40671_cov_28.098615_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>40671</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>76224375</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>38</Iteration_iter-num>
+  <Iteration_query-ID>Query_38</Iteration_query-ID>
+  <Iteration_query-def>contig00038 len=37441 cov=25.1 corr=0 origname=NODE_38_length_37441_cov_25.096355_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>37441</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>70168125</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>39</Iteration_iter-num>
+  <Iteration_query-ID>Query_39</Iteration_query-ID>
+  <Iteration_query-def>contig00039 len=33180 cov=21.8 corr=0 origname=NODE_39_length_33180_cov_21.814839_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>33180</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>62178750</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>40</Iteration_iter-num>
+  <Iteration_query-ID>Query_40</Iteration_query-ID>
+  <Iteration_query-def>contig00040 len=32899 cov=27.7 corr=0 origname=NODE_40_length_32899_cov_27.744272_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>32899</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>61651875</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>41</Iteration_iter-num>
+  <Iteration_query-ID>Query_41</Iteration_query-ID>
+  <Iteration_query-def>contig00041 len=31368 cov=25.0 corr=0 origname=NODE_41_length_31368_cov_24.979705_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>31368</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>58781250</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>42</Iteration_iter-num>
+  <Iteration_query-ID>Query_42</Iteration_query-ID>
+  <Iteration_query-def>contig00042 len=30034 cov=23.5 corr=0 origname=NODE_42_length_30034_cov_23.470573_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>30034</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>18</Statistics_hsp-len>
+      <Statistics_eff-space>56280000</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>43</Iteration_iter-num>
+  <Iteration_query-ID>Query_43</Iteration_query-ID>
+  <Iteration_query-def>contig00043 len=26631 cov=21.9 corr=0 origname=NODE_43_length_26631_cov_21.928819_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>26631</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>49927864</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>44</Iteration_iter-num>
+  <Iteration_query-ID>Query_44</Iteration_query-ID>
+  <Iteration_query-def>contig00044 len=24072 cov=31.0 corr=0 origname=NODE_44_length_24072_cov_30.974743_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>24072</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>45127180</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>45</Iteration_iter-num>
+  <Iteration_query-ID>Query_45</Iteration_query-ID>
+  <Iteration_query-def>contig00045 len=22708 cov=23.4 corr=0 origname=NODE_45_length_22708_cov_23.354280_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>22708</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>42568316</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>46</Iteration_iter-num>
+  <Iteration_query-ID>Query_46</Iteration_query-ID>
+  <Iteration_query-def>contig00046 len=21842 cov=27.5 corr=0 origname=NODE_46_length_21842_cov_27.530350_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>21842</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>40943700</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>47</Iteration_iter-num>
+  <Iteration_query-ID>Query_47</Iteration_query-ID>
+  <Iteration_query-def>contig00047 len=19666 cov=28.3 corr=0 origname=NODE_47_length_19666_cov_28.297851_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>19666</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>36861524</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>48</Iteration_iter-num>
+  <Iteration_query-ID>Query_48</Iteration_query-ID>
+  <Iteration_query-def>contig00048 len=18956 cov=22.5 corr=0 origname=NODE_48_length_18956_cov_22.454627_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>18956</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>35529564</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>49</Iteration_iter-num>
+  <Iteration_query-ID>Query_49</Iteration_query-ID>
+  <Iteration_query-def>contig00049 len=16950 cov=35.3 corr=2 origname=NODE_49_length_16950_cov_35.338036_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>16950</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>31766308</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>50</Iteration_iter-num>
+  <Iteration_query-ID>Query_50</Iteration_query-ID>
+  <Iteration_query-def>contig00050 len=16310 cov=32.8 corr=0 origname=NODE_50_length_16310_cov_32.826566_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>16310</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>30565668</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>51</Iteration_iter-num>
+  <Iteration_query-ID>Query_51</Iteration_query-ID>
+  <Iteration_query-def>contig00051 len=15679 cov=19.2 corr=0 origname=NODE_51_length_15679_cov_19.229038_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>15679</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>29381912</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>52</Iteration_iter-num>
+  <Iteration_query-ID>Query_52</Iteration_query-ID>
+  <Iteration_query-def>contig00052 len=15491 cov=27.3 corr=0 origname=NODE_52_length_15491_cov_27.259019_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>15491</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>29029224</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>53</Iteration_iter-num>
+  <Iteration_query-ID>Query_53</Iteration_query-ID>
+  <Iteration_query-def>contig00053 len=14775 cov=22.3 corr=0 origname=NODE_53_length_14775_cov_22.272523_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>14775</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>27686008</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>54</Iteration_iter-num>
+  <Iteration_query-ID>Query_54</Iteration_query-ID>
+  <Iteration_query-def>contig00054 len=13893 cov=28.9 corr=0 origname=NODE_54_length_13893_cov_28.913132_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>13893</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>17</Statistics_hsp-len>
+      <Statistics_eff-space>26031376</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>55</Iteration_iter-num>
+  <Iteration_query-ID>Query_55</Iteration_query-ID>
+  <Iteration_query-def>contig00055 len=12332 cov=23.7 corr=0 origname=NODE_55_length_12332_cov_23.731168_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>12332</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>23117132</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>56</Iteration_iter-num>
+  <Iteration_query-ID>Query_56</Iteration_query-ID>
+  <Iteration_query-def>contig00056 len=11128 cov=32.1 corr=0 origname=NODE_56_length_11128_cov_32.074939_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>11128</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>20857224</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>57</Iteration_iter-num>
+  <Iteration_query-ID>Query_57</Iteration_query-ID>
+  <Iteration_query-def>contig00057 len=9499 cov=35.6 corr=0 origname=NODE_57_length_9499_cov_35.631423_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>9499</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>17799591</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>58</Iteration_iter-num>
+  <Iteration_query-ID>Query_58</Iteration_query-ID>
+  <Iteration_query-def>contig00058 len=9469 cov=17.3 corr=0 origname=NODE_58_length_9469_cov_17.330564_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>9469</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>17743281</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>59</Iteration_iter-num>
+  <Iteration_query-ID>Query_59</Iteration_query-ID>
+  <Iteration_query-def>contig00059 len=9222 cov=37.3 corr=0 origname=NODE_59_length_9222_cov_37.297714_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>9222</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>17279662</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>60</Iteration_iter-num>
+  <Iteration_query-ID>Query_60</Iteration_query-ID>
+  <Iteration_query-def>contig00060 len=8516 cov=23.3 corr=0 origname=NODE_60_length_8516_cov_23.279483_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>8516</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>15954500</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>61</Iteration_iter-num>
+  <Iteration_query-ID>Query_61</Iteration_query-ID>
+  <Iteration_query-def>contig00061 len=8372 cov=19.5 corr=0 origname=NODE_61_length_8372_cov_19.518027_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>8372</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>15684212</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>62</Iteration_iter-num>
+  <Iteration_query-ID>Query_62</Iteration_query-ID>
+  <Iteration_query-def>contig00062 len=7767 cov=17.0 corr=0 origname=NODE_62_length_7767_cov_16.977237_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>7767</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>14548627</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>63</Iteration_iter-num>
+  <Iteration_query-ID>Query_63</Iteration_query-ID>
+  <Iteration_query-def>contig00063 len=7670 cov=37.3 corr=1 origname=NODE_63_length_7670_cov_37.315242_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>7670</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>14366558</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>64</Iteration_iter-num>
+  <Iteration_query-ID>Query_64</Iteration_query-ID>
+  <Iteration_query-def>contig00064 len=7645 cov=21.3 corr=0 origname=NODE_64_length_7645_cov_21.280333_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>7645</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>14319633</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>65</Iteration_iter-num>
+  <Iteration_query-ID>Query_65</Iteration_query-ID>
+  <Iteration_query-def>contig00065 len=7573 cov=30.0 corr=0 origname=NODE_65_length_7573_cov_30.045236_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>7573</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>14184489</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>66</Iteration_iter-num>
+  <Iteration_query-ID>Query_66</Iteration_query-ID>
+  <Iteration_query-def>contig00066 len=6132 cov=27.7 corr=0 origname=NODE_66_length_6132_cov_27.666446_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>6132</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>11479732</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>67</Iteration_iter-num>
+  <Iteration_query-ID>Query_67</Iteration_query-ID>
+  <Iteration_query-def>contig00067 len=5913 cov=34.3 corr=0 origname=NODE_67_length_5913_cov_34.317449_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>5913</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>11068669</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>68</Iteration_iter-num>
+  <Iteration_query-ID>Query_68</Iteration_query-ID>
+  <Iteration_query-def>contig00068 len=5699 cov=2.4 corr=1 origname=NODE_68_length_5699_cov_2.391993_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>5699</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>16</Statistics_hsp-len>
+      <Statistics_eff-space>10666991</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>69</Iteration_iter-num>
+  <Iteration_query-ID>Query_69</Iteration_query-ID>
+  <Iteration_query-def>contig00069 len=4345 cov=29.4 corr=0 origname=NODE_69_length_4345_cov_29.357243_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>4345</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>8131740</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>70</Iteration_iter-num>
+  <Iteration_query-ID>Query_70</Iteration_query-ID>
+  <Iteration_query-def>contig00070 len=4324 cov=10.1 corr=0 origname=NODE_70_length_4324_cov_10.121319_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>4324</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>8092302</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>71</Iteration_iter-num>
+  <Iteration_query-ID>Query_71</Iteration_query-ID>
+  <Iteration_query-def>contig00071 len=3845 cov=30.8 corr=0 origname=NODE_71_length_3845_cov_30.766330_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3845</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>7192740</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>72</Iteration_iter-num>
+  <Iteration_query-ID>Query_72</Iteration_query-ID>
+  <Iteration_query-def>contig00072 len=3770 cov=2.4 corr=0 origname=NODE_72_length_3770_cov_2.443782_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3770</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>7051890</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>73</Iteration_iter-num>
+  <Iteration_query-ID>Query_73</Iteration_query-ID>
+  <Iteration_query-def>contig00073 len=3753 cov=20.6 corr=0 origname=NODE_73_length_3753_cov_20.566140_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3753</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>7019964</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>74</Iteration_iter-num>
+  <Iteration_query-ID>Query_74</Iteration_query-ID>
+  <Iteration_query-def>contig00074 len=3685 cov=31.8 corr=0 origname=NODE_74_length_3685_cov_31.815585_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3685</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>6892260</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>75</Iteration_iter-num>
+  <Iteration_query-ID>Query_75</Iteration_query-ID>
+  <Iteration_query-def>contig00075 len=3675 cov=18.0 corr=0 origname=NODE_75_length_3675_cov_18.041991_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3675</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>6873480</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>76</Iteration_iter-num>
+  <Iteration_query-ID>Query_76</Iteration_query-ID>
+  <Iteration_query-def>contig00076 len=3463 cov=33.4 corr=0 origname=NODE_76_length_3463_cov_33.447104_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3463</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>6475344</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>77</Iteration_iter-num>
+  <Iteration_query-ID>Query_77</Iteration_query-ID>
+  <Iteration_query-def>contig00077 len=3171 cov=41.8 corr=0 origname=NODE_77_length_3171_cov_41.776520_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3171</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5926968</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>78</Iteration_iter-num>
+  <Iteration_query-ID>Query_78</Iteration_query-ID>
+  <Iteration_query-def>contig00078 len=3165 cov=14.8 corr=0 origname=NODE_78_length_3165_cov_14.761504_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3165</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5915700</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>79</Iteration_iter-num>
+  <Iteration_query-ID>Query_79</Iteration_query-ID>
+  <Iteration_query-def>contig00079 len=3164 cov=27.5 corr=0 origname=NODE_79_length_3164_cov_27.531280_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3164</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5913822</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>80</Iteration_iter-num>
+  <Iteration_query-ID>Query_80</Iteration_query-ID>
+  <Iteration_query-def>contig00080 len=3128 cov=177.5 corr=0 origname=NODE_80_length_3128_cov_177.539193_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>3128</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5846214</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>81</Iteration_iter-num>
+  <Iteration_query-ID>Query_81</Iteration_query-ID>
+  <Iteration_query-def>contig00081 len=2908 cov=33.1 corr=0 origname=NODE_81_length_2908_cov_33.066101_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2908</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5433054</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>82</Iteration_iter-num>
+  <Iteration_query-ID>Query_82</Iteration_query-ID>
+  <Iteration_query-def>contig00082 len=2856 cov=30.8 corr=0 origname=NODE_82_length_2856_cov_30.783219_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2856</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5335398</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>83</Iteration_iter-num>
+  <Iteration_query-ID>Query_83</Iteration_query-ID>
+  <Iteration_query-def>contig00083 len=2856 cov=23.3 corr=0 origname=NODE_83_length_2856_cov_23.270796_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2856</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5335398</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>84</Iteration_iter-num>
+  <Iteration_query-ID>Query_84</Iteration_query-ID>
+  <Iteration_query-def>contig00084 len=2820 cov=23.7 corr=0 origname=NODE_84_length_2820_cov_23.728931_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2820</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5267790</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>85</Iteration_iter-num>
+  <Iteration_query-ID>Query_85</Iteration_query-ID>
+  <Iteration_query-def>contig00085 len=2699 cov=157.0 corr=0 origname=NODE_85_length_2699_cov_157.001145_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2699</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>5040552</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>86</Iteration_iter-num>
+  <Iteration_query-ID>Query_86</Iteration_query-ID>
+  <Iteration_query-def>contig00086 len=2581 cov=191.4 corr=0 origname=NODE_86_length_2581_cov_191.360512_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2581</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>15</Statistics_hsp-len>
+      <Statistics_eff-space>4818948</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>87</Iteration_iter-num>
+  <Iteration_query-ID>Query_87</Iteration_query-ID>
+  <Iteration_query-def>contig00087 len=2261 cov=64.2 corr=0 origname=NODE_87_length_2261_cov_64.182401_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2261</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>4222113</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>88</Iteration_iter-num>
+  <Iteration_query-ID>Query_88</Iteration_query-ID>
+  <Iteration_query-def>contig00088 len=2227 cov=11.4 corr=0 origname=NODE_88_length_2227_cov_11.357076_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2227</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>4158227</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>89</Iteration_iter-num>
+  <Iteration_query-ID>Query_89</Iteration_query-ID>
+  <Iteration_query-def>contig00089 len=2103 cov=3.7 corr=0 origname=NODE_89_length_2103_cov_3.704545_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2103</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3925231</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>90</Iteration_iter-num>
+  <Iteration_query-ID>Query_90</Iteration_query-ID>
+  <Iteration_query-def>contig00090 len=2039 cov=37.9 corr=0 origname=NODE_90_length_2039_cov_37.878571_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>2039</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3804975</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>91</Iteration_iter-num>
+  <Iteration_query-ID>Query_91</Iteration_query-ID>
+  <Iteration_query-def>contig00091 len=1829 cov=22.9 corr=0 origname=NODE_91_length_1829_cov_22.895429_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1829</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3410385</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>92</Iteration_iter-num>
+  <Iteration_query-ID>Query_92</Iteration_query-ID>
+  <Iteration_query-def>contig00092 len=1730 cov=7.0 corr=0 origname=NODE_92_length_1730_cov_6.963658_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1730</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3224364</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>93</Iteration_iter-num>
+  <Iteration_query-ID>Query_93</Iteration_query-ID>
+  <Iteration_query-def>contig00093 len=1722 cov=25.9 corr=0 origname=NODE_93_length_1722_cov_25.922094_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1722</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3209332</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>94</Iteration_iter-num>
+  <Iteration_query-ID>Query_94</Iteration_query-ID>
+  <Iteration_query-def>contig00094 len=1702 cov=176.8 corr=0 origname=NODE_94_length_1702_cov_176.782502_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1702</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>3171752</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>95</Iteration_iter-num>
+  <Iteration_query-ID>Query_95</Iteration_query-ID>
+  <Iteration_query-def>contig00095 len=1599 cov=38.6 corr=0 origname=NODE_95_length_1599_cov_38.567763_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1599</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2978215</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>96</Iteration_iter-num>
+  <Iteration_query-ID>Query_96</Iteration_query-ID>
+  <Iteration_query-def>contig00096 len=1496 cov=74.0 corr=0 origname=NODE_96_length_1496_cov_74.003529_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1496</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2784678</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>97</Iteration_iter-num>
+  <Iteration_query-ID>Query_97</Iteration_query-ID>
+  <Iteration_query-def>contig00097 len=1409 cov=90.7 corr=0 origname=NODE_97_length_1409_cov_90.712030_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1409</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2621205</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>98</Iteration_iter-num>
+  <Iteration_query-ID>Query_98</Iteration_query-ID>
+  <Iteration_query-def>contig00098 len=1359 cov=43.1 corr=0 origname=NODE_98_length_1359_cov_43.064844_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1359</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2527255</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>99</Iteration_iter-num>
+  <Iteration_query-ID>Query_99</Iteration_query-ID>
+  <Iteration_query-def>contig00099 len=1309 cov=46.0 corr=0 origname=NODE_99_length_1309_cov_46.047154_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1309</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2433305</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>100</Iteration_iter-num>
+  <Iteration_query-ID>Query_100</Iteration_query-ID>
+  <Iteration_query-def>contig00100 len=1262 cov=20.0 corr=0 origname=NODE_100_length_1262_cov_20.016061_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1262</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2344992</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>101</Iteration_iter-num>
+  <Iteration_query-ID>Query_101</Iteration_query-ID>
+  <Iteration_query-def>contig00101 len=1257 cov=73.0 corr=0 origname=NODE_101_length_1257_cov_73.015280_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1257</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2335597</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>102</Iteration_iter-num>
+  <Iteration_query-ID>Query_102</Iteration_query-ID>
+  <Iteration_query-def>contig00102 len=1254 cov=13.7 corr=0 origname=NODE_102_length_1254_cov_13.740426_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1254</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2329960</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>103</Iteration_iter-num>
+  <Iteration_query-ID>Query_103</Iteration_query-ID>
+  <Iteration_query-def>contig00103 len=1248 cov=47.9 corr=0 origname=NODE_103_length_1248_cov_47.852866_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1248</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2318686</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>104</Iteration_iter-num>
+  <Iteration_query-ID>Query_104</Iteration_query-ID>
+  <Iteration_query-def>contig00104 len=1221 cov=47.4 corr=0 origname=NODE_104_length_1221_cov_47.419440_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1221</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2267953</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>105</Iteration_iter-num>
+  <Iteration_query-ID>Query_105</Iteration_query-ID>
+  <Iteration_query-def>contig00105 len=1209 cov=30.7 corr=0 origname=NODE_105_length_1209_cov_30.728319_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1209</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2245405</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>106</Iteration_iter-num>
+  <Iteration_query-ID>Query_106</Iteration_query-ID>
+  <Iteration_query-def>contig00106 len=1152 cov=18.5 corr=0 origname=NODE_106_length_1152_cov_18.533085_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1152</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2138302</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>107</Iteration_iter-num>
+  <Iteration_query-ID>Query_107</Iteration_query-ID>
+  <Iteration_query-def>contig00107 len=1152 cov=17.7 corr=0 origname=NODE_107_length_1152_cov_17.679404_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>1152</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>14</Statistics_hsp-len>
+      <Statistics_eff-space>2138302</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>108</Iteration_iter-num>
+  <Iteration_query-ID>Query_108</Iteration_query-ID>
+  <Iteration_query-def>contig00108 len=968 cov=53.1 corr=0 origname=NODE_108_length_968_cov_53.084364_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>968</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1795400</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>109</Iteration_iter-num>
+  <Iteration_query-ID>Query_109</Iteration_query-ID>
+  <Iteration_query-def>contig00109 len=956 cov=45.0 corr=0 origname=NODE_109_length_956_cov_44.971494_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>956</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1772840</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>110</Iteration_iter-num>
+  <Iteration_query-ID>Query_110</Iteration_query-ID>
+  <Iteration_query-def>contig00110 len=952 cov=12.5 corr=0 origname=NODE_110_length_952_cov_12.478809_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>952</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1765320</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>111</Iteration_iter-num>
+  <Iteration_query-ID>Query_111</Iteration_query-ID>
+  <Iteration_query-def>contig00111 len=840 cov=17.9 corr=0 origname=NODE_112_length_840_cov_17.875164_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>840</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1554760</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>112</Iteration_iter-num>
+  <Iteration_query-ID>Query_112</Iteration_query-ID>
+  <Iteration_query-def>contig00112 len=807 cov=27.0 corr=0 origname=NODE_113_length_807_cov_26.984890_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>807</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1492720</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>113</Iteration_iter-num>
+  <Iteration_query-ID>Query_113</Iteration_query-ID>
+  <Iteration_query-def>contig00113 len=797 cov=22.6 corr=0 origname=NODE_115_length_797_cov_22.625348_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>797</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1473920</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>114</Iteration_iter-num>
+  <Iteration_query-ID>Query_114</Iteration_query-ID>
+  <Iteration_query-def>contig00114 len=797 cov=37.8 corr=0 origname=NODE_114_length_797_cov_37.805014_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>797</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1473920</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>115</Iteration_iter-num>
+  <Iteration_query-ID>Query_115</Iteration_query-ID>
+  <Iteration_query-def>contig00115 len=797 cov=22.3 corr=0 origname=NODE_116_length_797_cov_22.321727_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>797</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1473920</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>116</Iteration_iter-num>
+  <Iteration_query-ID>Query_116</Iteration_query-ID>
+  <Iteration_query-def>contig00116 len=795 cov=43.5 corr=0 origname=NODE_117_length_795_cov_43.497207_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>795</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1470160</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>117</Iteration_iter-num>
+  <Iteration_query-ID>Query_117</Iteration_query-ID>
+  <Iteration_query-def>contig00117 len=788 cov=44.4 corr=0 origname=NODE_118_length_788_cov_44.376587_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>788</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1457000</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>118</Iteration_iter-num>
+  <Iteration_query-ID>Query_118</Iteration_query-ID>
+  <Iteration_query-def>contig00118 len=749 cov=51.6 corr=0 origname=NODE_119_length_749_cov_51.580597_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>749</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1383680</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>119</Iteration_iter-num>
+  <Iteration_query-ID>Query_119</Iteration_query-ID>
+  <Iteration_query-def>contig00119 len=639 cov=26.9 corr=0 origname=NODE_121_length_639_cov_26.875000_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>639</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1176880</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>120</Iteration_iter-num>
+  <Iteration_query-ID>Query_120</Iteration_query-ID>
+  <Iteration_query-def>contig00120 len=639 cov=29.3 corr=0 origname=NODE_120_length_639_cov_29.253571_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>639</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1176880</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>121</Iteration_iter-num>
+  <Iteration_query-ID>Query_121</Iteration_query-ID>
+  <Iteration_query-def>contig00121 len=614 cov=38.6 corr=0 origname=NODE_122_length_614_cov_38.614953_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>614</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1129880</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>122</Iteration_iter-num>
+  <Iteration_query-ID>Query_122</Iteration_query-ID>
+  <Iteration_query-def>contig00122 len=605 cov=20.1 corr=0 origname=NODE_123_length_605_cov_20.068441_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>605</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1112960</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>123</Iteration_iter-num>
+  <Iteration_query-ID>Query_123</Iteration_query-ID>
+  <Iteration_query-def>contig00123 len=559 cov=254.4 corr=0 origname=NODE_125_length_559_cov_254.445833_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>559</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1026480</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>124</Iteration_iter-num>
+  <Iteration_query-ID>Query_124</Iteration_query-ID>
+  <Iteration_query-def>contig00124 len=551 cov=64.3 corr=0 origname=NODE_126_length_551_cov_64.341102_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>551</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1011440</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>125</Iteration_iter-num>
+  <Iteration_query-ID>Query_125</Iteration_query-ID>
+  <Iteration_query-def>contig00125 len=545 cov=43.0 corr=0 origname=NODE_127_length_545_cov_43.049356_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>545</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>1000160</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>126</Iteration_iter-num>
+  <Iteration_query-ID>Query_126</Iteration_query-ID>
+  <Iteration_query-def>contig00126 len=540 cov=23.6 corr=0 origname=NODE_128_length_540_cov_23.570499_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>540</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>990760</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>127</Iteration_iter-num>
+  <Iteration_query-ID>Query_127</Iteration_query-ID>
+  <Iteration_query-def>contig00127 len=514 cov=21.6 corr=0 origname=NODE_129_length_514_cov_21.597701_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>514</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>941880</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>128</Iteration_iter-num>
+  <Iteration_query-ID>Query_128</Iteration_query-ID>
+  <Iteration_query-def>contig00128 len=511 cov=36.3 corr=0 origname=NODE_130_length_511_cov_36.307870_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>511</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>936240</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>129</Iteration_iter-num>
+  <Iteration_query-ID>Query_129</Iteration_query-ID>
+  <Iteration_query-def>contig00129 len=486 cov=85.7 corr=0 origname=NODE_131_length_486_cov_85.724816_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>486</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>889240</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>130</Iteration_iter-num>
+  <Iteration_query-ID>Query_130</Iteration_query-ID>
+  <Iteration_query-def>contig00130 len=478 cov=64.9 corr=0 origname=NODE_132_length_478_cov_64.922306_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>478</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>874200</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>131</Iteration_iter-num>
+  <Iteration_query-ID>Query_131</Iteration_query-ID>
+  <Iteration_query-def>contig00131 len=468 cov=101.0 corr=0 origname=NODE_133_length_468_cov_100.964010_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>468</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>855400</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>132</Iteration_iter-num>
+  <Iteration_query-ID>Query_132</Iteration_query-ID>
+  <Iteration_query-def>contig00132 len=445 cov=30.1 corr=0 origname=NODE_134_length_445_cov_30.131148_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>445</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>13</Statistics_hsp-len>
+      <Statistics_eff-space>812160</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>133</Iteration_iter-num>
+  <Iteration_query-ID>Query_133</Iteration_query-ID>
+  <Iteration_query-def>contig00133 len=418 cov=289.0 corr=0 origname=NODE_135_length_418_cov_289.044248_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>418</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>763686</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>134</Iteration_iter-num>
+  <Iteration_query-ID>Query_134</Iteration_query-ID>
+  <Iteration_query-def>contig00134 len=418 cov=22.8 corr=0 origname=NODE_136_length_418_cov_22.837758_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>418</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>763686</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>135</Iteration_iter-num>
+  <Iteration_query-ID>Query_135</Iteration_query-ID>
+  <Iteration_query-def>contig00135 len=406 cov=24.1 corr=0 origname=NODE_138_length_406_cov_24.131498_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>406</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>741114</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>136</Iteration_iter-num>
+  <Iteration_query-ID>Query_136</Iteration_query-ID>
+  <Iteration_query-def>contig00136 len=406 cov=23.3 corr=0 origname=NODE_139_length_406_cov_23.281346_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>406</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>741114</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>137</Iteration_iter-num>
+  <Iteration_query-ID>Query_137</Iteration_query-ID>
+  <Iteration_query-def>contig00137 len=384 cov=24.0 corr=0 origname=NODE_140_length_384_cov_23.963934_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>384</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>699732</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>138</Iteration_iter-num>
+  <Iteration_query-ID>Query_138</Iteration_query-ID>
+  <Iteration_query-def>contig00138 len=377 cov=30.3 corr=0 origname=NODE_142_length_377_cov_30.338926_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>377</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>686565</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>139</Iteration_iter-num>
+  <Iteration_query-ID>Query_139</Iteration_query-ID>
+  <Iteration_query-def>contig00139 len=376 cov=125.3 corr=0 origname=NODE_143_length_376_cov_125.333333_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>376</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>684684</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>140</Iteration_iter-num>
+  <Iteration_query-ID>Query_140</Iteration_query-ID>
+  <Iteration_query-def>contig00140 len=374 cov=31.0 corr=0 origname=NODE_144_length_374_cov_31.013559_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>374</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>680922</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>141</Iteration_iter-num>
+  <Iteration_query-ID>Query_141</Iteration_query-ID>
+  <Iteration_query-def>contig00141 len=359 cov=19.4 corr=0 origname=NODE_145_length_359_cov_19.389286_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>359</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>652707</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>142</Iteration_iter-num>
+  <Iteration_query-ID>Query_142</Iteration_query-ID>
+  <Iteration_query-def>contig00142 len=352 cov=34.7 corr=0 origname=NODE_146_length_352_cov_34.747253_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>352</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>639540</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>143</Iteration_iter-num>
+  <Iteration_query-ID>Query_143</Iteration_query-ID>
+  <Iteration_query-def>contig00143 len=351 cov=29.3 corr=0 origname=NODE_147_length_351_cov_29.283088_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>351</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>637659</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>144</Iteration_iter-num>
+  <Iteration_query-ID>Query_144</Iteration_query-ID>
+  <Iteration_query-def>contig00144 len=350 cov=14.5 corr=0 origname=NODE_148_length_350_cov_14.468635_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>350</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>635778</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>145</Iteration_iter-num>
+  <Iteration_query-ID>Query_145</Iteration_query-ID>
+  <Iteration_query-def>contig00145 len=347 cov=28.7 corr=0 origname=NODE_149_length_347_cov_28.701493_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>347</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>630135</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>146</Iteration_iter-num>
+  <Iteration_query-ID>Query_146</Iteration_query-ID>
+  <Iteration_query-def>contig00146 len=343 cov=32.0 corr=0 origname=NODE_150_length_343_cov_31.981061_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>343</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>622611</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>147</Iteration_iter-num>
+  <Iteration_query-ID>Query_147</Iteration_query-ID>
+  <Iteration_query-def>contig00147 len=342 cov=24.5 corr=0 origname=NODE_151_length_342_cov_24.460076_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>342</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>620730</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>148</Iteration_iter-num>
+  <Iteration_query-ID>Query_148</Iteration_query-ID>
+  <Iteration_query-def>contig00148 len=337 cov=77.4 corr=0 origname=NODE_152_length_337_cov_77.449612_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>337</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>611325</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>149</Iteration_iter-num>
+  <Iteration_query-ID>Query_149</Iteration_query-ID>
+  <Iteration_query-def>contig00149 len=333 cov=3.8 corr=0 origname=NODE_153_length_333_cov_3.763780_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>333</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>603801</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>150</Iteration_iter-num>
+  <Iteration_query-ID>Query_150</Iteration_query-ID>
+  <Iteration_query-def>contig00150 len=321 cov=19.1 corr=0 origname=NODE_156_length_321_cov_19.148760_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>321</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>581229</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>151</Iteration_iter-num>
+  <Iteration_query-ID>Query_151</Iteration_query-ID>
+  <Iteration_query-def>contig00151 len=321 cov=16.3 corr=0 origname=NODE_157_length_321_cov_16.305785_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>321</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>581229</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>152</Iteration_iter-num>
+  <Iteration_query-ID>Query_152</Iteration_query-ID>
+  <Iteration_query-def>contig00152 len=321 cov=58.5 corr=0 origname=NODE_155_length_321_cov_58.504132_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>321</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>581229</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>153</Iteration_iter-num>
+  <Iteration_query-ID>Query_153</Iteration_query-ID>
+  <Iteration_query-def>contig00153 len=310 cov=38.2 corr=0 origname=NODE_159_length_310_cov_38.181818_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>310</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>560538</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>154</Iteration_iter-num>
+  <Iteration_query-ID>Query_154</Iteration_query-ID>
+  <Iteration_query-def>contig00154 len=297 cov=72.0 corr=0 origname=NODE_160_length_297_cov_72.027523_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>297</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>536085</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>155</Iteration_iter-num>
+  <Iteration_query-ID>Query_155</Iteration_query-ID>
+  <Iteration_query-def>contig00155 len=285 cov=20.9 corr=0 origname=NODE_161_length_285_cov_20.932039_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>285</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>513513</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>156</Iteration_iter-num>
+  <Iteration_query-ID>Query_156</Iteration_query-ID>
+  <Iteration_query-def>contig00156 len=259 cov=23.9 corr=0 origname=NODE_162_length_259_cov_23.922222_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>259</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>464607</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>157</Iteration_iter-num>
+  <Iteration_query-ID>Query_157</Iteration_query-ID>
+  <Iteration_query-def>contig00157 len=238 cov=39.0 corr=0 origname=NODE_163_length_238_cov_39.037736_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>238</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>425106</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>158</Iteration_iter-num>
+  <Iteration_query-ID>Query_158</Iteration_query-ID>
+  <Iteration_query-def>contig00158 len=209 cov=20.2 corr=0 origname=NODE_164_length_209_cov_20.161538_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>209</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>370557</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>159</Iteration_iter-num>
+  <Iteration_query-ID>Query_159</Iteration_query-ID>
+  <Iteration_query-def>contig00159 len=204 cov=28.3 corr=0 origname=NODE_165_length_204_cov_28.312000_pilon sw=shovill-spades/1.0.4 date=20191204</Iteration_query-def>
+  <Iteration_query-len>204</Iteration_query-len>
+<Iteration_hits>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>0</Statistics_db-num>
+      <Statistics_db-len>0</Statistics_db-len>
+      <Statistics_hsp-len>12</Statistics_hsp-len>
+      <Statistics_eff-space>361152</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+  <Iteration_message>No hits found</Iteration_message>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

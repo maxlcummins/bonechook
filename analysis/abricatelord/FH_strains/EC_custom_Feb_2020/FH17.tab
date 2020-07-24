@@ -1,0 +1,10 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH17.fasta	contig00013	107221	107958	-	tia_CP019944.1	1-738/738	===============	0/0	100.00	97.42	EC_custom_Feb_2020		tia_CP019944.1	
+FH17.fasta	contig00020	21205	22107	+	fimH_CP015076.1	1-903/903	===============	0/0	100.00	98.89	EC_custom_Feb_2020		fimH_CP015076.1	
+FH17.fasta	contig00046	25459	26190	+	traT_CP018978.1	1-732/732	===============	0/0	100.00	98.91	EC_custom_Feb_2020		traT_CP018978.1	
+FH17.fasta	contig00086	5830	8958	+	silA_KU248945.1	1-3129/3147	========/======	2/4	99.36	77.07	EC_custom_Feb_2020		silA_KU248945.1	
+FH17.fasta	contig00111	5430	5651	+	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	93.69	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH17.fasta	contig00123	3024	3977	+	ompT_HM210637.1	1-954/954	===============	0/0	100.00	99.89	EC_custom_Feb_2020		ompT_HM210637.1	
+FH17.fasta	contig00123	4410	5519	+	hylF_CP000836.1	1-1110/1110	===============	0/0	100.00	99.64	EC_custom_Feb_2020		hylF_CP000836.1	
+FH17.fasta	contig00143	1879	2638	-	hek_|VFG1539	3-756/756	========/======	1/6	99.74	93.68	EC_custom_Feb_2020		hek_|VFG1539	
+FH17.fasta	contig00144	2440	2661	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	94.14	EC_custom_Feb_2020		yeeT_|VFG1529	

@@ -1,0 +1,18 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH164.fasta	contig00013	8823	9044	+	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	96.40	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH164.fasta	contig00013	45096	45998	+	fimH_CP015076.1	1-903/903	===============	0/0	100.00	98.89	EC_custom_Feb_2020		fimH_CP015076.1	
+FH164.fasta	contig00014	13696	16824	+	silA_KU248945.1	1-3129/3147	========/======	5/14	99.21	76.98	EC_custom_Feb_2020		silA_KU248945.1	
+FH164.fasta	contig00026	37779	38000	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	98.65	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH164.fasta	contig00029	30668	31399	+	traT_CP018978.1	1-732/732	===============	0/0	100.00	98.91	EC_custom_Feb_2020		traT_CP018978.1	
+FH164.fasta	contig00032	31614	31835	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	95.95	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH164.fasta	contig00038	2311	2547	+	cvi_AY545598.5	1-237/237	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvi_AY545598.5	
+FH164.fasta	contig00038	2525	2836	-	cvaC_X57525.1	1-312/312	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvaC_X57525.1	
+FH164.fasta	contig00038	3006	5120	-	cvaB_AY545598.5	1-2115/2115	===============	0/0	100.00	99.91	EC_custom_Feb_2020		cvaB_AY545598.5	
+FH164.fasta	contig00038	5095	6006	-	cvaA_AY545598.5	1-912/912	===============	0/0	100.00	99.78	EC_custom_Feb_2020		cvaA_AY545598.5	
+FH164.fasta	contig00039	9763	10950	-	etsA_KU578032	1-1188/1188	===============	0/0	100.00	100.00	EC_custom_Feb_2020		etsA_KU578032	
+FH164.fasta	contig00039	15232	16185	+	ompT_HM210637.1	1-954/954	===============	0/0	100.00	100.00	EC_custom_Feb_2020		ompT_HM210637.1	
+FH164.fasta	contig00039	16618	17727	+	hylF_CP000836.1	1-1110/1110	===============	0/0	100.00	99.73	EC_custom_Feb_2020		hylF_CP000836.1	
+FH164.fasta	contig00040	380	1294	+	sitA_(gi:387606979)|VFG034194	1-915/915	===============	0/0	100.00	98.80	EC_custom_Feb_2020		sitA_(gi:387606979)|VFG034194	
+FH164.fasta	contig00040	15813	17090	+	iucD_AY545598.5	1-1278/1278	===============	0/0	100.00	99.77	EC_custom_Feb_2020		iucD_AY545598.5	
+FH164.fasta	contig00040	17172	19373	+	iutA_KU578032.1	1-2202/2202	===============	0/0	100.00	99.86	EC_custom_Feb_2020		iutA_KU578032.1	
+FH164.fasta	contig00048	5528	7852	-	fecA_NC_000913.3	1-2325/2325	===============	0/0	100.00	99.78	EC_custom_Feb_2020		fecA_NC_000913.3	

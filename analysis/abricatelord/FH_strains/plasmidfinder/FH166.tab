@@ -1,0 +1,10 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH166.fasta	contig00029	51722	51993	-	IncFIC(FII)_1	1-271/499	========/......	1/1	54.31	95.96	plasmidfinder	AP001918	IncFIC(FII)_1__AP001918	
+FH166.fasta	contig00033	1914	2595	+	IncFIB(AP001918)_1	1-682/682	===============	0/0	100.00	98.39	plasmidfinder	AP001918	IncFIB(AP001918)_1__AP001918	
+FH166.fasta	contig00056	2489	2642	-	Col156_1	1-154/154	===============	0/0	100.00	94.81	plasmidfinder	NC_009781	Col156_1__NC_009781	
+FH166.fasta	contig00064	2655	2785	-	ColRNAI_1	1-130/130	========/======	1/1	100.00	88.55	plasmidfinder	DQ298019	ColRNAI_1__DQ298019	
+FH166.fasta	contig00067	473	601	+	ColRNAI_1	1-128/130	========/======	1/1	98.46	83.72	plasmidfinder	DQ298019	ColRNAI_1__DQ298019	
+FH166.fasta	contig00072	381	640	-	Col(MG828)_1	1-262/262	========/======	5/6	98.47	84.09	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH166.fasta	contig00073	345	604	-	Col(MG828)_1	1-262/262	========/======	5/6	98.47	85.61	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH166.fasta	contig00077	272	529	-	Col(MG828)_1	1-258/262	===============	0/0	98.47	94.19	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	
+FH166.fasta	contig00078	112	373	+	Col(MG828)_1	1-262/262	===============	0/0	100.00	91.98	plasmidfinder	NC_008486	Col(MG828)_1__NC_008486	

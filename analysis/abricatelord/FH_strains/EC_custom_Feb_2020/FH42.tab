@@ -1,0 +1,27 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH42.fasta	contig00007	183738	183959	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	95.50	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH42.fasta	contig00008	172584	175712	-	silA_KU248945.1	1-3129/3147	========/======	5/14	99.21	77.39	EC_custom_Feb_2020		silA_KU248945.1	
+FH42.fasta	contig00017	107803	108024	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	91.89	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH42.fasta	contig00018	30370	31272	+	fimH_CP015076.1	1-903/903	===============	0/0	100.00	98.67	EC_custom_Feb_2020		fimH_CP015076.1	
+FH42.fasta	contig00020	82116	82337	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	98.65	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH42.fasta	contig00023	4433	5344	+	cvaA_AY545598.5	1-912/912	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvaA_AY545598.5	
+FH42.fasta	contig00023	5319	7433	+	cvaB_AY545598.5	1-2115/2115	===============	0/0	100.00	99.91	EC_custom_Feb_2020		cvaB_AY545598.5	
+FH42.fasta	contig00023	7603	7914	+	cvaC_X57525.1	1-312/312	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvaC_X57525.1	
+FH42.fasta	contig00023	7892	8128	-	cvi_AY545598.5	1-237/237	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvi_AY545598.5	
+FH42.fasta	contig00023	25909	26922	+	intI1_HQ730118.1	1-1014/1014	========/======	2/2	99.90	99.80	EC_custom_Feb_2020		intI1_HQ730118.1	
+FH42.fasta	contig00023	31114	32808	-	merA_CP022086.1	1-1695/1695	===============	0/0	100.00	100.00	EC_custom_Feb_2020		merA_CP022086.1	
+FH42.fasta	contig00023	48415	49146	-	traT_CP018978.1	1-732/732	===============	0/0	100.00	99.04	EC_custom_Feb_2020		traT_CP018978.1	
+FH42.fasta	contig00030	72998	73253	+	sitA_(gi:82776740)|VFG013039	1-256/915	=====..........	0/0	27.98	98.44	EC_custom_Feb_2020		sitA_(gi:82776740)|VFG013039	
+FH42.fasta	contig00053	1024	2211	+	etsA_KU578032	1-1188/1188	===============	0/0	100.00	100.00	EC_custom_Feb_2020		etsA_KU578032	
+FH42.fasta	contig00056	4550	6664	-	cvaB_AY545598.5	1-2115/2115	===============	0/0	100.00	90.12	EC_custom_Feb_2020		cvaB_AY545598.5	
+FH42.fasta	contig00056	6639	7550	-	cvaA_AY545598.5	1-912/912	===============	0/0	100.00	95.28	EC_custom_Feb_2020		cvaA_AY545598.5	
+FH42.fasta	contig00060	549	2750	-	iutA_KU578032.1	1-2202/2202	===============	0/0	100.00	100.00	EC_custom_Feb_2020		iutA_KU578032.1	
+FH42.fasta	contig00060	2832	4109	-	iucD_AY545598.5	1-1278/1278	===============	0/0	100.00	99.92	EC_custom_Feb_2020		iucD_AY545598.5	
+FH42.fasta	contig00061	921	1100	+	papI_DQ095216.1	1-181/306	========/=.....	1/1	58.82	90.06	EC_custom_Feb_2020		papI_DQ095216.1	
+FH42.fasta	contig00061	1505	1798	+	papB_CU928161	1-294/315	===============	0/0	93.33	81.63	EC_custom_Feb_2020		papB_CU928161	
+FH42.fasta	contig00061	9916	10090	+	papGIII_CP010151.1|3421241-3422500	1086-1260/1260	............===	0/0	13.89	97.71	EC_custom_Feb_2020		papGIII_CP010151.1|3421241-3422500	
+FH42.fasta	contig00062	5648	6757	-	hylF_CP000836.1	1-1110/1110	===============	0/0	100.00	99.82	EC_custom_Feb_2020		hylF_CP000836.1	
+FH42.fasta	contig00062	7190	8143	-	ompT_HM210637.1	1-954/954	===============	0/0	100.00	100.00	EC_custom_Feb_2020		ompT_HM210637.1	
+FH42.fasta	contig00064	1874	4198	+	fecA_NC_000913.3	1-2325/2325	===============	0/0	100.00	99.87	EC_custom_Feb_2020		fecA_NC_000913.3	
+FH42.fasta	contig00098	1	738	+	sitA_(gi:88770314)|VFG012575	178-915/915	..=============	0/0	80.66	99.32	EC_custom_Feb_2020		sitA_(gi:88770314)|VFG012575	
+FH42.fasta	contig00106	380	635	+	sitA_(gi:88770314)|VFG012575	1-256/915	=====..........	0/0	27.98	100.00	EC_custom_Feb_2020		sitA_(gi:88770314)|VFG012575	

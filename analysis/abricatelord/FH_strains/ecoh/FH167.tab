@@ -1,0 +1,5 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH167.fasta	contig00011	40813	41862	+	fliC-H4	1-1050/1050	===============	0/0	100.00	100.00	ecoh	AJ605764.1	flagellin H4	
+FH167.fasta	contig00018	27150	28364	-	wzt-O8	1-1215/1215	===============	0/0	100.00	99.51	ecoh	AB811598.1	ATP-binding protein O8	
+FH167.fasta	contig00018	28364	29158	-	wzm-O8	1-795/795	===============	0/0	100.00	99.37	ecoh	AB010150.1	O-antigen ABC transporter permease O8	
+FH167.fasta	contig00034	1449	1574	-	wzx-O164-Gp13	24-155/1614	==....../......	4/8	7.74	79.70	ecoh	AB972425.1	O antigen flippase O164	

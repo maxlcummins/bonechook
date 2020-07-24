@@ -1,0 +1,19 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH85.fasta	contig00013	19419	19640	+	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	90.09	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH85.fasta	contig00030	50694	53822	+	silA_KU248945.1	1-3129/3147	========/======	5/14	99.21	77.07	EC_custom_Feb_2020		silA_KU248945.1	
+FH85.fasta	contig00035	5632	7956	-	fecA_NC_000913.3	1-2325/2325	===============	0/0	100.00	99.78	EC_custom_Feb_2020		fecA_NC_000913.3	
+FH85.fasta	contig00035	10518	10589	-	ompT_HM210637.1	579-650/954	.........==....	0/0	7.55	95.83	EC_custom_Feb_2020		ompT_HM210637.1	
+FH85.fasta	contig00035	16107	16328	+	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	95.05	EC_custom_Feb_2020		yeeT_|VFG1529	
+FH85.fasta	contig00035	32150	33052	+	fimH_CP015076.1	1-903/903	===============	0/0	100.00	98.78	EC_custom_Feb_2020		fimH_CP015076.1	
+FH85.fasta	contig00040	24436	25167	+	traT_CP018978.1	1-732/732	===============	0/0	100.00	99.04	EC_custom_Feb_2020		traT_CP018978.1	
+FH85.fasta	contig00046	10584	11771	-	etsA_KU578032	1-1188/1188	===============	0/0	100.00	100.00	EC_custom_Feb_2020		etsA_KU578032	
+FH85.fasta	contig00046	16039	16992	+	ompT_HM210637.1	1-954/954	===============	0/0	100.00	100.00	EC_custom_Feb_2020		ompT_HM210637.1	
+FH85.fasta	contig00046	17425	18534	+	hylF_CP000836.1	1-1110/1110	===============	0/0	100.00	100.00	EC_custom_Feb_2020		hylF_CP000836.1	
+FH85.fasta	contig00048	376	612	+	cvi_AY545598.5	1-237/237	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvi_AY545598.5	
+FH85.fasta	contig00048	590	901	-	cvaC_X57525.1	1-312/312	===============	0/0	100.00	100.00	EC_custom_Feb_2020		cvaC_X57525.1	
+FH85.fasta	contig00048	1071	3185	-	cvaB_AY545598.5	1-2115/2115	===============	0/0	100.00	99.91	EC_custom_Feb_2020		cvaB_AY545598.5	
+FH85.fasta	contig00048	3160	4071	-	cvaA_AY545598.5	1-912/912	===============	0/0	100.00	99.78	EC_custom_Feb_2020		cvaA_AY545598.5	
+FH85.fasta	contig00052	412	1326	+	sitA_(gi:88770314)|VFG012575	1-915/915	===============	0/0	100.00	100.00	EC_custom_Feb_2020		sitA_(gi:88770314)|VFG012575	
+FH85.fasta	contig00052	11604	12881	+	iucD_AY545598.5	1-1278/1278	===============	0/0	100.00	99.84	EC_custom_Feb_2020		iucD_AY545598.5	
+FH85.fasta	contig00052	12963	15164	+	iutA_KU578032.1	1-2202/2202	===============	0/0	100.00	99.91	EC_custom_Feb_2020		iutA_KU578032.1	
+FH85.fasta	contig00078	115	336	-	yeeT_|VFG1529	1-222/222	===============	0/0	100.00	98.65	EC_custom_Feb_2020		yeeT_|VFG1529	

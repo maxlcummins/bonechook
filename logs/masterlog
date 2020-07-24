@@ -1,0 +1,13 @@
+#Shuvlord used to generate assemblies for FH collection (207 strains - some removed for crappy sequence data)
+
+#abricatelord used to genotype strains
+#/home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/snakemake/abricatelord/Snakefile was copied to the abricatelord directory as Snakefile_FH
+nohup snakemake -j -s Snakefile_FH --use-conda  -p > /home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/logs/abricate/nohup_abricatelord.out &
+#Job ID = 21103
+
+### Pointfinder
+my_python_paths
+source activate ~/Data/miniconda3_old/envs/pointfinder/
+cd ~/Data/Manuscripts/Femoral_Head_2019/bonechook/assemblies/FH_strains/
+mkdir /home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/analysis/pointfinder
+for f in *.fasta; do mkdir /home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/analysis/pointfinder/${f/\.fasta/}; /home/malcummi/Data/pointfinder/PointFinder.py -i $f -o /home/malcummi/Data/Manuscripts/Femoral_Head_2019/bonechook/analysis/pointfinder/${f/\.fasta/} -p /home/malcummi/Data/pointfinder/pointfinder_db -s escherichia_coli -m blastn -m_p /usr/local/ncbi-blast-ihpc-2.8.1+/bin/blastn; done

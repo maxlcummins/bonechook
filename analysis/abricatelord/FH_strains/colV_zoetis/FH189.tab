@@ -1,0 +1,12 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+FH189.fasta	contig00039	412	1326	+	sitA	1-915/915	===============	0/0	100.00	99.13	colV_zoetis		sitA	
+FH189.fasta	contig00039	1326	2153	+	sitB	1-828/828	===============	0/0	100.00	99.88	colV_zoetis		sitB	
+FH189.fasta	contig00039	2150	2985	+	sitC	1-837/837	========/======	1/1	99.88	99.52	colV_zoetis		sitC	
+FH189.fasta	contig00039	3004	3861	+	sitD	1-858/858	===============	0/0	100.00	99.88	colV_zoetis		sitD	
+FH189.fasta	contig00039	7136	8917	+	iucA	1-1782/1782	===============	0/0	100.00	99.89	colV_zoetis		iucA	
+FH189.fasta	contig00039	8918	9865	+	iucB	1-948/948	===============	0/0	100.00	99.89	colV_zoetis		iucB	
+FH189.fasta	contig00039	9865	11607	+	iucC	1-1743/1743	===============	0/0	100.00	99.94	colV_zoetis		iucC	
+FH189.fasta	contig00039	11604	12881	+	iucD	1-1278/1278	===============	0/0	100.00	99.77	colV_zoetis		iucD	
+FH189.fasta	contig00039	12963	15164	+	iutA	1-2202/2202	===============	0/0	100.00	99.91	colV_zoetis		iutA	
+FH189.fasta	contig00044	2467	3420	-	ompT	1-954/954	===============	0/0	100.00	100.00	colV_zoetis		ompT	
+FH189.fasta	contig00044	4181	5933	-	hlyF	1-1754/1754	========/======	1/1	99.94	99.43	colV_zoetis		hlyF	
