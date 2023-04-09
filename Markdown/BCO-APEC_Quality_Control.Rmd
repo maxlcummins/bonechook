@@ -1,0 +1,652 @@
+---
+title: "BCO-APEC Quality Control"
+author: "Max Cummins"
+date: "10/4/2023"
+output:
+    html_document:
+        theme: spacelab
+        toc: true
+        toc_float: true
+        code_folding: hide
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Read in our packages
+library(tidyverse)
+library(abricateR)
+library(dplyr)
+library(ggplot2)
+library(ggtree)
+library(pheatmap)
+library(phytools)
+library(plotly)
+library(readr)
+library(readxl)
+library(paletteer)
+
+#Define our not in function
+`%nin%` <- Negate(`%in%`)
+
+########## Remember to change this so you have a copy of these files somewhere intelligent
+##########
+if(!file.exists("delims/species_genome_size.txt")){
+        dir.create("delims", showWarnings = FALSE)
+        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/species_genome_size.txt", "delims/species_genome_size.txt")
+        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/taxid_to_scientific_name.txt", "delims/taxid_to_scientific_name.txt")
+}
+```
+
+## Outline
+
+## File summary
+
+A GitHub repository available at
+<https://github.com/maxlcummins/bonechook> contains all scripts and
+files required to rerun analysis detailed in this document.
+
+## Quality Control
+
+The pipelord QC
+[workflow](https://github.com/maxlcummins/pipelord/workflows/QC_workflow.smk)
+was used to generate data from:
+
+-   Kraken and Bracken
+-   Gunc
+-   CheckM
+-   Assembly Stats (following genomic assembly)
+
+```{bash , run_QC_workflow, eval=FALSE}
+#Activate our snakemake environment
+source activate snakemake
+
+#Run our QC workflow
+nohup snakemake --use-conda --conda-frontend mamba -T 10 --rerun-incomplete -s workflow/QC_workflow.smk --configfile config/AVC_FH.yaml -j 36 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_QC_all.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_QC_all.err.log &
+
+# Jupiter6
+# JobID = 52980
+# Fri Jun 3 10:47:30 AEST 2022
+```
+
+Note that the pipeline also filters our reads using fastp before their
+use by any other tool.
+
+A subsequent step will be run to generate genomic data but also MLST
+data which is used as part of the QC protocol.
+
+### Genomic data
+
+We also generate all our genomic data prior to QC and filter out genomes
+we don't need later on. This also generates our MLST data we can use in
+our QC.
+
+This is run using snakemake as above but with a new
+[snakefile](https://github.com/maxlcummins/pipelord/workflows/Snakefile)
+to generate the genomic data (including MLST).
+
+```{bash run_genomics_workflow, eval=FALSE}
+#Run our genomics workflow
+nohup snakemake --use-conda --conda-frontend mamba -T 10 --rerun-incomplete -s workflow/Snakefile --configfile config/AVC_FH.yaml -j 36 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_Genotype_all.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_Genotype_all.err.log &
+
+# Jupiter6
+# JobID = 41101
+# Fri Jun  3 22:38:03 AEST 2022
+```
+
+### Mashtree
+
+It can also be helpful to generate a mashtree to visualise the
+relatedness of samples and identify partitcularly phylogenetically
+distant isolates which may be contaminated. e then generate an initial
+mashtree of all isolates:
+
+```{bash run_mashtree, eval=FALSE}
+#Deactivate our old environment
+source deactivate
+
+#Activate our new environment
+source activate mashtree
+
+#Run mashtree
+nohup mashtree --mindepth 0 --tempdir /tmp/BCO_APEC_all_mashtree --numcpus 20 --outmatrix /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/all_mashtree.matrix --outtree /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/all_mashtree.tree /projects/AusGEM/Users/Max/symlink_Bigchook/*.R1.fastq.gz > /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_all.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_all.err.log &
+
+# Jupiter5
+# JobID = 129082
+# Fri Jun  3 11:11:14 AEST 2022
+```
+
+## Quality Control Results and Processing
+
+After downloading all of the resulting files from the remote server we
+are ready to begin our QC.
+
+```{r read_in_file_paths, echo=FALSE, tidy = TRUE}
+#Load paths to files needed for the script
+#Assembly stats file
+assembly_stats_path <-
+        "analysis/assembly_stats.txt"
+#A list of taxonomic IDs and their respective scientific names
+tax_id_converter_path  <-
+        "delims/taxid_to_scientific_name.txt"
+#A list of expected genome sizes.
+genome_sizes_path  <-
+        "delims/species_genome_size.txt"
+
+abricate_path <- "analysis/genotype.txt"
+pointfinder_path <- "analysis/pointfinder.txt"
+pMLST_data <- "analysis/pMLST.txt"
+mlst_path <- "analysis/mlst.txt"
+bracken_path <- "analysis/bracken_report.txt"
+checkm_path <- "analysis/checkm_qa.txt"
+
+tree_path <- "analysis/trees/old/all_mashtree.tree"
+
+#Provide output names
+output_name <- "BCO_APEC"
+```
+
+### Species identification
+
+We required our samples to meet the following criteria to be considered
+*E. coli*:
+
+-   Detected as *E. coli* by [MLST
+    analysis](https://github.com/tseemann/mlst)
+-   Determined to have the majority of reads (\>50%) mapping to *E.
+    coli* by Kraken2/Bracken
+-   Of a genome size within 5% of the range observed in the RefSeq
+    database
+
+```{r determine_species_ID}
+
+#Read in bracken data and identify top species per sample
+bracken <- read_delim(
+        bracken_path,
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE,
+        show_col_types = FALSE
+)
+
+#Reshape bracken data
+bracken <-
+        reshape2::dcast(
+                data = bracken,
+                name ~ scientific_name,
+                value.var = "fraction_total_reads",
+                drop = FALSE
+        )
+
+#Save our names column for later use
+bracken_names <- bracken$name
+
+#Remove name column so we can manipulate data format
+bracken <- bracken %>% select(-name)
+
+#Change NAs to 0s
+bracken[is.na(bracken)] <- 0
+
+#Reassign names as rownames
+rownames(bracken) <- bracken_names
+
+#Create a column for the top species for a given sample
+bracken$top_species <-
+        colnames(bracken)[apply(bracken, 1, which.max)]
+
+#Reapply the names column
+bracken$name <- bracken_names
+
+#Create a simple table with species IDs for the samples
+species_IDs <-  bracken %>% select(name, top_species, `Escherichia coli`)
+
+#Remove unwanted brackets in species name
+species_IDs$top_species <- gsub("\\[", "", species_IDs$top_species)
+species_IDs$top_species <- gsub("\\]", "", species_IDs$top_species)
+
+#Create a top genus column
+species_IDs$genus <- gsub(" .*", "", species_IDs$top_species)
+
+#Read in our MLST data
+mlst <- read_delim(mlst_path, delim = "\t", 
+    escape_double = FALSE, trim_ws = TRUE, show_col_types = FALSE)
+
+#Join our MLST data to our species_ID table
+QC_data <- inner_join(mlst, species_IDs, by = "name")
+```
+
+With this we can now see the distribution of the samples as below:
+
+```{r species_identity, fig.height=8, fig.width=12}
+#Make a figure with two box plots showing proportion of reads mapping to E. coli,
+#whtehr they were detected as E. coli by MLST on the X axis.
+
+g <- ggplot(QC_data, mapping = aes(x = `Escherichia coli`, y = top_species))
+
+p <- g + geom_boxplot(varwidth=T, fill="#DD8D29") + 
+        labs(title="Species ID by MLST allele detection", 
+             x="Proportion of reads mapped to E. coli",
+             y="Species with most reads mapped")
+
+p
+```
+
+From the above we can see most of our genomes are typed as
+
+Next we look at genome sizes - we will require them to be between 3.729 and 6.274 Mbp.
+
+```{r assembly_stats_species_plot, echo=FALSE, fig.align="center", fig.width=8, fig.height=6, fig.cap="Figure  2: A boxplot visualising the relationship between genome size and species best match (determined using Kraken2 and Bracken). Error bars indicate the minimum and maximum expected genome sizes for a given species."}
+#Read in our assembly stats data
+assembly_stats <- read_delim(
+        assembly_stats_path,
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE,
+        show_col_types = FALSE
+)
+
+#Read in data from NCBI with taxID/scientific name conversions
+taxid_names <- read_delim(
+        tax_id_converter_path,
+        "|",
+        escape_double = FALSE,
+        trim_ws = TRUE,
+        show_col_types = FALSE
+)
+
+#Read in data from NCBI with expected species genome sizes
+genome_size <- read_delim(
+        genome_sizes_path,
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE,
+        show_col_types = FALSE
+)
+
+#Rename the column to simplify it and remove illegal character
+genome_size <- genome_size %>% rename('taxid' = '#species_taxid')
+
+#Join our two NCBI tables
+expected_genome_size <-
+        inner_join(genome_size, taxid_names, by = "taxid")
+
+#rename our column to facilitate a join later on
+expected_genome_size <-
+        expected_genome_size %>% rename('top_species' = 'taxname')
+
+
+#Remove anything with the word "Virus" which breaks our size ranges later
+expected_genome_size <- expected_genome_size %>% filter(!grepl("virus", top_species))
+
+#Remove unwanted brackets in species name
+expected_genome_size$top_species <-
+        gsub("\\[", "", expected_genome_size$top_species)
+expected_genome_size$top_species <-
+        gsub("\\]", "", expected_genome_size$top_species)
+
+#Create a top genus column
+expected_genome_size$genus <-
+        gsub(" .*", "", expected_genome_size$top_species)
+
+#Create a df of expected genus genome sizes (rather than species)
+expected_genus_size <-
+        expected_genome_size %>% group_by(genus) %>% summarise(
+                `Expected Max Genome Size (Genus)` = max(max_ungapped_length),
+                `Expected Min Genome Size (Genus)` = min(min_ungapped_length)
+        )
+
+#Bind this new df bcak to our expected genome sizes table
+expected_genome_size <-
+        inner_join(expected_genome_size, expected_genus_size, by = "genus")
+
+#Separate out the genus related data
+expected_genome_size_genus <- expected_genome_size %>% select(genus, `Expected Min Genome Size (Genus)`, `Expected Max Genome Size (Genus)`)
+
+#Remove genus/genus lengths columns - dont need them anymore
+expected_genome_size <- expected_genome_size %>% select(-genus, -`Expected Min Genome Size (Genus)`, -`Expected Max Genome Size (Genus)`)
+
+#Join our assembly_stats data with our species ID lists
+df <- left_join(assembly_stats, species_IDs, by = "name")
+
+#Remove genera not present in those in our isolates
+expected_genome_size_genus <- expected_genome_size_genus %>% filter(genus %in% df$genus) %>% unique()
+
+#Join our expected genome size list (genus) to our assembly stats data
+df <-
+        left_join(df, expected_genome_size_genus, by = c("genus"))
+
+#Not sure why but we get duplicate rows... Lets remove them
+df <- unique(df)
+
+#Join our expected genome size list to our assembly stats data
+df <-
+        left_join(df, expected_genome_size, by = c("top_species"))
+
+#Generate columns for passed or failed genome sizes
+df <-
+        df %>% mutate(
+                within_species_size = ifelse(
+                        total_length > min_ungapped_length*0.95 &
+                                total_length < max_ungapped_length*1.05,
+                        TRUE,
+                        FALSE
+                ),
+                within_genus_size = ifelse(
+                        total_length > `Expected Min Genome Size (Genus)`*0.95 &
+                                total_length < `Expected Max Genome Size (Genus)`*1.05,
+                        TRUE,
+                        FALSE
+                )
+        )
+
+#Join the new table to our QC data table
+QC_data <- QC_data %>% select(-top_species, -`Escherichia coli`, -genus) %>% inner_join(df, by = "name")
+
+df1 <- QC_data %>% rename("Genome Length (Mbp)" = total_length, "Species Best Match" = top_species, "Expected Max Genome Size" =  max_ungapped_length, "Expected Min Genome Size" = min_ungapped_length)
+
+#Change the units to Mbp
+df1$`Genome Length (Mbp)` <- df1$`Genome Length (Mbp)`/1000000
+df1$`Expected Max Genome Size` <- df1$`Expected Max Genome Size`/1000000
+df1$`Expected Min Genome Size` <- df1$`Expected Min Genome Size`/1000000
+
+g <- ggplot(df1, mapping = aes(x = `Species Best Match`, y = `Genome Length (Mbp)`, label=`Species Best Match`, label2=`Genome Length (Mbp)`))
+
+p <- g + geom_boxplot(varwidth=T, fill="#DD8D29") + 
+        labs(title="Assembly sizes by species", 
+             x="Species",
+             y="Genome size (Mbp)") +
+        theme(axis.text.x = element_text(angle=90), legend.position = "none") +
+        geom_errorbar(aes(ymin = `Expected Min Genome Size`, ymax = `Expected Max Genome Size`,
+                          width = 0.2,
+                          color = "#bebeda",
+                          alpha = 0.3))
+```
+
+The following table summarises instances where a genome size outside of
+the range expected for its species ID.
+
+```{r species_size_table}
+species_size_fails <- df %>% filter(within_species_size != TRUE) 
+species_size_fails_table <-  species_size_fails %>% group_by(top_species, within_species_size) %>% summarise("Count" = n(), .groups="keep") %>% arrange(within_species_size, top_species) %>% rename("Species Best Match" = top_species, "Within expected size range (Species)" = within_species_size) 
+
+knitr::kable(species_size_fails_table, align = 'c')
+```
+
+### Contamination screening
+
+Next we will use Bracken data to inform which samples might be
+contaminated:
+
+```{r contamination_screening}
+#Transform down our bracken data
+melt_bracken <- reshape2::melt(bracken, id.vars = 'name')
+
+#Reassign our column names
+colnames(melt_bracken) <- c('name', 'species', 'read_proportion')
+
+#Get rid of annoying characters in our species names
+melt_bracken$species <- gsub("\\]", "", melt_bracken$species)
+melt_bracken$species <- gsub("\\[", "", melt_bracken$species)
+
+#Create a column for genus
+melt_bracken$genus <- melt_bracken$species
+
+#Remove everything after genus name
+melt_bracken$genus <- gsub(" .*", "", melt_bracken$genus)
+
+#Convert the proportion of reads associated with a given genus/species to a numeric
+suppressWarnings(melt_bracken$read_proportion <-
+        as.numeric(melt_bracken$read_proportion))
+
+#Replace NAs with 0s (not all genomes hit all species/genera)
+melt_bracken$read_proportion[is.na(melt_bracken$read_proportion)] <-
+        0
+```
+
+We will start by checking the genomes which we think are contaminated
+based on them having genome sizes outside of the range expected for
+their respective species. Note that we remove noise in the data by only
+considering species/genus matches which account for 5% or more of the
+reads
+
+Below you can see the proportion of reads from a given sample mapping to
+a species from the Kraken2 database (processed using Bracken).
+
+------------------------------------------------------------------------
+
+```{r pheatmap_bracken_species}
+#Create a list of genomes which had genome lengths outside the expected range for their species
+species_genome_size_fails <- species_size_fails %>% filter(within_species_size == FALSE)
+
+#Create a list of genomes which were of a species not represented in refseq (and therefore missing an expected genome size)
+species_genome_size_missing <- species_size_fails %>% filter(is.na(within_species_size))
+
+
+BCO_APEC_bracken <-
+        bracken %>% filter(name %in% species_genome_size_fails$name) %>% select(-top_species,-name)
+
+BCO_APEC_bracken[BCO_APEC_bracken < 0.05] <- 0
+
+i <- (colSums(BCO_APEC_bracken, na.rm = T) != 0)
+
+BCO_APEC_bracken <- BCO_APEC_bracken[, i]
+
+pheatmap(
+        BCO_APEC_bracken,
+        fontsize_row = 3,
+        fontsize_col = 10,
+        cluster_cols = FALSE,
+        color = colorRampPalette(c("white", "blue", "red"))(50),
+        border_color = "grey",
+        main = "Species associations of reads from Group A samples",
+        display_numbers = FALSE
+)
+```
+
+Now lets work out how many samples are:
+
+-   *E. coli* (\>= 50% of the reads being *E. coli* and MLST scheme
+    auto-detection being *E. coli*)
+-   Of an appropriate size for the species (Based on Assembly stats and
+    Bracken ID)
+-   Sufficiently pure (\<= 10% contamination from CheckM)
+-   Sufficiently complete (\>= 90% completeness from CheckM)
+
+```{r QC_pass_table}
+#Combine our assembly stats, genome sizes and bracken data
+checkm_qa <- read_delim(checkm_path, 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE, show_col_types = FALSE)
+
+#Rename our ID column
+checkm_qa <- checkm_qa %>% rename(name = `Bin Id`)
+
+#Combine our bracken data
+QC_data <- left_join(QC_data, checkm_qa, by = "name")
+
+#Create our table of QC pass/fails
+tablesss <- QC_data %>% group_by(`Escherichia coli` > 0.5 & scheme == "ecoli", name %nin% species_size_fails$name, Contamination > 10, Completeness > 90) %>% summarise(counts = n(), .groups="keep")
+
+colnames(tablesss) <- c('E. coli', 'Appropriate size', "Contaminated", "Complete", "Count")
+
+knitr::kable(tablesss, align = 'c')
+
+```
+
+### Genome contiguity
+
+Lastly lets check for contiguity of the genomes.
+
+We will require our genomes to have an N50 of \> 15,000 and fewer than
+800 scaffolds.
+
+```{r contiguity_check}
+#Generate a table of the genomes which do and don't meet our contiguity criteria
+contiguity_table <- QC_data %>% group_by(N50 > 15000, number < 800) %>% summarise(counts = n(), .groups="keep")
+
+#Rename our columns 
+contiguity_table <- contiguity_table %>% rename("Scaffold count < 800" = `number < 800`)
+
+#Plot the table
+knitr::kable(contiguity_table, align = 'c')
+
+```
+
+Now lets show below the count of samples which met or didn't meet our QC criteria:
+
+```{r final_QC}
+#Generate a table of genomes which passed QC
+pass_QC_table <- QC_data %>% group_by(`Escherichia coli` > 0.5 & scheme == "ecoli", name %nin% species_size_fails$name, Contamination > 10, Completeness > 90, N50 > 15000, number < 800) %>% summarise(counts = n(), .groups="keep")
+
+#Rename our columns
+colnames(pass_QC_table) <- c('E. coli', 'Appropriate size', "Contaminated", "Complete", "Count", "N50 > 15,000", "Scaffold count < 800")
+
+#Generate our list of samples which pass QC
+QC_pass <- QC_data %>% filter(`Escherichia coli` > 0.5 & scheme == "ecoli", name %nin% species_size_fails$name, Contamination < 10, Completeness > 90, N50 > 15000, number < 800) %>% select(name)
+
+#Add a column for if the strains passed our QC or not
+QC_data <- QC_data %>% mutate(QC_status = if_else(name %in% QC_pass$name, "Pass", "Fail"))
+
+#Write the names of the samples which passed QC
+#write_delim(QC_pass, "delims/QC_data.txt", delim = "\t")
+
+#Write the names of the samples which passed QC
+#write_delim(QC_pass, "delims/QC_pass.txt")
+
+#Plot our table
+knitr::kable(pass_QC_table, align = 'c')
+```
+
+### Preliminary Phylogeny
+
+Lastly we create a preliminary phylogeny of our genomes higlighting those
+which passed QC and those which did not.
+
+```{r}
+#Read in our tree
+tree <- read.tree(tree_path)
+
+#Rename our tips to trim off the ".R1"
+tree$tip.label <- gsub(".R1$","",tree$tip.label)
+
+#Select the columns we want from our QC dataframe
+small_QC_df <- QC_data %>% select(name, within_species_size, ST, top_species, Contamination, Completeness, QC_status)
+
+p2 <- ggtree(tree, layout = "circular", open.angle = 0) %<+%
+        small_QC_df +
+        geom_tiplab(size = 1,
+                align = TRUE,
+                linesize = 0.15,
+                aes(color = as.factor(QC_status))
+                ) +
+        geom_tippoint(size = 0.2#,
+                #aes(colour = as.factor(mytipcolvar))
+                )
+
+p2
+```
+
+
+
+## Remove Duplicates
+
+Some strains were collected from different sites in the same bird. To address
+this and reduce bias in statistical analyses, samples collected from the same
+bird were removed such that only one isolate from a given host remained. Samples
+were prioritised from bone sites.
+
+```{r metadata_processing, eval=FALSE, include=FALSE}
+
+#Note these 'not_to_be_shared' files contain some sensitive metadata and are
+#thus not included in this analysis, howevever the file resulting from this code
+#block (which have sensitive information removed) are included. Do not run this
+#section as it won't work - the files are missing!
+
+library(readr)
+metadata <- read_delim("not_to_be_shared/metadata.txt", 
+                       delim = "\t", escape_double = FALSE, 
+                       trim_ws = TRUE, show_col_types = FALSE)
+
+birdwise_metadata <- read_delim("not_to_be_shared/birdwise_metadata.txt", 
+                                delim = "\t", escape_double = FALSE, 
+                                trim_ws = TRUE, show_col_types = FALSE)
+
+small_birdwise_metadata <- birdwise_metadata %>% select(Bird_Gross_Necropsy_ID, Bird_Age, Farms_ID, Flock_ID)
+
+metadata <- metadata %>% rename("Bird_Gross_Necropsy_ID" = Gross_bird_necropsy_id)
+
+metadata <- left_join(metadata, small_birdwise_metadata, by = "Bird_Gross_Necropsy_ID")
+
+#metadata %>% unique() %>% write_delim("not_to_be_shared/merged_metadata.txt", delim = "\t")
+
+#Manual edits were required to the final columns for samples which had bird ids but no sample listed.
+#Sample Name	scheme	ST	QC_Pass	Exclude (non/duplicate sample)	Final_subset	Bird_Gross_Necropsy_ID	Plate Label - Site of isolation	collection_date	collection_year	Bird_Age	Farms_ID	Flock_ID
+#FH36	ecoli	101	PASS	Include	Yes	55	RHJF	1/8/16	2016	38	7	9
+#FH40	ecoli	665	PASS	Include	Yes	60	LTTJF	1/8/16	2016	38	7	9
+#FH177	ecoli	135	PASS	Include	Yes	121	LTT	1/9/16	2016	6	12	14
+#FH175	ecoli	48	PASS	Include	No	124	NAVEL	1/9/16	2016	6	12	14
+#FH202	ecoli	1594	FAIL	Include	No	42	LFH	20/7/16	2016	28	5	8
+#
+
+#I also deleted 3 columns: QC_Pass	Exclude (non/duplicate sample)	Final_subset
+# And another 2 columns: scheme	ST
+
+
+
+```
+
+Code used to randomly select a strain from a given host can be seen in the code
+block below.
+
+```{r duplicate_removal}
+
+metadata <- read_delim("delims/merged_metadata.txt", delim = "\t", show_col_types = FALSE)
+
+metadata <- metadata %>% rename('name' = `Sample Name`, 'site' = `Plate Label - Site of isolation`)
+
+metadata <- metadata %>% filter(name %in% QC_pass$name)
+
+site_table <- metadata %>% group_by(site) %>% tally(sort = TRUE)
+
+bone_sites <- c(
+        "RTT",
+        "LFH",
+        "RFH",
+        "LTT",
+        "RHSF",
+        "LHSF",
+        #"LIVER",
+        #"YS",
+        #"Liver",
+        #"PERICARDITIS",
+        #"PERITONITIS",
+        "RFHSF",
+        #"ACCETABULUM",
+        #"HB",
+        "LTTJF",
+        "LTTSF",
+        #"Lung 1",
+        #"Lung 2",
+        #"NAVEL",
+        #"PERICARD FLUID",
+        #"PERICARDIUM",
+        "RFHJF",
+        "RHJF",
+        "RKSF",
+        "RTTSF"#,
+        #"SKIN"
+)
+
+metadata <- metadata %>% mutate(bone_site = if_else(site %in% bone_sites, "bone", "other"))
+
+set.seed(1)
+
+sample_bone_sites <- metadata %>% filter(bone_site == "bone") %>% group_by(Bird_Gross_Necropsy_ID) %>% slice_sample(n = 1) %>% pull(name) %>% as.data.frame() %>% rename("name" = ".")
+
+#write_delim(sample_bone_sites, "delims/sampled_bone_site_names.txt", delim = "\t")
+```
+
+

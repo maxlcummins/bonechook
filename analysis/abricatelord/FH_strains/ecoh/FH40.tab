@@ -1,5 +1,0 @@
-#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
-FH40.fasta	contig00012	122056	123105	-	fliC-H4	1-1050/1050	===============	0/0	100.00	99.91	ecoh	AJ536600.1	flagellin H4	
-FH40.fasta	contig00018	43695	45110	-	wzx-O78	1-1416/1416	===============	0/0	100.00	99.93	ecoh	FJ940775.1	O antigen flippase O78	
-FH40.fasta	contig00018	47837	48958	-	wzy-O78	1-1122/1122	===============	0/0	100.00	99.73	ecoh	FJ940775.1	O antigen polyermase O78	
-FH40.fasta	contig00029	30194	30340	+	wzx-O164-Gp13	7-153/1614	==....../......	2/2	9.05	84.46	ecoh	AB972425.1	O antigen flippase O164	

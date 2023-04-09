@@ -1,4 +1,0 @@
-#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
-FH18.fasta	contig00001	53506	55518	+	fliC-H9	1-2013/2013	===============	0/0	100.00	98.86	ecoh	AY249994.1	flagellin H9	
-FH18.fasta	contig00052	8880	9632	-	wzm-Onovel32	1-753/753	===============	0/0	100.00	100.00	ecoh	SRR2544773	O-antigen ABC transporter permease Onovel32	
-FH18.fasta	contig00052	9639	10418	-	wzt-Onovel32	1-780/780	===============	0/0	100.00	100.00	ecoh	SRR2544773	ATP-binding protein Onovel32	
