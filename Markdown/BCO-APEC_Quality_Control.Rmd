@@ -14,7 +14,6 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-
 #Read in our packages
 library(tidyverse)
 library(abricateR)
@@ -27,7 +26,6 @@ library(plotly)
 library(readr)
 library(readxl)
 library(paletteer)
-
 #Define our not in function
 `%nin%` <- Negate(`%in%`)
 ```
@@ -43,7 +41,7 @@ files required to rerun analysis detailed in this document.
 ## Quality Control
 
 The pipelord QC
-[workflow](https://github.com/maxlcummins/pipelord/workflows/QC_workflow.smk)
+[workflow](https://github.com/maxlcummins/pipelord/blob/main/workflow/QC_workflow.smk)
 was used to generate data from:
 
 -   Kraken and Bracken
