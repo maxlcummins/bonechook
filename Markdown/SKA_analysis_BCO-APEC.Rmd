@@ -56,7 +56,7 @@ mlst <- read_delim(
 QC_pass <- read_csv("delims/QC_pass.txt", col_names = "name", show_col_types = FALSE)
 
 #Read in our metadata
-metadata <- read_delim("not_to_be_shared/merged_metadata_AVC_FH.txt", delim = "\t", show_col_types = FALSE)
+metadata <- read_delim("delims/merged_metadata_AVC_FH.txt", delim = "\t", show_col_types = FALSE)
 
 #Define paths for genotypic data
 pointfinder_path <- "analysis/pointfinder.txt"
@@ -101,9 +101,9 @@ data_microreact1 <- data_microreact %>% rename("Sample 1" = "ID") %>% rev()
 
 data_microreact2 <- data_microreact %>% rename("Sample 2" = "ID")
 
-dists2 <- inner_join(data_microreact1, dists, by = "Sample 1", multiple = "all")
+dists2 <- inner_join(data_microreact1, dists, by = "Sample 1")
 
-dists2 <- inner_join(dists2, data_microreact2, by = "Sample 2", multiple = "all")
+dists2 <- inner_join(dists2, data_microreact2, by = "Sample 2")
 
 dists3 <- dists2 %>% filter(SNPs < 1000)
 
