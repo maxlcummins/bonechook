@@ -164,7 +164,7 @@ phylogroup2_path <- file.path("analysis/clermontyping.txt")
 mlst_path <- file.path("analysis/mlst.txt")
 bracken_path <- file.path("analysis/bracken_report.txt")
 checkm_path <- file.path("analysis/trees/checkm_qa.txt")
-metadata_path <- file.path("not_to_be_shared/merged_metadata_AVC_FH.txt")
+metadata_path <- file.path("delims/merged_metadata_AVC_FH.txt")
 
 enterobase_data_path <- file.path("delims/enterobase.txt")
 
