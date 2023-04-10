@@ -32,13 +32,6 @@ library(paletteer)
 #Define our not in function
 `%nin%` <- Negate(`%in%`)
 
-########## Remember to change this so you have a copy of these files somewhere intelligent
-##########
-if(!file.exists("delims/species_genome_size.txt")){
-        dir.create("delims", showWarnings = FALSE)
-        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/species_genome_size.txt", "delims/species_genome_size.txt")
-        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/taxid_to_scientific_name.txt", "delims/taxid_to_scientific_name.txt")
-}
 ```
 
 ## Outline
