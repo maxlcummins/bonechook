@@ -1,0 +1,312 @@
+Sample Name	QC_Pass	Exclude (non/duplicate sample)	Final_subset	Bird_Gross_Necropsy_ID	Plate Label - Site of isolation	collection_date	collection_year	Bird_Age	Farms_ID	Flock_ID	Host	Collection
+FH110	PASS	Include	No	264	LIVER	24/5/2016	2016	5	3	19	Chicken	BCO
+FH118	FAIL	Include	No	267	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH123	FAIL	Include	No	274	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH129	FAIL	Include	No	358	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH131	FAIL	Include	No	360	LIVER	24/5/2016	2016	5	3	19	Chicken	BCO
+FH135	PASS	Include	No	362	YS	24/5/2016	2016	5	3	19	Chicken	BCO
+FH111	PASS	Include	Yes	264	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH113	PASS	Include	No	264	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH112	PASS	Include	No	264	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH114	PASS	Include	Yes	266	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH143	PASS	Include	No	364	PERICARDIUM	24/5/2016	2016	5	3	19	Chicken	BCO
+FH144	PASS	Include	No	364	LIVER	24/5/2016	2016	5	3	19	Chicken	BCO
+FH115	PASS	Include	No	266	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH117	PASS	Include	No	266	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH116	PASS	Include	No	266	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH120	PASS	Include	Yes	267	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH121	PASS	Include	No	267	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH124	PASS	Include	Yes	274	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH125	PASS	Include	Yes	274	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH122	PASS	Include	No	274	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH132	PASS	Include	Yes	358	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH126	PASS	Include	No	358	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH128	PASS	Include	No	358	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH130	PASS	Include	Yes	359	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH134	PASS	Include	Yes	360	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH133	PASS	Include	No	360	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH138	PASS	Include	Yes	362	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH136	PASS	Include	No	362	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH137	PASS	Include	No	362	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH127	PASS	Include	No	362	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH140	PASS	Include	Yes	363	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH139	PASS	Include	No	363	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH141	PASS	Include	No	363	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH142	PASS	Include	No	363	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH146	PASS	Include	Yes	364	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH148	PASS	Include	No	364	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH147	PASS	Include	No	364	RFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH145	PASS	Include	No	364	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH150	PASS	Include	Yes	368	LFH	24/5/2016	2016	5	3	19	Chicken	BCO
+FH119	PASS	Include	No	368	LTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH149	PASS	Include	No	368	RTT	24/5/2016	2016	5	3	19	Chicken	BCO
+FH86	FAIL	Include	No	332	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH87	PASS	Include	No	329	YS	24/5/2015	2015	7	22	25	Chicken	BCO
+FH88	PASS	Include	No	334	YS	24/5/2015	2015	7	22	25	Chicken	BCO
+FH97	PASS	Include	No	337	LIVER	24/5/2015	2015	7	22	25	Chicken	BCO
+FH82	PASS	Include	Yes	329	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH81	PASS	Include	No	329	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH79	PASS	Include	No	329	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH80	PASS	Include	No	329	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH84	PASS	Include	Yes	332	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH83	PASS	Include	No	332	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH85	PASS	Include	No	332	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH92	PASS	Include	Yes	334	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH91	PASS	Include	No	334	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH90	PASS	Include	No	334	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH89	PASS	Include	No	334	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH95	PASS	Include	Yes	335	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH96	PASS	Include	No	335	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH93	PASS	Include	No	335	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH94	PASS	Include	No	335	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH101	PASS	Include	Yes	337	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH98	PASS	Include	No	337	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH99	PASS	Include	No	337	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH100	PASS	Include	No	337	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH105	PASS	Include	Yes	339	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH104	PASS	Include	No	339	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH103	PASS	Include	No	339	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH102	PASS	Include	No	339	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH108	PASS	Include	Yes	343	LFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH109	PASS	Include	No	343	LTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH107	PASS	Include	No	343	RFH	24/5/2015	2015	7	22	25	Chicken	BCO
+FH106	PASS	Include	Yes	343	RTT	24/5/2015	2015	7	22	25	Chicken	BCO
+FH78	PASS	Include	Yes	88	RFHSF	11/8/2016	2016	28	9	11	Chicken	BCO
+FH44	PASS	Include	Yes	31	LFH	18/7/2016	2016	13	4	6	Chicken	BCO
+FH43	PASS	Include	No	31	LTT	18/7/2016	2016	13	4	6	Chicken	BCO
+FH41	PASS	Include	No	31	RFH	18/7/2016	2016	13	4	6	Chicken	BCO
+FH46	PASS	Include	No	31	RHSF	18/7/2016	2016	13	4	6	Chicken	BCO
+FH42	PASS	Include	No	31	RTT	18/7/2016	2016	13	4	6	Chicken	BCO
+FH50	PASS	Include	Yes	32	RFH	18/7/2016	2016	13	4	6	Chicken	BCO
+FH49	PASS	Include	No	32	RTT	18/7/2016	2016	13	4	6	Chicken	BCO
+FH48	PASS	Include	Yes	37	LFH	18/7/2016	2016	13	4	6	Chicken	BCO
+FH45	PASS	Include	No	31	PERITONITIS	18/7/2016	2016	13	4	6	Chicken	BCO
+FH47	PASS	Include	No	31	LIVER	18/7/2016	2016	13	4	6	Chicken	BCO
+FH36	PASS	Include	Yes	55	RHJF	1/8/2016	2016	38	7	9	Chicken	BCO
+FH39	PASS	Include	Yes	59	LFH	1/8/2016	2016	38	7	9	Chicken	BCO
+FH38	PASS	Include	No	59	RFH	1/8/2016	2016	38	7	9	Chicken	BCO
+FH37	PASS	Include	No	59	RFHJF	1/8/2016	2016	38	7	9	Chicken	BCO
+FH40	PASS	Include	Yes	60	LTTJF	1/8/2016	2016	38	7	9	Chicken	BCO
+FH186	PASS	Include	Yes	117	LFH	1/9/2016	2016	6	12	14	Chicken	BCO
+FH181	PASS	Include	No	117	LTT	1/9/2016	2016	6	12	14	Chicken	BCO
+FH182	PASS	Include	No	117	RFH	1/9/2016	2016	6	12	14	Chicken	BCO
+FH184	PASS	Include	No	117	RHSF	1/9/2016	2016	6	12	14	Chicken	BCO
+FH185	PASS	Include	No	117	RTT	1/9/2016	2016	6	12	14	Chicken	BCO
+FH177	PASS	Include	Yes	121	LTT	1/9/2016	2016	6	12	14	Chicken	BCO
+FH188	PASS	Include	Yes	122	RTT	1/9/2016	2016	6	12	14	Chicken	BCO
+FH179	PASS	Include	Yes	123	RHSF	1/9/2016	2016	6	12	14	Chicken	BCO
+FH180	PASS	Exclude	No	123	RHSF	1/9/2016	2016	6	12	14	Chicken	BCO
+FH189	PASS	Include	Yes	126	LFH	1/9/2016	2016	6	12	14	Chicken	BCO
+FH190	PASS	Include	No	126	LTT	1/9/2016	2016	6	12	14	Chicken	BCO
+FH178	PASS	Include	No	126	LTTSF	1/9/2016	2016	6	12	14	Chicken	BCO
+FH192	PASS	Include	No	126	RFH	1/9/2016	2016	6	12	14	Chicken	BCO
+FH191	PASS	Include	No	126	RTTSF	1/9/2016	2016	6	12	14	Chicken	BCO
+FH158	PASS	Include	Yes	145	LFH	21/9/2016	2016	28	12	14	Chicken	BCO
+FH159	PASS	Include	No	145	LHSF	21/9/2016	2016	28	12	14	Chicken	BCO
+FH157	PASS	Include	No	145	LTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH160	PASS	Include	No	145	RTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH163	PASS	Include	Yes	146	LTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH161	PASS	Include	No	146	RHSF	21/9/2016	2016	28	12	14	Chicken	BCO
+FH162	PASS	Include	No	146	RTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH164	PASS	Include	Yes	147	RFH	21/9/2016	2016	28	12	14	Chicken	BCO
+FH167	PASS	Include	Yes	148	LFH	21/9/2016	2016	28	12	14	Chicken	BCO
+FH166	PASS	Include	No	148	RTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH170	PASS	Include	Yes	152	LTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH168	PASS	Include	No	152	RFH	21/9/2016	2016	28	12	14	Chicken	BCO
+FH169	PASS	Include	No	152	RTT	21/9/2016	2016	28	12	14	Chicken	BCO
+FH151	PASS	Include	Yes	153	LHSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH152	PASS	Include	No	153	RTT	28/9/2016	2016	35	12	14	Chicken	BCO
+FH154	PASS	Include	Yes	157	LFH	28/9/2016	2016	35	12	14	Chicken	BCO
+FH155	PASS	Include	No	157	RFH	28/9/2016	2016	35	12	14	Chicken	BCO
+FH153	PASS	Include	Yes	157	RKSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH171	PASS	Include	Yes	159	LHSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH156	PASS	Include	No	159	RHSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH172	PASS	Include	Yes	160	RHSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH173	PASS	Include	Yes	162	LTT	28/9/2016	2016	35	12	14	Chicken	BCO
+FH174	PASS	Include	No	162	RHSF	28/9/2016	2016	35	12	14	Chicken	BCO
+FH165	PASS	Include	No	147	ACCETABULUM	21/9/2016	2016	28	12	14	Chicken	BCO
+FH175	PASS	Include	No	124	NAVEL	1/9/2016	2016	6	12	14	Chicken	BCO
+FH176	FAIL	Include	No	128	YOLK	1/9/2016	2016	6	12	14	Chicken	BCO
+FH183	PASS	Include	No	117	YS	1/9/2016	2016	6	12	14	Chicken	BCO
+FH187	PASS	Include	No	122	YS	1/9/2016	2016	6	12	14	Chicken	BCO
+FH194	PASS	Include	Yes	29	RHSF	27/7/2016	2016	35	6	7	Chicken	BCO
+FH203	PASS	Include	Yes	45	RFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH205	PASS	Include	No	45	RHSF	20/7/2016	2016	28	5	8	Chicken	BCO
+FH210	PASS	Include	Yes	48	RFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH207	PASS	Include	Yes	49	LFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH211	PASS	Include	No	49	LTT	20/7/2016	2016	28	5	8	Chicken	BCO
+FH209	PASS	Include	No	49	RFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH214	PASS	Include	No	49	RTT	20/7/2016	2016	28	5	8	Chicken	BCO
+FH212	PASS	Include	Yes	51	LFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH213	PASS	Include	No	51	RFH	20/7/2016	2016	28	5	8	Chicken	BCO
+FH195	PASS	Include	Yes	66	LFH	27/7/2016	2016	35	6	7	Chicken	BCO
+FH199	PASS	Include	No	66	LHSF	27/7/2016	2016	35	6	7	Chicken	BCO
+FH198	PASS	Include	No	66	LTT	27/7/2016	2016	35	6	7	Chicken	BCO
+FH197	PASS	Include	No	66	RFH	27/7/2016	2016	35	6	7	Chicken	BCO
+FH196	PASS	Include	No	66	RTT	27/7/2016	2016	35	6	7	Chicken	BCO
+FH200	PASS	Include	Yes	67	RFH	27/7/2016	2016	35	6	7	Chicken	BCO
+FH201	PASS	Include	Yes	68	RHSF	27/7/2016	2016	35	6	7	Chicken	BCO
+FH193	PASS	Include	No	29	SKIN	27/7/2016	2016	35	6	7	Chicken	BCO
+FH202	FAIL	Include	No	42	LFH	20/7/2016	2016	35	6	7	Chicken	BCO
+FH204	PASS	Include	No	45	HB	20/7/2016	2016	28	5	8	Chicken	BCO
+FH206	PASS	Include	No	49	PERICARD FLUID	20/7/2016	2016	28	5	8	Chicken	BCO
+FH208	PASS	Include	No	49	LIVER	20/7/2016	2016	28	5	8	Chicken	BCO
+FH57	PASS	Include	No	98	Lung 1	30/8/2016	2016	28	11	13	Chicken	BCO
+FH58	PASS	Include	No	98	Lung 2	30/8/2016	2016	28	11	13	Chicken	BCO
+FH60	PASS	Include	No	79	PERITONITIS	9/9/2016	2016	8	8	10	Chicken	BCO
+FH61	PASS	Include	No	79	PERICARDITIS	9/9/2016	2016	8	8	10	Chicken	BCO
+FH66	FAIL	Include	No	79	LIVER	9/9/2016	2016	8	8	10	Chicken	BCO
+FH63	PASS	Include	Yes	79	LFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH67	PASS	Include	No	79	LHSF	9/9/2016	2016	8	8	10	Chicken	BCO
+FH64	PASS	Include	No	79	RFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH72	PASS	Include	No	82	PERICARDITIS	9/9/2016	2016	8	8	10	Chicken	BCO
+FH62	PASS	Include	No	79	RTT	9/9/2016	2016	8	8	10	Chicken	BCO
+FH65	PASS	Include	No	79	RTT	9/9/2016	2016	8	8	10	Chicken	BCO
+FH75	FAIL	Include	No	83	RFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH71	PASS	Include	Yes	82	LFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH77	PASS	Include	No	83	PERICARDITIS	9/9/2016	2016	8	8	10	Chicken	BCO
+FH69	PASS	Include	No	82	LHSF	9/9/2016	2016	8	8	10	Chicken	BCO
+FH70	PASS	Include	No	82	RFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH68	PASS	Include	No	82	RHSF	9/9/2016	2016	8	8	10	Chicken	BCO
+FH74	PASS	Include	Yes	83	LFH	9/9/2016	2016	8	8	10	Chicken	BCO
+FH73	PASS	Include	No	83	LTT	9/9/2016	2016	8	8	10	Chicken	BCO
+FH76	PASS	Include	No	83	RTT	9/9/2016	2016	8	8	10	Chicken	BCO
+FH59	PASS	Include	Yes	105	RTT	30/8/2016	2016	28	11	13	Chicken	BCO
+FH2	PASS	Include	Yes	7	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH1	PASS	Include	No	7	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH3	FAIL	Include	No	7	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH8	PASS	Include	Yes	8	LFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH5	PASS	Include	No	8	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH6	FAIL	Include	No	8	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH4	PASS	Include	No	8	RFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH7	PASS	Include	No	8	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH9	PASS	Include	Yes	9	RFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH10	FAIL	Include	No	9	RFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH11	PASS	Include	No	9	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH12	FAIL	Include	No	10	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH13	PASS	Exclude	No	9	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH16	PASS	Include	Yes	10	LFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH17	PASS	Include	No	10	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH14	PASS	Exclude	No	10	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH15	PASS	Include	No	10	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH19	PASS	Include	Yes	11	LFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH18	PASS	Include	Yes	11	RFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH20	PASS	Include	Yes	12	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH22	PASS	Include	Yes	13	LFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH21	PASS	Include	No	13	RTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH23	PASS	Include	No	13	YS	18/4/2016	2016	7	2	5	Chicken	BCO
+FH25	PASS	Include	Yes	14	LFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH26	PASS	Include	No	14	LTT	18/4/2016	2016	7	2	5	Chicken	BCO
+FH24	PASS	Include	No	14	RFH	18/4/2016	2016	7	2	5	Chicken	BCO
+FH27	PASS	Include	No	185	Liver	28/10/2016	2016	14	14	16	Chicken	BCO
+FH28	PASS	Include	No	183	Liver	28/10/2016	2016	14	14	16	Chicken	BCO
+FH35	PASS	Include	No	228	Liver	9/5/2016	2016	28	2	5	Chicken	BCO
+FH30	PASS	Include	Yes	173	RFH	28/10/2016	2016	11	13	15	Chicken	BCO
+FH29	PASS	Include	No	173	RTT	28/10/2016	2016	11	13	15	Chicken	BCO
+FH32	PASS	Include	Yes	209	LFH	9/5/2016	2016	28	2	5	Chicken	BCO
+FH31	PASS	Include	Yes	228	LTT	9/5/2016	2016	28	2	5	Chicken	BCO
+FH34	PASS	Include	No	228	RFH	9/5/2016	2016	28	2	5	Chicken	BCO
+FH33	PASS	Include	Yes	234	RFH	9/5/2016	2016	28	2	5	Chicken	BCO
+FH51	FAIL	Include	No	374	RFH	17/8/2016	2016	35	10	12	Chicken	BCO
+FH52	FAIL	Include	No	374	LFH	17/8/2016	2016	35	10	12	Chicken	BCO
+FH55	PASS	Include	Yes	375	LFH	17/8/2016	2016	35	10	12	Chicken	BCO
+FH53	PASS	Include	No	375	RFH	17/8/2016	2016	35	10	12	Chicken	BCO
+FH56	PASS	Include	No	375	RFHSF	17/8/2016	2016	35	10	12	Chicken	BCO
+FH54	PASS	Include	No	375	RTT	17/8/2016	2016	35	10	12	Chicken	BCO
+AVC10	PASS	Include	No	376	digestive	9/11/2007	2007	NA	NA	NA	Turkey	AVC
+AVC103	PASS	Include	No	377	mixed or systemic	2/2/2009	2009	NA	NA	NA	Chicken	AVC
+AVC105	PASS	Include	No	378	mixed or systemic	12/3/2009	2009	NA	NA	NA	Chicken	AVC
+AVC106	PASS	Include	No	379	digestive	16/3/2009	2009	NA	NA	NA	Chicken	AVC
+AVC107	PASS	Include	No	380	digestive	16/3/2009	2009	NA	NA	NA	Turkey	AVC
+AVC109	PASS	Include	No	381	digestive	16/3/2009	2009	NA	NA	NA	Turkey	AVC
+AVC11	PASS	Include	No	382	digestive	9/11/2007	2007	NA	NA	NA	Turkey	AVC
+AVC111	PASS	Include	No	383	digestive	16/3/2009	2009	NA	NA	NA	Chicken	AVC
+AVC113	PASS	Include	No	384	digestive	16/3/2009	2009	NA	NA	NA	Chicken	AVC
+AVC12	PASS	Include	No	385	mixed or systemic	26/11/2007	2007	NA	NA	NA	Chicken	AVC
+AVC123	PASS	Include	No	386	skin and subcutis	28/7/2009	2009	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC126	PASS	Include	No	387	digestive	4/8/2009	2009	NA	AVC_Farm_2	NA	Chicken	AVC
+AVC148	PASS	Include	No	388	missing	24/12/2009	2009	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC149	PASS	Include	No	389	missing	24/12/2009	2009	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC153	PASS	Include	No	390	mixed or systemic	6/5/2010	2010	NA	AVC_Farm_10	NA	Chicken	AVC
+AVC154	PASS	Include	No	391	mixed or systemic	6/5/2010	2010	NA	AVC_Farm_10	NA	Chicken	AVC
+AVC155	PASS	Include	No	392	mixed or systemic	4/6/2010	2010	NA	NA	NA	Chicken	AVC
+AVC156	PASS	Include	No	393	mixed or systemic	29/7/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC159	PASS	Include	No	394	Reference strain	27/8/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC160	PASS	Include	No	395	Reference strain	27/8/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC161	PASS	Include	No	396	Reference strain	27/8/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC162	PASS	Include	No	397	Reference strain	27/8/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC167	PASS	Include	No	398	mixed or systemic	10/9/2010	2010	NA	AVC_Farm_11	NA	Chicken	AVC
+AVC171	PASS	Include	No	399	mixed or systemic	27/9/2010	2010	NA	NA	NA	Chicken	AVC
+AVC173	PASS	Include	No	400	mixed or systemic	5/10/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC176	PASS	Include	No	401	mixed or systemic	3/11/2010	2010	NA	AVC_Farm_8	NA	Chicken	AVC
+AVC177	PASS	Include	No	402	mixed or systemic	3/11/2010	2010	NA	AVC_Farm_8	NA	Chicken	AVC
+AVC179	PASS	Include	No	403	mixed or systemic	1/12/2010	2010	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC183	PASS	Include	No	404	mixed or systemic	22/12/2010	2010	NA	NA	NA	Chicken	AVC
+AVC184	PASS	Include	No	405	mixed or systemic	5/1/2011	2011	NA	AVC_Farm_8	NA	Chicken	AVC
+AVC186	PASS	Include	No	406	cardiovascular	10/1/2011	2011	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC19	PASS	Include	No	407	mixed or systemic	22/2/2008	2008	NA	AVC_Farm_3	NA	Turkey	AVC
+AVC191	PASS	Include	No	408	mixed or systemic	29/3/2011	2011	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC195	PASS	Include	No	409	mixed or systemic	2/6/2011	2011	NA	NA	NA	Chicken	AVC
+AVC196	PASS	Include	No	410	digestive	7/6/2011	2011	NA	AVC_Farm_13	NA	Poultry animal (variety unknown)	AVC
+AVC197	PASS	Include	No	411	digestive	7/6/2011	2011	NA	AVC_Farm_13	NA	Poultry animal (variety unknown)	AVC
+AVC198	PASS	Include	No	412	Reference strain	9/6/2011	2011	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC20	PASS	Include	No	413	mixed or systemic	22/2/2008	2008	NA	AVC_Farm_3	NA	Turkey	AVC
+AVC200	PASS	Include	No	414	Reference strain	9/6/2011	2011	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC201	PASS	Include	No	415	mixed or systemic	27/6/2011	2011	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC204	PASS	Include	No	416	mixed or systemic	30/6/2011	2011	NA	NA	NA	Chicken	AVC
+AVC207	PASS	Include	No	417	mixed or systemic	18/8/2011	2011	NA	NA	NA	Chicken	AVC
+AVC209	PASS	Include	No	418	mixed or systemic	17/10/2011	2011	NA	NA	NA	Chicken	AVC
+AVC21	PASS	Include	No	419	mixed or systemic	22/2/2008	2008	NA	AVC_Farm_3	NA	Turkey	AVC
+AVC210	PASS	Include	No	420	mixed or systemic	17/10/2011	2011	NA	NA	NA	Chicken	AVC
+AVC211	PASS	Include	No	421	mixed or systemic	9/11/2011	2011	NA	NA	NA	Chicken	AVC
+AVC213	PASS	Include	No	422	mixed or systemic	30/11/2011	2011	NA	NA	NA	Chicken	AVC
+AVC215	PASS	Include	No	423	mixed or systemic	18/1/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC216	PASS	Include	No	424	mixed or systemic	18/1/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC218	PASS	Include	No	425	mixed or systemic	27/1/2012	2012	NA	AVC_Farm_6	NA	Chicken	AVC
+AVC219	PASS	Include	No	426	mixed or systemic	21/2/2012	2012	NA	NA	NA	Chicken	AVC
+AVC220	PASS	Include	No	427	mixed or systemic	23/2/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC221	PASS	Include	No	428	mixed or systemic	23/2/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC222	PASS	Include	No	429	mixed or systemic	23/2/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC223	PASS	Include	No	430	mixed or systemic	23/2/2012	2012	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC224	PASS	Include	No	431	mixed or systemic	22/3/2012	2012	NA	NA	NA	Chicken	AVC
+AVC226	PASS	Include	No	432	mixed or systemic	14/8/2012	2012	NA	NA	NA	Duck	AVC
+AVC227	PASS	Include	No	433	mixed or systemic	28/11/2012	2012	NA	NA	NA	Chicken	AVC
+AVC228	PASS	Include	No	434	mixed or systemic	1/3/2013	2013	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC232	PASS	Include	No	435	mixed or systemic	23/10/2013	2013	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC233	PASS	Include	No	436	mixed or systemic	23/10/2013	2013	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC234	PASS	Include	No	437	mixed or systemic	23/10/2013	2013	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC235	PASS	Include	No	438	mixed or systemic	24/1/2014	2014	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC237	PASS	Include	No	439	mixed or systemic	24/1/2014	2014	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC242	PASS	Include	No	440	mixed or systemic	18/7/2014	2014	NA	NA	NA	Chicken	AVC
+AVC246	PASS	Include	No	441	mixed or systemic	3/11/2014	2014	NA	NA	NA	Chicken	AVC
+AVC249	PASS	Include	No	442	mixed or systemic	17/12/2014	2014	NA	AVC_Farm_12	NA	Poultry animal (variety unknown)	AVC
+AVC25	PASS	Include	No	443	mixed or systemic	15/4/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC251	PASS	Include	No	444	mixed or systemic	27/3/2015	2015	NA	AVC_Farm_4	NA	Chicken	AVC
+AVC252	PASS	Include	No	445	mixed or systemic	27/3/2015	2015	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC256	PASS	Include	No	446	mixed or systemic	22/7/2015	2015	NA	AVC_Farm_7	NA	Chicken	AVC
+AVC26	PASS	Include	No	447	mixed or systemic	15/4/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC29	PASS	Include	No	448	digestive	11/6/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC30	PASS	Include	No	449	digestive	11/6/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC34	PASS	Include	No	450	mixed or systemic	11/7/2008	2008	NA	NA	NA	Turkey	AVC
+AVC35	PASS	Include	No	451	mixed or systemic	11/7/2008	2008	NA	NA	NA	Turkey	AVC
+AVC38	PASS	Include	No	452	digestive	18/7/2008	2008	NA	AVC_Farm_1	NA	Chicken	AVC
+AVC39	PASS	Include	No	453	digestive	18/7/2008	2008	NA	AVC_Farm_1	NA	Chicken	AVC
+AVC4	PASS	Include	No	454	cardiovascular	19/1/2007	2007	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC5	PASS	Include	No	455	digestive	7/3/2007	2007	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC51	PASS	Include	No	456	cardiovascular	14/8/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC58	PASS	Include	No	457	mixed or systemic	25/8/2008	2008	NA	NA	NA	Chicken	AVC
+AVC59	PASS	Include	No	458	mixed or systemic	25/8/2008	2008	NA	NA	NA	Chicken	AVC
+AVC60	PASS	Include	No	459	mixed or systemic	28/8/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC61	PASS	Include	No	460	mixed or systemic	28/8/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC64	PASS	Include	No	461	cardiovascular	3/9/2008	2008	NA	AVC_Farm_1	NA	Chicken	AVC
+AVC65	PASS	Include	No	462	cardiovascular	3/9/2008	2008	NA	AVC_Farm_1	NA	Chicken	AVC
+AVC7	PASS	Include	No	463	musculo-skeletal	13/7/2007	2007	NA	AVC_Farm_13	NA	Chicken	AVC
+AVC77	PASS	Include	No	464	mixed or systemic	10/10/2008	2008	NA	NA	NA	Poultry animal (variety unknown)	AVC
+AVC79	PASS	Include	No	465	mixed or systemic	14/10/2008	2008	NA	NA	NA	Turkey	AVC
+AVC8	PASS	Include	No	466	cardiovascular	31/10/2007	2007	NA	NA	NA	Turkey	AVC
+AVC80	PASS	Include	No	467	mixed or systemic	27/10/2008	2008	NA	NA	NA	Chicken	AVC
+AVC91	PASS	Include	No	468	mixed or systemic	9/1/2009	2009	NA	AVC_Farm_5	NA	Poultry animal (variety unknown)	AVC
+AVC94	PASS	Include	No	469	reproductive	9/1/2009	2009	NA	AVC_Farm_5	NA	Poultry animal (variety unknown)	AVC
+AVC96	PASS	Include	No	470	mixed or systemic	9/1/2009	2009	NA	NA	NA	Chicken	AVC
+AVC97	PASS	Include	No	471	mixed or systemic	9/1/2009	2009	NA	NA	NA	Chicken	AVC
+AVC98	PASS	Include	No	472	mixed or systemic	14/1/2009	2009	NA	NA	NA	Chicken	AVC
