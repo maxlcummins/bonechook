@@ -1,0 +1,394 @@
+---
+title: "SKA analysis BCO/APEC"
+author: "Max Cummins"
+date: "`r Sys.Date()`"
+output:
+    html_document:
+        theme: spacelab
+        toc: true
+        toc_float: true
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse, quietly = TRUE)
+library(ggtree)
+library(ape)
+library(phangorn)
+library(phytools)
+library(paletteer)
+library(grid)
+library(gridExtra)
+```
+
+# Outline
+
+Here I will document the processing of SKA-borne SNP data for the investigation of relatedness between APEC samples from cases of BCO vs colibacillosis.
+
+First lets read in our datasets. We will also do some data processing to join tables:
+
+```{r read}
+
+#Read in SNP distances
+dists <- read_delim("analysis/ska/AVC_FH.distances.tsv", 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE, show_col_types = FALSE)
+
+#Read in SNP Clusters
+clusts <- read_delim("analysis/ska/AVC_FH.clusters.tsv", 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE, show_col_types = FALSE)
+
+#Read in MLST data
+mlst <- read_delim(
+    "analysis/mlst.txt",
+    delim = "\t",
+    escape_double = FALSE,
+    trim_ws = TRUE,
+    show_col_types = FALSE
+)
+
+#Read in the list of genomes which passed QC
+QC_pass <- read_csv("delims/QC_pass.txt", col_names = "name", show_col_types = FALSE)
+
+#Read in our metadata
+metadata <- read_delim("not_to_be_shared/merged_metadata_AVC_FH.txt", delim = "\t", show_col_types = FALSE)
+
+#Define paths for genotypic data
+pointfinder_path <- "analysis/pointfinder.txt"
+pMLST_path <- "analysis/pMLST.txt"
+abricate_path <- "analysis/genotype.txt"
+
+output_name <- "APEC_BCO"
+
+#Filter out samples which didnt pass QC
+mlst <- mlst %>% filter(name %in% QC_pass$name)
+
+#Filter out samples which didnt pass QC
+metadata <- metadata %>% filter(`Sample Name` %in% QC_pass$name)
+
+#Read in our cgMLST data
+enterobase_data <- read_delim("delims/enterobase.txt", delim = "\t", show_col_types = FALSE)
+
+#Rename name column
+metadata <- metadata %>% rename('name' = 'Sample Name')
+
+##NEED TO FIX THIS STEP
+metadata <- enterobase_data %>% rename(name = "Name") %>% dplyr::select(name, starts_with("HC"), `fimH (fimTyper)(Phylotypes)`) %>% right_join(metadata, by = "name") %>% rename("fimtype" = `fimH (fimTyper)(Phylotypes)`)
+
+#Fix the source column for internal isolates
+metadata <- metadata %>% rename("ID" = `name`)
+
+#Remove duplicates - not sure why theyre in there
+metadata <- metadata %>% unique
+
+#Combine our metadata and our clusters for use in microreact
+data_microreact <- left_join(clusts, metadata, by = "ID") #, by.x = "ID", by.y = "name")
+
+#Combine our ST data and metadata/clusters for use in microreact
+data_microreact <- mlst %>% dplyr::select(name, ST) %>% rename("ID" = name) %>% right_join(data_microreact, by = "ID")
+
+data_microreact <- data_microreact %>% filter(ID %in% clusts$ID)
+
+#Write this to file
+write_delim(x = data_microreact, file = "analysis/ska/AVC_FH.clusters_w_metadata.tsv", delim = "\t")
+
+data_microreact1 <- data_microreact %>% rename("Sample 1" = "ID") %>% rev()
+
+data_microreact2 <- data_microreact %>% rename("Sample 2" = "ID")
+
+dists2 <- inner_join(data_microreact1, dists, by = "Sample 1", multiple = "all")
+
+dists2 <- inner_join(dists2, data_microreact2, by = "Sample 2", multiple = "all")
+
+dists3 <- dists2 %>% filter(SNPs < 1000)
+
+#dists3 %>% filter(Cluster__autocolour.x == Cluster__autocolour.y) %>% filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.x) %>% arrange(Bird_Gross_Necropsy_ID.x, SNPs) %>% drop_na(QC_Pass.x, QC_Pass.y) %>% View()
+```
+
+## Generate SKA figures
+
+Now we will read in our tree as this will help us to filter out any unwanted samples
+which didnt pass QC.
+
+We will then visualise the SNP distances between the strains which share an ST and
+are of STs 117, 57 or 95. This is because the sample sizes for these STs is quite high,
+aiding visualisation of the distances between these strains. Below a dotted red
+line indicates a cut-off of 100 SNPs which we deem closely related. Three panels
+below highlight comparisons across collections, within the colibac collection and
+within the BCO collection.
+
+```{r}
+tree_path <- "analysis/trees/old/mashtree_QC_pass.tree"#"analysis/trees/old/mashtree_QC_pass_AVC_BCO_bone_nondup.tree"
+
+tree <- read.tree(tree_path)
+
+tree$tip.label <- gsub(".R1$", "", tree$tip.label)
+
+birds_w_many_sites <- metadata %>% group_by(Bird_Gross_Necropsy_ID) %>% tally() %>% filter(n > 4) %>% arrange(desc(n)) %>% dplyr::select(Bird_Gross_Necropsy_ID)
+
+samples_per_bird <- metadata %>% filter(grepl("FH", ID)) %>% filter(ID %in% QC_pass$name) %>% group_by(Bird_Gross_Necropsy_ID) %>% summarise(samples = n())
+
+
+#dists2 %>% filter(`Sample 1` %in% tree$tip.label) %>% filter(`Sample 2` %in% tree$tip.label)
+
+df_all_ST_filtered_SNPs <- dists2 %>% as.data.frame() %>% filter(ST.x == ST.y)
+
+cross_collection <- df_all_ST_filtered_SNPs %>% 
+        filter(Collection.x != Collection.y) %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 7000),
+                           breaks = c(seq(from = 0,
+                                          to = 7000,
+                                          by = 1000))) +
+        ggtitle("A) Between collections") +
+        #scale_color_manual(values = source_combo_cols) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(colour = guide_legend(override.aes = list(size=6)))
+
+AVC_collection <- df_all_ST_filtered_SNPs %>%
+        filter(Collection.x == Collection.y & Collection.x == "AVC") %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 7000),
+                           breaks = c(seq(from = 0,
+                                          to = 7000,
+                                          by = 1000))) +
+        ggtitle("B) Colibac collection") +
+        #scale_color_manual(values = source_combo_cols) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(colour = guide_legend(override.aes = list(size=6)))
+
+BCO_collection <- df_all_ST_filtered_SNPs %>% 
+        filter(Collection.x == Collection.y & Collection.x == "BCO")  %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 7000),
+                           breaks = c(seq(from = 0,
+                                          to = 7000,
+                                          by = 1000))) +
+        ggtitle("C) BCO Collection") +
+        #scale_color_manual(values = source_combo_cols) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(colour = guide_legend(override.aes = list(size=6)))
+
+grid.arrange(cross_collection, AVC_collection, BCO_collection, nrow = 1)
+```
+
+Lets generate the same figure again but this time with a bit of colour to differentiate the STs.
+
+```{r}
+cross_collection <- df_all_ST_filtered_SNPs %>% filter(SNPs <= 100) %>%
+        filter(Collection.x != Collection.y) %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1, aes(color = ST.x)) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 100),
+                           breaks = c(seq(from = 0,
+                                          to = 100,
+                                          by = 10))) +
+        #ggtitle("C) BCO Collection") +
+        scale_color_manual(values = c("#e6194B", "#f58231", "#3cb44b")) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        #geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(color="none")
+
+AVC_collection <- df_all_ST_filtered_SNPs %>% filter(SNPs <= 100) %>%
+        filter(Collection.x == Collection.y & Collection.x == "AVC") %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1, aes(color = ST.x)) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 100),
+                           breaks = c(seq(from = 0,
+                                          to = 100,
+                                          by = 10))) +
+        #ggtitle("C) BCO Collection") +
+        scale_color_manual(values = c("#e6194B", "#f58231", "#3cb44b")) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        #geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(color="none")
+
+BCO_collection <- df_all_ST_filtered_SNPs %>% filter(SNPs <= 100) %>%
+        filter(Collection.x == Collection.y & Collection.x == "BCO")  %>%
+        #filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x %in% c(117, 95, 57)) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = ST.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1, aes(color = ST.x)) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 100),
+                           breaks = c(seq(from = 0,
+                                          to = 100,
+                                          by = 10))) +
+        #ggtitle("C) BCO Collection") +
+        scale_color_manual(values = c("#e6194B", "#f58231", "#3cb44b")) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        #geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(color="none")
+
+grid.arrange(cross_collection, AVC_collection, BCO_collection, nrow = 1)
+```
+
+
+## Check cgMLST and SKA concordance
+
+We now want to check that all genomes which share an ST and are below 100 SNPs have a reasonable closeness by cgmlst data.
+```{r message=FALSE, warning=FALSE}
+
+name1 <- df_all_ST_filtered_SNPs %>% pull(`Sample 1`)
+name2 <- df_all_ST_filtered_SNPs %>% pull(`Sample 2`)
+name3 <- c(name1, name2)
+
+
+#All hit at HC10, 379/1195
+check_me_for_HC10_proof <- dists %>% filter(`Sample 1` %in% name3 & `Sample 2` %in% name3) %>%
+    inner_join(mlst[,c(1,3)], by = c("Sample 1" = "name")) %>%
+    rename("ST_1" = ST) %>%
+    inner_join(mlst[,c(1,3)], by = c("Sample 2" = "name")) %>%
+    rename("ST_2" = ST)  %>%
+    inner_join(metadata[,c(1,5)], by = c("Sample 1" = "ID")) %>%
+    rename_at(vars(starts_with('HC')), funs(paste0('Sample1', .))) %>%
+    inner_join(metadata[,c(1,5)], by = c("Sample 2" = "ID")) %>%
+    rename_at(vars(starts_with('HC')), funs(paste0('Sample2', .))) %>%
+    filter(ST_1 == ST_2) %>%
+    mutate(same_HC10 = `Sample1HC10(cgMLST V1 + HierCC V1)` == `Sample2HC10(cgMLST V1 + HierCC V1)`) %>%
+    filter(SNPs <= 100) %>% group_by(same_HC10) %>% tally()
+
+#All hit at HC20, 443/664
+check_me_for_HC20_proof <- dists %>% filter(`Sample 1` %in% name3 & `Sample 2` %in% name3) %>%
+    inner_join(mlst[,c(1,3)], by = c("Sample 1" = "name")) %>%
+    rename("ST_1" = ST) %>%
+    inner_join(mlst[,c(1,3)], by = c("Sample 2" = "name")) %>%
+    rename("ST_2" = ST)  %>%
+    inner_join(metadata[,c(1,6)], by = c("Sample 1" = "ID")) %>%
+    rename_at(vars(starts_with('HC')), funs(paste0('Sample1', .))) %>%
+    inner_join(metadata[,c(1,6)], by = c("Sample 2" = "ID")) %>%
+    rename_at(vars(starts_with('HC')), funs(paste0('Sample2', .))) %>%
+    filter(ST_1 == ST_2) %>%
+    mutate(same_HC20 = `Sample1HC20(cgMLST V1 + HierCC V1)` == `Sample2HC20(cgMLST V1 + HierCC V1)`) %>%
+    filter(SNPs <= 100) %>% group_by(same_HC20) %>% tally()
+
+```
+
+Lets first see how many share an HC10 group:
+```{r}
+knitr::kable(check_me_for_HC10_proof, align = 'c')
+```
+
+And now how many share an HC20 group:
+```{r}
+knitr::kable(check_me_for_HC20_proof, align = 'c')
+```
+
+Clearly the vast majority of samples under 100 SNPs we are analysing share an
+HC20, giving us extra confidence in our methodology.
+
+
+## ColV analysis
+Lets now briefly explore how many SNPs apart strains from the same birds are:
+
+```{r}
+
+within_bird <- df_all_ST_filtered_SNPs %>%
+        filter(Collection.x == "BCO")  %>%
+        filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x == ST.y) %>%
+        #filter(SNPs < 10) %>%
+        ggplot(aes(x = Collection.x, y = SNPs)) +
+        #facet_wrap(~ Bird_Gross_Necropsy_ID.x + Bird_Gross_Necropsy_ID.y) +
+        geom_jitter(height = 0, alpha = 0.5, size = 1) +
+        geom_boxplot(alpha = 0) +
+        scale_y_continuous(name = "Pairwise SNP distance",
+                           limits = c(0, 10),
+                           breaks = c(seq(from = 0,
+                                          to = 10,
+                                          by = 1))) +
+        #ggtitle("C) BCO Collection") +
+        scale_color_manual(values = c("#e6194B", "#f58231", "#3cb44b")) +
+        #scale_x_discrete(name = "Sequence Type", limits=x_order_ww) +
+        #geom_hline(yintercept = 100, color = "red", linetype = "dashed") +
+        theme_minimal() +
+        guides(color="none")
+
+table_for_plotting <- df_all_ST_filtered_SNPs %>%
+        filter(Collection.x == "BCO")  %>%
+        filter(Bird_Gross_Necropsy_ID.x == Bird_Gross_Necropsy_ID.y) %>%
+        filter(ST.x == ST.y) %>%
+        group_by(SNPs) %>%
+        tally(sort = T) %>%
+        mutate(perc = scales::percent(n/sum(.$n)))
+
+knitr::kable(table_for_plotting, align = 'c')
+```
+
+Lastly lets explore the relationship between ColV carriage and collection.
+Is there a statistically significant difference btween carriage of ColV plasmids
+between APEC which cause BCO and those associated with colibacillosis?
+```{r message=FALSE, warning=FALSE}
+
+#Run AbricateR to summarise genomic data
+abricateR::abricateR(
+        abricate_in = abricate_path,
+        output = output_name,
+        output_directory = output_dir,
+        identity = 90,
+        length = 90,
+        writecsv = FALSE,
+        pointfinder_data = pointfinder_path
+)
+
+geno <- APEC_BCO_simple_summary_N90L90 %>% filter(name %in% tree$tip.label)
+
+genometa <- metadata %>% rename("name" = "ID") %>% inner_join(geno)
+
+ColV_by_Collec <- table(genometa$ColV, genometa$Collection)
+
+rownames(ColV_by_Collec) <- c("ColV Neg", "ColV Positive")
+
+chisq.test(ColV_by_Collec, correct = FALSE)
+```
+

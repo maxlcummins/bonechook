@@ -1,0 +1,1571 @@
+---
+title: "AVC_BCO_bone_nondup_genomic_analysis"
+author: "Max Cummins"
+date: "`r Sys.Date()`"
+output:
+    html_document:
+        theme: spacelab
+        toc: true
+        toc_float: true
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+#Read in our packages
+library(tidyverse)
+library(abricateR)
+library(dplyr)
+library(ggplot2)
+library(ggtree)
+library(pheatmap)
+library(phytools)
+library(plotly)
+library(readr)
+library(readxl)
+library(paletteer)
+
+if("MASS" %in% (.packages())){
+  detach("package:MASS", unload=TRUE) 
+}
+
+#Define our not in function
+`%nin%` <- Negate(`%in%`)
+
+```
+
+## Outline
+
+## File summary
+
+A GitHub repository available at
+<https://github.com/maxlcummins/bonechook> contains all scripts and
+files required to rerun analysis detailed in this document.
+
+Below are the files associated with this research project and report.
+
+**Insert Filetree**
+
+### Genomic data
+
+Genomic data was generated using snakemake using the following [snakefile](https://github.com/maxlcummins/pipelord/tree/main/workflow/Snakefile).
+
+```{bash run_genomics_workflow, eval=FALSE}
+#Run our genomics workflow
+nohup snakemake --use-conda --conda-frontend mamba -T 10 --rerun-incomplete -s workflow/Snakefile --configfile config/AVC_FH.yaml -j 36 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_Genotype_all.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_Genotype_all.err.log &
+
+# Jupiter6
+# JobID = 41101
+# Fri Jun  3 22:38:03 AEST 2022
+```
+
+### Mashtree
+
+We also generated a mashtree in our QC step, but we will now generate another with only the ones which passed QC.
+
+```{bash run_mashtree, eval=FALSE}
+#Deactivate our old environment
+source deactivate
+
+#Activate our new environment
+source activate mashtree
+
+#Run mashtree
+nohup mashtree --mindepth 0 --tempdir /tmp/mashtree_QC_pass --numcpus 20 --outmatrix /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/mashtree_QC_pass.matrix --outtree /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/mashtree_QC_pass.tree /projects/AusGEM/Users/Max/AVC_FH/data/symlink_QC_pass/*.R1.fastq.gz > /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_QC_pass.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_QC_pass.err.log &
+
+# Jupiter8
+# JobID = 91625
+# Mon Jun  6 11:52:44 AEST 2022
+```
+
+Now we generate the tree consisting of the BCO samples we filtered for in our QC
+script. These samples are different from the full BCO cohort as they:
+
+* Are limited to one sample per bird
+* Are only sourced from bone sites
+
+```{bash run_mashtree2, eval=FALSE}
+#Deactivate our old environment
+source deactivate
+
+#Activate our new environment
+source activate mashtree
+
+#Run mashtree
+nohup mashtree --mindepth 0 --tempdir /tmp/mashtree_QC_pass_AVC_BCO_bone_nondup --numcpus 6 --outmatrix /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/mashtree_QC_pass_AVC_BCO_bone_nondup.matrix --outtree /projects/AusGEM/Users/Max/AVC_FH/analysis/mashtree/mashtree_QC_pass_AVC_BCO_bone_nondup.tree /projects/AusGEM/Users/Max/AVC_FH/data/sampled_bonesites_and_AVC/*.R1.fastq.gz > /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_QC_pass_AVC_BCO_bone_nondup.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/mashtree/mashtree_QC_pass_AVC_BCO_bone_nondup.err.log &
+
+# Jupiter5
+# JobID = 245746
+# Tue Jun  7 13:58:55 AEST 2022
+```
+
+Now we run our pangenomics workflow to generate our phylogeny and pangenome for our bone nondupe cohort (with AVC).
+
+```{bash run_pangenomics_workflow, eval=FALSE}
+#Run our pangenomics/phylogenetic workflow
+nohup snakemake --use-conda --conda-frontend mamba -T 10 --rerun-incomplete -s workflow/Treebuild_panaroo.smk --configfile config/AVC_FH.yaml -j 30 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_pangenome_bone_nondup.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_pangenome_bone_nondup.err.log &
+
+# Jupiter12
+# JobID = 35408
+# Wed Jun 15 09:41:44 AEST 2022
+```
+
+```{bash run_pangenomics_workflow2, eval=FALSE}
+#Run our pangenomics/phylogenetic workflow
+nohup snakemake --use-conda --conda-frontend mamba --rerun-incomplete -s workflow/Treebuild_panaroo.smk --configfile config/AVC_FH.yaml -j 30 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_pangenome_bone_nondup.out2.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/AVC_FH_pangenome_bone_nondup.err2.log &
+
+# Jupiter15
+# JobID = 43678
+# Thu Jun 16 09:56:35 AEST 2022
+```
+
+Now we run it again for our FH isolates, and FH ST117, ST95, ST69 and ST57
+```{bash run_pangenomics_workflow3, eval=FALSE}
+#Run our pangenomics/phylogenetic workflow
+nohup snakemake --use-conda --conda-frontend mamba --rerun-incomplete -s workflow/Treebuild_panaroo.smk --configfile config/AVC_FH.yaml -j 30 -k -p > /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/FH_only.out.log 2> /projects/AusGEM/Users/Max/AVC_FH/logs/snakemake/FH_only.err.log &
+
+# Jupiter10
+# JobID = 19994
+# Mon Jul  4 11:07:48 AEST 2022
+```
+
+
+## Genomic analysis
+
+After downloading all of the resulting files from the remote server we
+are ready to begin our QC.
+
+```{r read_in_file_paths, echo=FALSE, tidy = TRUE}
+#Load paths to files needed for the script
+#Assembly stats file
+assembly_stats_path <-
+        file.path("analysis/assembly_stats.txt")
+#A list of taxonomic IDs and their respective scientific names
+tax_id_converter_path  <-
+        file.path("delims/taxid_to_scientific_name.txt")
+#A list of expected genome sizes.
+genome_sizes_path  <-
+        file.path("delims/species_genome_size.txt")
+
+abricate_path <- file.path("analysis/genotype.txt")
+pointfinder_path <- file.path("analysis/pointfinder.txt")
+pMLST_path <- file.path("analysis/pMLST.txt")
+serotype_path <- file.path("analysis/ectyper.txt")
+fimtype_path <- file.path("analysis/fimtyper.txt")
+phylogroup1_path <- file.path("analysis/ezclermont.txt")
+phylogroup2_path <- file.path("analysis/clermontyping.txt")
+mlst_path <- file.path("analysis/mlst.txt")
+bracken_path <- file.path("analysis/bracken_report.txt")
+checkm_path <- file.path("analysis/trees/checkm_qa.txt")
+metadata_path <- file.path("not_to_be_shared/merged_metadata_AVC_FH.txt")
+
+enterobase_data_path <- file.path("delims/enterobase.txt")
+
+tree_path <- file.path("analysis/trees/old/mashtree_QC_pass.tree")
+
+QC_pass_path <- file.path("delims/QC_data.txt")
+
+#Provide output names
+output_name <- "BCO_APEC"
+```
+
+```{r quiet_abricate, echo=FALSE,include=FALSE}
+#Read in our tree
+tree <- read.tree(tree_path)
+
+#Midpoint root our tree
+tree <- midpoint.root(tree)
+
+#Trim off excess characters from the tree tip labels
+tree$tip.label <- gsub(".R1","",tree$tip.label)
+
+#Run AbricateR to summarise genomic data
+abricateR::abricateR(
+        abricate_in = abricate_path,
+        output = output_name,
+        output_directory = output_dir,
+        identity = 90,
+        length = 90,
+        writecsv = FALSE,
+        pointfinder_data = pointfinder_path#,
+        #pMLST_data = pMLST_path
+)
+
+#Filter our collection
+BCO_APEC_simple_summary_N90L90 <- BCO_APEC_simple_summary_N90L90 %>% filter(name %in% tree$tip.label)
+BCO_APEC.N90.L90.PASS <- BCO_APEC.N90.L90.PASS %>% filter(name %in% tree$tip.label)
+BCO_APEC.N90.L90.FAIL <- BCO_APEC.N90.L90.FAIL %>% filter(name %in% tree$tip.label)
+BCO_APEC_co_occurence_N90L90 <- BCO_APEC_co_occurence_N90L90 %>% filter(name %in% tree$tip.label)
+
+#Read in our filtered metadata
+metadata <- read_delim(metadata_path, delim = "\t", show_col_types = FALSE)
+
+#Rename our name column
+metadata <- metadata %>% rename(name= `Sample Name`)
+
+#Filter our metadata to our tree
+metadata <- metadata %>% filter(name %in% tree$tip.label)
+
+#Bind our genotypic data and metadata
+genometa <- left_join(metadata, BCO_APEC_simple_summary_N90L90, by = "name") %>% as.data.frame()
+
+#Move our working name to the start
+genometa <- genometa %>% dplyr::select(name, everything())
+
+#Apply our names as rownames
+rownames(genometa) <- genometa$name
+
+#Read in our MLST data
+mlst <- read_delim(mlst_path, delim = "\t", show_col_types = FALSE)
+
+#Bind our MLST data
+genometa <- left_join(genometa, mlst, by = "name")
+
+#categorise top ten STs or other
+genometa <- genometa %>% mutate(ST_other = fct_lump(ST, n = 10))
+
+#Read in our fim data
+fimtype <- read_delim(fimtype_path, delim = "\t", show_col_types = FALSE)
+
+#Remove potential duplicate hits, only take the first.
+#AVC160 appears to have a duplicated fimH gene (same type, same scaffold)
+fimtype <- fimtype %>% dplyr::select(name, Fimtype) %>% unique()
+
+#Bind our fimtype data
+genometa <- left_join(genometa, fimtype, by = "name")
+
+#Read in our serotype data
+serotype <- read_delim(serotype_path, delim = "\t", show_col_types = FALSE)
+
+#Rename name column
+serotype <- serotype %>% rename('name' = 'Name')
+
+#Bind our serotype data
+genometa <- left_join(genometa, serotype, by = "name")
+
+#Read in our ezclermont data
+ezclermont <- read_delim(phylogroup1_path, delim = "\t", show_col_types = FALSE)
+
+#Remove spaces at start of names for some reason
+ezclermont <- ezclermont %>% mutate(name = str_replace(name, '^ ', ''))
+
+#Bind our ezclermont data
+genometa <- left_join(genometa, ezclermont, by = "name")
+
+#Read in our clermontyper data
+clermontyper <- read_delim(phylogroup2_path, delim = "\t", show_col_types = FALSE)
+
+#Bind our ezclermont data
+genometa <- left_join(genometa, clermontyper, by = "name")
+
+
+```
+
+## Collection breakdown
+
+We will start by producing some figures relating to the collection composition:
+
+### Breakdown by year
+```{r year_breakdown, echo=FALSE}
+library(ggplot2)
+library(magrittr)
+
+df2 <- metadata %>% group_by(collection_year) %>% summarise(counts = n(), .groups = "keep")
+
+#ggplot(df2, aes(x=collection_year, y=counts, fill=Collection)) +
+#  geom_bar() + theme(axis.text.x = element_text(angle=90)) + xlab("Collection Year") + ylab("Count")
+
+metadata$collection_year[metadata$collection_year == "NA"] <- NA
+
+years <- min(unique(sort(metadata$collection_year))):max(unique(sort(metadata$collection_year)))
+
+cols_fun <- colorRampPalette(c("blue", "red"))
+year_cols <- cols_fun(length(years))
+
+names(year_cols) <- years
+
+ylimit <- max(df2$counts) + (max(df2$counts) * 0.1)
+
+#Treemap
+year_dist_plot <- ggplot(metadata, aes(x = collection_year, fill = as.character(collection_year))) +
+        geom_bar(stat = "count") +
+        scale_fill_manual(
+                name = "Collection Year",
+                aesthetics = c("colour", "fill"),
+                values = year_cols,
+                na.value = 'grey'
+        ) +
+        theme(axis.text.x = element_text(angle = 90)) +
+        xlab("Collection Year") +
+        ylab("Count") +
+        scale_y_continuous(expand = c(0, 0),
+                           limits = c(0, ylimit)
+                           ) +
+        scale_x_continuous(expand = c(0, 0),
+                           limits = c(min(years)-1, max(years)+1),
+                           labels = (min(years)-1):(max(years)+1),
+                           breaks = (min(years)-1):(max(years)+1)
+                           ) 
+
+year_dist_plot
+```
+
+### Generate our first tree
+
+```{r base_tree, echo=FALSE}
+
+
+#Create a list of ST other names
+ST_other_names <- genometa %>% group_by(ST_other) %>% tally(sort = TRUE) %>% pull(ST_other)
+
+#Generate a list of colours for STs
+ST_other_cols <- c(#Red
+"#e6194B",
+#Green
+"#3cb44b",
+##Yellow
+#"#ffe119",
+#Blue
+"#4363d8",
+#Orange
+"#f58231",
+#Purple
+"#911eb4",
+#Cyan
+"#42d4f4",
+#Magenta
+"#f032e6",
+#Lime
+"#bfef45",
+#Pink
+"#fabed4",
+#Teal
+"#469990",
+##Lavender
+#"#dcbeff",
+#Brown
+"#9A6324",
+##Beige
+#"#fffac8",
+#Maroon
+"#800000",
+#Mint
+"#aaffc3",
+#Olive
+"#808000",
+#Apricot
+"#ffd8b1",
+#Navy
+"#000075",
+#Grey
+"#a9a9a9",
+##White
+#"#ffffff",
+#Black
+"#000000")
+
+#Trim our list of colours for STs
+ST_other_cols <- ST_other_cols [1:length(ST_other_names)]
+
+#Name our ST colours
+names(ST_other_cols) <- ST_other_names
+
+#Define our collection names
+collection_names <- c("AVC", "BCO")
+
+#Define our collection colours
+collection_colours <- c("black", "red")
+
+#Assign names to our collection colours
+names(collection_colours) <- collection_names
+
+#Bind our list of colours 
+mycolslist <- c(collection_colours, ST_other_cols)
+
+#Get rid of ugly complex O types
+genometa$`O-type` <- gsub('/O', '/', genometa$`O-type`)
+
+#Build tree
+p1 <- ggtree(tree, layout = 'circular') %<+%
+        genometa +
+        geom_tiplab(size = 1.5,
+                    align = TRUE,
+                    offset = 0.002,
+                    linesize = 0.15,
+                    aes(color = as.factor(ST))
+                ) +
+        geom_tiplab(size = 1.5,
+                    align = TRUE,
+                    linetype = NULL,
+                    offset = 0.007,
+                    aes(label = paste0("ST",as.character(ST),":", `O-type`,":", `H-type`))
+                ) +
+        geom_tiplab(size = 1.5,
+                    align = TRUE,
+                    linetype = NULL,
+                    offset = 0.018,
+                    aes(label = Clermont_type)
+                ) +
+        geom_tippoint(size = 0.5,
+                      aes(colour = Collection)
+                ) +
+        scale_fill_manual(
+                        aesthetics = c("colour", "fill"),
+                        values = mycolslist,
+                        na.value = 'grey'
+                        ) 
+
+ST_coord <- fortify(p1$data) %>%
+        filter(isTip == TRUE) %>%
+        dplyr::select(label, ST_other, y) %>%
+        arrange(y) %>%
+        group_by(ST_other) %>%
+        summarise(
+                firstocc = first(label),
+                lastocc = last(label),
+                count = n()
+        )
+
+
+#Bind our colours and names
+STcols_df <- suppressWarnings(as.data.frame(cbind(ST_other_cols, as.character(ST_other_names))))
+
+#Rename our coloumns
+STcols_df <- STcols_df %>% rename(color = ST_other_cols, ST_other = V2)
+
+#Join our df of coordinates for our annotations with our colours for our annotations
+ST_coord <- left_join(ST_coord, STcols_df, by = "ST_other")
+
+
+
+find_firstlast <- function(x, y){
+        ST_other_coord <- fortify(p1$data) %>%
+        filter(isTip == TRUE) %>%
+        dplyr::select(label, Clermont_type, y, angle) %>%
+        arrange(y) %>%
+        filter(Clermont_type == x) %>%
+        summarise(
+                firstocc = first(label),
+                lastocc = last(label),
+                angle = (median(angle))
+        )
+                
+        #Dynamically set hjust based on angle of label
+        ST_other_coord <- ST_other_coord %>% mutate(hjust = if_else(angle > 90 & angle < 270, 1, 0))
+        
+        #Modify angle for labels beyong 90 degrees and before 270 so they arent upside down
+        ST_other_coord <- ST_other_coord %>% mutate(angle = if_else(angle > 90 & angle < 270, angle + 180, angle))
+        #Angles cant be over 360 (i think) so lets reduce by 360 if they are
+        ST_other_coord <- ST_other_coord %>% mutate(angle = if_else(angle > 360, angle - 360, angle))
+        
+        return(ST_other_coord[[y]])
+}
+
+#Define some parameters for our plotting
+strip_fontsize <- 5
+strip_offset <- 0.02
+strip_text_offset <- 0.003
+strip_barsize <- 3
+strip_text_hjust <- 1
+
+#Plot our core tree
+p2 <- p1 + geom_strip(
+        taxa1 = "FH83",
+        taxa2 = "FH58",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[1],
+        label = "A",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("A", 3),
+        hjust = find_firstlast("A", 4)
+) + geom_strip(
+        taxa1 = "AVC94",
+        taxa2 = "FH164",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[2],
+        label = "B1",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("B1", 3),
+        hjust = find_firstlast("B1", 4)
+) + geom_strip(
+        taxa1 = "FH101",
+        taxa2 = "AVC183",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[3],
+        label = "B2",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("B2", 3),
+        hjust = find_firstlast("B2", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("C", 1),
+        taxa2 = find_firstlast("C", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[4],
+        label = "C",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("C", 3),
+        hjust = find_firstlast("C", 4)
+) + geom_strip(
+        taxa1 = "FH141",
+        taxa2 = "FH22",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[5],
+        label = "D",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("D", 3),
+        hjust = find_firstlast("D", 4)
+) + geom_strip(
+        taxa1 = "FH45",
+        taxa2 = "FH59",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[6],
+        label = "E",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("E", 3),
+        hjust = find_firstlast("E", 4)
+) + 
+#        geom_strip(
+#        taxa1 = find_firstlast("F", 1),
+#        taxa2 = find_firstlast("F", 2),
+#        barsize = strip_barsize,
+#        color = paletteer_d("ggsci::nrc_npg")[7],
+#        label = "F",
+#        fontsize = strip_fontsize,
+#        offset = strip_offset,
+#        offset.text = strip_text_offset,
+#        angle = find_firstlast("F", 3),
+#        hjust = find_firstlast("F", 4)
+#) + 
+        geom_strip(
+        taxa1 = "FH154",
+        #Manually change taxa label
+        taxa2 = "AVC107",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[8],
+        label = "G",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("G", 3),
+        hjust = find_firstlast("G", 4)
+) +
+#        geom_strip(
+#        taxa1 = find_firstlast("U", 1),
+#        taxa2 = find_firstlast("U", 2),
+#        barsize = strip_barsize,
+#        color = paletteer_d("ggsci::nrc_npg")[9],
+#        label = "U",
+#        fontsize = strip_fontsize,
+#        offset = strip_offset,
+#        offset.text = strip_text_offset,
+#        angle = find_firstlast("U", 3),
+#        hjust = find_firstlast("U", 4)
+#) +
+        theme(legend.position = "none")
+```
+
+### Generate our second tree
+
+```{r base_tree2, echo=FALSE}
+
+
+#Create a list of ST other names
+ST_other_names <- genometa %>% group_by(ST_other) %>% tally(sort = TRUE) %>% pull(ST_other)
+
+#Generate a list of colours for STs
+ST_other_cols <- c(#Red
+"#e6194B",
+#Green
+"#3cb44b",
+##Yellow
+#"#ffe119",
+#Blue
+"#4363d8",
+#Orange
+"#f58231",
+#Purple
+"#911eb4",
+#Cyan
+"#42d4f4",
+#Magenta
+"#f032e6",
+#Lime
+"#bfef45",
+#Pink
+"#fabed4",
+#Teal
+"#469990",
+##Lavender
+#"#dcbeff",
+#Brown
+"#9A6324",
+##Beige
+#"#fffac8",
+#Maroon
+"#800000",
+#Mint
+"#aaffc3",
+#Olive
+"#808000",
+#Apricot
+"#ffd8b1",
+#Navy
+"#000075",
+#Grey
+"#a9a9a9",
+##White
+#"#ffffff",
+#Black
+"#000000")
+
+#Trim our list of colours for STs
+ST_other_cols <- ST_other_cols [1:length(ST_other_names)]
+
+#Name our ST colours
+names(ST_other_cols) <- ST_other_names
+
+#Define our collection names
+collection_names <- c("AVC", "BCO")
+
+#Define our collection colours
+collection_colours <- c("black", "red")
+
+#Assign names to our collection colours
+names(collection_colours) <- collection_names
+
+#Bind our list of colours 
+mycolslist <- c(collection_colours, ST_other_cols)
+
+#Get rid of ugly complex O types
+genometa$`O-type` <- gsub('/O', '/', genometa$`O-type`)
+
+#Build tree
+p1_linear <- ggtree(tree) %<+%
+        genometa +
+        geom_tiplab(size = .75,
+                    align = TRUE,
+                    offset = 0.002,
+                    linesize = 0.15,
+                    aes(color = as.factor(ST))
+                ) +
+        geom_tiplab(size = .75,
+                    align = TRUE,
+                    linetype = NULL,
+                    offset = 0.01,
+                    aes(label = paste0("ST",as.character(ST),":", `O-type`,":", `H-type`))
+                ) +
+        geom_tiplab(size = 0.75,
+                    align = TRUE,
+                    linetype = NULL,
+                    offset = 0.025,
+                    aes(label = Clermont_type)
+                ) +
+        geom_tippoint(size = 0.5,
+                      aes(colour = Collection)
+                ) +
+        scale_fill_manual(
+                        aesthetics = c("colour", "fill"),
+                        values = mycolslist,
+                        na.value = 'grey'
+                        ) 
+
+ST_coord <- fortify(p1_linear$data) %>%
+        filter(isTip == TRUE) %>%
+        dplyr::select(label, ST_other, y) %>%
+        arrange(y) %>%
+        group_by(ST_other) %>%
+        summarise(
+                firstocc = first(label),
+                lastocc = last(label),
+                count = n()
+        )
+
+
+#Bind our colours and names
+STcols_df <- suppressWarnings(as.data.frame(cbind(ST_other_cols, as.character(ST_other_names))))
+
+#Rename our coloumns
+STcols_df <- STcols_df %>% rename(color = ST_other_cols, ST_other = V2)
+
+#Join our df of coordinates for our annotations with our colours for our annotations
+ST_coord <- left_join(ST_coord, STcols_df, by = "ST_other")
+
+
+
+find_firstlast <- function(x, y){
+        ST_other_coord <- fortify(p1_linear$data) %>%
+        filter(isTip == TRUE) %>%
+        dplyr::select(label, Clermont_type, y, angle) %>%
+        arrange(y) %>%
+        filter(Clermont_type == x) %>%
+        summarise(
+                firstocc = first(label),
+                lastocc = last(label),
+                angle = (median(angle))
+        )
+                
+        #Dynamically set hjust based on angle of label
+        ST_other_coord <- ST_other_coord %>% mutate(hjust = if_else(angle > 90 & angle < 270, 1, 0))
+        
+        #Modify angle for labels beyong 90 degrees and before 270 so they arent upside down
+        ST_other_coord <- ST_other_coord %>% mutate(angle = if_else(angle > 90 & angle < 270, angle + 180, angle))
+        #Angles cant be over 360 (i think) so lets reduce by 360 if they are
+        ST_other_coord <- ST_other_coord %>% mutate(angle = if_else(angle > 360, angle - 360, angle))
+        
+        return(ST_other_coord[[y]])
+}
+
+#Define some parameters for our plotting
+strip_fontsize <- 5
+strip_offset <- 0.025
+strip_text_offset <- 0.003
+strip_barsize <- 3
+strip_text_hjust <- 1
+
+#Plot our core tree
+p2_linear <- p1_linear + geom_strip(
+        taxa1 = find_firstlast("A", 1),
+        taxa2 = find_firstlast("A", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[1],
+        label = "A",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("A", 3),
+        hjust = find_firstlast("A", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("B1", 1),
+        taxa2 = find_firstlast("B1", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[2],
+        label = "B1",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("B1", 3),
+        hjust = find_firstlast("B1", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("B2", 1),
+        taxa2 = find_firstlast("B2", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[3],
+        label = "B2",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("B2", 3),
+        hjust = find_firstlast("B2", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("C", 1),
+        taxa2 = find_firstlast("C", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[4],
+        label = "C",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("C", 3),
+        hjust = find_firstlast("C", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("D", 1),
+        taxa2 = find_firstlast("D", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[5],
+        label = "D",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("D", 3),
+        hjust = find_firstlast("D", 4)
+) + geom_strip(
+        taxa1 = find_firstlast("E", 1),
+        taxa2 = find_firstlast("E", 2),
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[6],
+        label = "E",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("E", 3),
+        hjust = find_firstlast("E", 4)
+) + 
+#        geom_strip(
+#        taxa1 = find_firstlast("F", 1),
+#        taxa2 = find_firstlast("F", 2),
+#        barsize = strip_barsize,
+#        color = paletteer_d("ggsci::nrc_npg")[7],
+#        label = "F",
+#        fontsize = strip_fontsize,
+#        offset = strip_offset,
+#        offset.text = strip_text_offset,
+#        angle = find_firstlast("F", 3),
+#        hjust = find_firstlast("F", 4)
+#) + 
+        geom_strip(
+        taxa1 = find_firstlast("G", 1),
+        #Manually change taxa label
+        taxa2 = "FH171",
+        barsize = strip_barsize,
+        color = paletteer_d("ggsci::nrc_npg")[8],
+        label = "G",
+        fontsize = strip_fontsize,
+        offset = strip_offset,
+        offset.text = strip_text_offset,
+        angle = find_firstlast("G", 3),
+        hjust = find_firstlast("G", 4)
+) +
+#        geom_strip(
+#        taxa1 = find_firstlast("U", 1),
+#        taxa2 = find_firstlast("U", 2),
+#        barsize = strip_barsize,
+#        color = paletteer_d("ggsci::nrc_npg")[9],
+#        label = "U",
+#        fontsize = strip_fontsize,
+#        offset = strip_offset,
+#        offset.text = strip_text_offset,
+#        angle = find_firstlast("U", 3),
+#        hjust = find_firstlast("U", 4)
+#) +
+        theme(legend.position = "none")
+```
+
+
+```{r}
+library(VennDiagram)
+
+#cMake the plot
+venn.diagram(
+  x = list(
+    genometa %>% filter(Collection =="BCO") %>% dplyr::select(ST) %>% unlist(), 
+    genometa %>% filter(Collection =="AVC") %>% dplyr::select(ST) %>% unlist()
+    ),
+  category.names = c("BCO", "AVC"),
+  filename = 'venn.png',
+  output = TRUE ,
+          imagetype="png" ,
+          height = 480 , 
+          width = 480 , 
+          resolution = 300,
+          compression = "lzw",
+          lwd = 1,
+          col=c("#440154ff", '#21908dff'),
+          fill = c(alpha("#440154ff",0.3), alpha('#21908dff',0.3)),
+          cex = 0.5,
+          fontfamily = "sans",
+          cat.cex = 0.3,
+          cat.default.pos = "outer",
+          cat.pos = c(-27, 27),
+          cat.dist = c(0.055, 0.055),
+          cat.fontfamily = "sans",
+          cat.col = c("#440154ff", '#21908dff')
+        )
+```
+
+```{r sankey_library, include=FALSE, echo=FALSE}
+#Separate library calls to suppress the high charter message
+library(highcharter)
+library(htmlwidgets)
+library(dplyr)
+```
+
+### Collection breakdown - HC5, Serovar, Source Niche and Source Details
+```{r sankey_1, echo=FALSE}
+
+
+sankey1 <- genometa %>% dplyr::select(Collection, ST_other, Clermont_type)
+
+sankey1 <- apply(sankey1,
+                 2,
+                 FUN = function(x) paste0(x,
+                                          " (",
+                                          as.data.frame(table(x)[x])[,2],
+                                          "/",
+                                          as.character(nrow(metadata)),
+                                          ")",
+                                          " ",
+                                          scales::percent(
+                                                  as.data.frame(
+                                                          table(x)[x])[,2]/nrow(metadata),
+                                                  accuracy = 0.1
+                                                  )
+                                          )
+                 )
+
+sankey1 <- as.data.frame(sankey1)
+
+sankey1_plot <- hchart(data_to_sankey(sankey1), "sankey", name = "Collection Breakdown")  %>%
+        hc_plotOptions(series = list(dataLabels = list(style = list(fontSize = "15px", fontFamily = "Arial")))) %>% suppressWarnings()
+
+
+```
+
+
+```{r multi_site_stats, echo = TRUE}
+library(ggpubr)
+
+count_sites_by_ST <- genometa %>% filter(Collection == "BCO") %>% group_by(ST, Bird_Gross_Necropsy_ID) %>% summarise(counts = n()) %>% mutate(ST = paste0("ST", ST))
+
+ST_by_clermontype <- genometa %>% group_by(ST, Clermont_type) %>% summarise(counts = n())
+
+ST_by_clermontype <- ST_by_clermontype %>% 
+        group_by(ST) %>%
+        filter(counts == max(counts)) %>%
+        arrange(ST,Clermont_type, counts) %>%
+        dplyr::select(-counts) %>%
+        mutate(ST = paste0("ST", ST))
+
+count_sites_by_ST <- left_join(count_sites_by_ST, ST_by_clermontype) %>% arrange(match(count_sites_by_ST$ST, ST_by_clermontype$ST))
+
+ST_order <- count_sites_by_ST %>% dplyr::select(ST, Clermont_type) %>% arrange(Clermont_type) %>% unique() %>% pull(ST)
+
+count_sites_by_ST$ST <- factor(count_sites_by_ST$ST, levels = ST_order)
+
+count_of_st <- genometa %>% filter(Collection == "BCO") %>% group_by(ST) %>% summarise(counts = n()) %>% mutate(ST = paste0("ST", ST)) %>% filter(counts > 3)
+
+count_sites_by_ST <- count_sites_by_ST %>% filter(ST %in% count_of_st$ST)
+
+count_sites_by_ST$Clermont_type <- factor(count_sites_by_ST$Clermont_type, levels = c("A","B1","B2","D","E", "G"))
+
+
+p <- ggboxplot(count_sites_by_ST, x = "ST", y = "counts", color = "Clermont_type", palette = "jco",
+          add = "jitter")
+
+
+```
+
+
+```{r process_vir}
+
+vir_df <- BCO_APEC_simple_summary_N90L90 %>% dplyr::select(name, starts_with('vfdb'), starts_with('EC_'))
+
+vir_df <- vir_df %>% column_to_rownames('name') %>% t() %>% as.data.frame()
+
+vir_df <- vir_df %>% rownames_to_column('gene')
+
+vir_df <- vir_df %>% mutate(gene = str_replace(gene, 'vfdb_|EC_custom_', ''))
+
+vir_df <- vir_df %>% column_to_rownames('gene') %>% t()
+
+vir_df[vir_df > 1] <- 1
+
+vir_df <- as.data.frame(vir_df)
+
+vir_df <- vir_df %>% dplyr::select(matches("astA"),
+matches("cba"),
+matches("celb"),
+matches("cma"),
+matches("cvaA"),
+matches("cvaB"),
+matches("cvaC"),
+matches("cvi"),
+matches("eilA"),
+matches("eitA"),
+matches("eitB"),
+matches("eitC"),
+matches("eitD"),
+matches("etsA"),
+matches("fimH"),
+matches("fyuA"),
+matches("gad"),
+matches("gimB_marker"),
+matches("hek"),
+matches("hlyE"),
+matches("hylF"),
+matches("ibeA"),
+matches("iha"),
+matches("ipaH"),
+matches("ireA"),
+matches("iroN"),
+matches("irp2"),
+matches("iss"),
+matches("iucD"),
+matches("iutA"),
+matches("kpsM"),
+matches("kpsMT_II"),
+matches("kpsMT_III"),
+matches("lpfA"),
+matches("malX"),
+matches("mchB"),
+matches("mchC"),
+matches("mchF"),
+matches("mcmA"),
+matches("neuC"),
+matches("ompT"),
+matches("papA"),
+matches("papB"),
+matches("papC"),
+matches("papD"),
+matches("papE"),
+matches("papF"),
+matches("papGII"),
+matches("papH"),
+matches("papI"),
+matches("papJ"),
+matches("papK"),
+matches("pic"),
+matches("shiD"),
+matches("sitA"),
+matches("tia"),
+matches("traT"),
+matches("tsh"),
+matches("usp"),
+matches("vat"),
+matches("yeeT")
+) 
+
+vir_df <- vir_df %>% 
+        rowwise() %>% 
+        mutate(fimH_new= sum(fimH, fimH_CP015076.1, na.rm = T)) %>% 
+        dplyr::select(-fimH, -fimH_CP015076.1) %>%
+        mutate(fyuA_new= sum(fyuA, fyuA_Z35106.1, na.rm = T)) %>% 
+        dplyr::select(-fyuA, -fyuA_Z35106.1) %>%
+        mutate(ibeA_new= sum(ibeA, ibeA_AY248744.1, na.rm = T)) %>% 
+        dplyr::select(-ibeA, -ibeA_AY248744.1) %>%
+        mutate(irp2_new = sum(irp2, `irp2_(gi:117624162)|VFG012550`, `irp2_(gi:218695586)|VFG034095`, `irp2_(gi:218705472)|VFG034101`, `irp2_(gi:222156713)|VFG034107`, `irp2_(gi:386629711)|VFG034099`, `irp2_(gi:387607663)|VFG034096`, `irp2_(gi:45441468)|VFG003119`, na.rm = T)) %>% 
+        dplyr::select(-irp2, -`irp2_(gi:117624162)|VFG012550`, -`irp2_(gi:218695586)|VFG034095`, -`irp2_(gi:218705472)|VFG034101`, -`irp2_(gi:222156713)|VFG034107`, -`irp2_(gi:386629711)|VFG034099`, -`irp2_(gi:387607663)|VFG034096`, -`irp2_(gi:45441468)|VFG003119`) %>%
+        mutate(iss_new= sum(`iss_type2_ETEC-B7a_NZ_AAJT00000000`, iss_type3_UTI89_CP000243, na.rm = T)) %>%            dplyr::select(-`iss_type2_ETEC-B7a_NZ_AAJT00000000`, -iss_type3_UTI89_CP000243) %>%
+        mutate(iucD_new = sum(iucD, iucD_AY545598.5, na.rm = T)) %>%
+        dplyr::select(-iucD, -iucD_AY545598.5) %>%
+        mutate(iutA_new = sum(iutA, iutA_KU578032.1, na.rm = T)) %>%
+        dplyr::select(-iutA, -iutA_KU578032.1) %>%
+        mutate(`kpsMT(II)_new` = sum(`kpsMT(II)_K1:AE014075.1|CFT073|3527848-3529293`, `kpsMT(II)_K2:CP000468.1:|APEC-O1|3376659-3378102`, `kpsMT(II)_K5:CP002212.1|3385642-3387090`, na.rm = T)) %>%
+        dplyr::select(-`kpsMT(II)_K1:AE014075.1|CFT073|3527848-3529293`, -`kpsMT(II)_K2:CP000468.1:|APEC-O1|3376659-3378102`, -`kpsMT(II)_K5:CP002212.1|3385642-3387090`) %>%
+        mutate(neuC_new = sum(neuC, neuC_CP007275.1, na.rm = T)) %>%
+        dplyr::select(-neuC, -neuC_CP007275.1) %>%
+        mutate(ompT_new = sum(`ompT_chromosomal_O157-H7_NC_002695`, `ompT_episomal_HM210637.1`, na.rm = T)) %>%
+        dplyr::select(-`ompT_chromosomal_O157-H7_NC_002695`, -`ompT_episomal_HM210637.1`) %>%
+        dplyr::select(-papB, -papD, -papE, -papF, -papH, -papI, -papJ, -papK)
+
+vir_df <- vir_df %>% mutate(sitA_new = sum(`sitA_(gi:218704670)|VFG034199`, `sitA_(gi:387606979)|VFG034194`, `sitA_(gi:387616520)|VFG034206`, `sitA_(gi:82776740)|VFG013039`,  `sitA_(gi:88770314)|VFG012575`,  `sitA_(gi:91210366)|VFG012573`, na.RM = T)) %>% dplyr::select(-`sitA_(gi:218704670)|VFG034199`, -`sitA_(gi:387606979)|VFG034194`, -`sitA_(gi:387616520)|VFG034206`, -`sitA_(gi:82776740)|VFG013039`,  -`sitA_(gi:88770314)|VFG012575`,  -`sitA_(gi:91210366)|VFG012573`)
+
+vir_df <- vir_df %>% mutate(papC_new = sum(papC, papC_CU928161)) %>% dplyr::select(-papC, -papC_CU928161)
+
+vir_df <- vir_df %>% mutate(tia_new = sum(tia_CP019944.1, tia_CU928161)) %>% dplyr::select(-tia_CP019944.1, -tia_CU928161)
+
+vir_df <- vir_df %>% mutate(usp_new = sum(usp_AB056434, usp_AB056436, usp_AB056437, usp_AB056439)) %>% dplyr::select(-usp_AB056434, -usp_AB056436, -usp_AB056437, -usp_AB056439)
+
+vir_df <- vir_df %>% rename_all(funs(stringr::str_replace_all(., '_.*', '')))
+        
+vir_df[vir_df > 1] <- 1
+
+heatmap_vir <- pheatmap(vir_df, cluster_cols = TRUE)
+
+vir_df <- vir_df %>% dplyr::select(all_of(heatmap_vir$tree_col$order))
+
+binary_sum_perc_colnames <- function(df){
+        df <- vir_df
+        oldname <- colnames(df)
+        n_w_gene <- colSums(df) %>% as.data.frame() %>% rownames_to_column('name') %>% rename('count' = '.')
+        n_total <- nrow(df) %>% as.numeric()
+        perc <- scales::percent(x = (n_w_gene$count/n_total), accuracy = 2)
+        n_w_gene <- n_w_gene %>% mutate(count = as.character(count))
+        n_total <- n_total %>% as.character(n_total)
+        colnames(df) <- paste0(n_w_gene$name, " ", n_w_gene$count, "/", n_total, " (", perc, ")")
+        return(df)
+}
+
+vir_df <- vir_df %>% binary_sum_perc_colnames()
+
+vir_df <- vir_df %>% mutate(across(where(is.numeric), as.character))
+
+vir_df <- vir_df %>% as.data.frame()
+
+rownames(vir_df) <- BCO_APEC_simple_summary_N90L90$name
+
+
+
+p2 <- gheatmap(
+        p = p1_linear,
+        data = vir_df,
+        colnames_offset_y = -0.1,
+        font.size = 3,
+        hjust = 0,
+        colnames = TRUE,
+        colnames_position = "top",
+        colnames_angle = 90,
+        offset = 0.025,
+        width = 15,
+        color = rgb(220, 220, 220, max = 255, alpha = 50)
+        ) +
+theme(legend.position = "bottom",
+        legend.box = "vertical",
+        legend.key.size = unit(1, "mm"),
+        legend.title = element_blank(),
+        legend.text = element_text(size = 8)
+        ) +
+scale_color_manual(
+        values = c(mycolslist, c('0' = 'white', '1' = 'red')),
+        na.value = 'grey',
+        guide = "none"
+        ) +
+scale_fill_manual(
+        values = c(mycolslist, c('0' = 'white', '1' = 'red')),
+        na.value = 'grey',
+        
+        ) +
+        ylim(NA, 350)
+
+
+
+
+```
+
+## IncF RST analysis
+```{r}
+pMLST <- read_delim("analysis/pMLST.txt", 
+    delim = "\t", escape_double = FALSE, 
+    trim_ws = TRUE,
+    show_col_types = FALSE)
+
+pMLST <- pMLST %>% pivot_wider(id_cols = 'name', names_from = 'pMLST_scheme', values_from = 'pMLST')
+
+genometa <- left_join(genometa, pMLST)
+
+long_inf_rst <- genometa %>% group_by(Collection, incf) %>% summarise(counts = n(), .groups = 'keep') %>% pivot_wider(id_cols = 'incf', names_from = 'Collection', values_from = 'counts') %>% mutate(across(everything(), ~replace_na(.,0)))
+
+long_inf_rst <- long_inf_rst %>% mutate(total = AVC + BCO) %>% mutate(total = paste0(total,"/300 (", scales::percent(total/300, accuracy = 2),')'))
+
+
+long_inf_rst <- long_inf_rst %>% mutate(AVC = paste0(AVC,"/95 (", scales::percent(AVC/95, accuracy = 2),')'))
+
+long_inf_rst <- long_inf_rst %>% mutate(BCO = paste0(BCO,"/205 (", scales::percent(BCO/205, accuracy = 2),')'))
+
+long_inf_rst<- long_inf_rst %>% mutate(incf = str_replace(incf, pattern = 'C4', replacement = 'F18'))
+
+
+```
+
+
+
+## ColV Stats
+
+```{r}
+contingency_table_ColV_Collection <- table(genometa$Collection, genometa$ColV)
+
+small_subset_tree <- read.tree("analysis/trees/old/mashtree_QC_pass_AVC_BCO_bone_nondup.tree")
+
+small_subset_tree$tip.label <- gsub("\\.R1$","", small_subset_tree$tip.label)
+
+small_subset_genometa <- genometa %>% filter(name %in% small_subset_tree$tip.label)
+
+table(small_subset_genometa$Collection, small_subset_genometa$ColV) %>% chisq.test()
+
+chisq.test(contingency_table_ColV_Collection)
+```
+
+```{r write_metadata, echo=FALSE}
+
+
+
+genometa <- genometa %>% mutate(Final_subset = if_else(name %in% small_subset_tree$tip.label, "Yes", "No"))
+
+genometa <- genometa %>% mutate(Final_subset = if_else(grepl("AVC",name), "No", Final_subset))
+
+#Write our metadata to file for our supplementary table
+write_delim(genometa, "Figures/2023/Supplementary/Supplementary_Table_1.txt", delim = "\t")
+
+```
+
+## ST Table
+
+```{r}
+
+ST_table <- genometa %>% group_by(ST, Collection) %>% summarise(counts = n())
+
+ST_table <- ST_table %>% pivot_wider(id_cols = 'ST', names_from = 'Collection', values_from = 'counts') %>% mutate(across(everything(), ~replace_na(.,0)))
+
+ST_table <- ST_table %>% mutate(total = AVC + BCO) %>% arrange(desc(total)) %>% mutate(total = paste0(total,"/300 (", scales::percent(total/300, accuracy = 2),')'))
+
+
+ST_table <- ST_table %>% mutate(AVC = paste0(AVC,"/95 (", scales::percent(AVC/95, accuracy = 2),')'))
+
+ST_table <- ST_table %>% mutate(BCO = paste0(BCO,"/205 (", scales::percent(BCO/205, accuracy = 2),')'))
+
+phylogroup_ST_intersection <- genometa %>% group_by(ST, Clermont_type) %>% summarise(clermontypes = n()) %>% mutate(type_and_count = paste0(Clermont_type, ' (',clermontypes,')')) %>% ungroup %>% group_by(ST) %>% mutate(Phylogroups = paste0(type_and_count, collapse = ",")) %>% dplyr::select(ST, Phylogroups) %>% unique()
+
+ST_phylogroup_table <- inner_join(ST_table, phylogroup_ST_intersection, by = "ST") %>% dplyr::select(ST, Phylogroups, AVC, BCO, total)
+```
+
+## Virulence NMDS
+
+```{r}
+library(MASS)
+library(vegan)
+library(ellipse)
+library(grid)
+library(gridExtra)
+library(dplyr)
+
+#read data into variable data
+mds.data <- genometa
+rownames(mds.data) <- genometa %>% pull(name)
+mds.metadata <- mds.data %>% dplyr::select(1:13, ST_other) %>% rename('Name' = 'name')
+
+vir_df <- vir_df %>% mutate(across(where(is.character), as.numeric))
+
+vir_df_MDS <- unique.data.frame(vir_df)
+
+#VIRULENCE
+#create distance object 
+virdist <- vegdist(wisconsin(vir_df_MDS), method = "jaccard")
+# Get the baseline solution: start with cmdscale
+mds.null.vir <- isoMDS(virdist, tol=1e-7)
+## See if you can get any better.
+  repeat{
+    mds.1.vir <- isoMDS(virdist, k=2, initMDS(virdist, k = 2), maxit=200, trace=FALSE, tol=1e-7)
+    print(mds.1.vir$stress)
+    print(mds.null.vir$stress)
+    if(mds.1.vir$stress < mds.null.vir$stress) break
+  }
+
+# Scale solutions ("fix translation, rotation and scale")
+mds.null.vir <- postMDS(mds.null.vir, virdist)
+mds.1.vir <- postMDS(mds.1.vir, virdist)
+# Compare solutions
+plot(procrustes(mds.1.vir, mds.null.vir))
+#convert to dataframe
+mds.null.vir.df <- as.data.frame(mds.null.vir,
+                             attr(x = mds.null.vir,
+                                which = "dimnames"))
+mds.1.vir.df <- as.data.frame(mds.1.vir, 
+                          attr(x = mds.1.vir, 
+                              which = "dimnames"))
+
+mds.1.vir$points %>% rownames() -> mds.1.vir.df$Name
+mds.1.vir.df <- left_join(mds.1.vir.df, mds.metadata)
+
+mds.1.vir.df$ST <- as.factor(mds.1.vir.df$ST)
+
+#Virulence by Sequence Type
+b1 <- ggplot() +
+  geom_point(data=mds.1.vir.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = Collection), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=mds.1.vir.df$points.1,
+                   y=mds.1.vir.df$points.2, 
+                   color = mds.1.vir.df$Collection)) +
+  scale_color_manual(breaks = collection_names, values = collection_colours)+
+  ggtitle("Nonmetric MDS - Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal(xlim = c(-3, 4), ylim = c(-1.5, 2)) +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+
+b2 <- ggplot() +
+  geom_point(data=mds.1.vir.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = ST_other), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=mds.1.vir.df$points.1,
+                   y=mds.1.vir.df$points.2, 
+                   color = mds.1.vir.df$ST_other)) +
+  scale_color_manual(breaks = ST_other_names, values = ST_other_cols)+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal(xlim = c(-3, 4), ylim = c(-1.5, 2)) +
+  theme(plot.title = element_text(hjust = 0.5))
+
+grid.arrange(b1, b2, nrow = 2)
+
+```
+
+## Resistance NMDS
+```{r}
+
+mds.data <- genometa
+rownames(mds.data) <- genometa %>% pull(name)
+mds.metadata <- mds.data %>% dplyr::select(1:13, ST_other, EC_custom_intI1_HQ730118.1) %>% rename('Name' = 'name', 'intI1 carriage' = EC_custom_intI1_HQ730118.1) %>% mutate(`intI1 carriage` = as.character(`intI1 carriage`))
+
+#read data into variable data
+card_df <- genometa %>% dplyr::select(name, starts_with("card_")) %>% column_to_rownames('name')
+
+card_df_MDS <- unique.data.frame(card_df)
+
+#VIRULENCE
+#create distance object 
+carddist <- vegdist(wisconsin(card_df_MDS), method = "jaccard")
+# Get the baseline solution: start with cmdscale
+mds.null.card <- isoMDS(carddist, tol=1e-7)
+## See if you can get any better.
+  repeat{
+    mds.1.card <- isoMDS(carddist, k=2, initMDS(carddist, k = 2), maxit=200, trace=FALSE, tol=1e-7)
+    print(mds.1.card$stress)
+    print(mds.null.card$stress)
+    if(mds.1.card$stress < mds.null.card$stress) break
+  }
+
+# Scale solutions ("fix translation, rotation and scale")
+mds.null.card <- postMDS(mds.null.card, carddist)
+mds.1.card <- postMDS(mds.1.card, carddist)
+# Compare solutions
+plot(procrustes(mds.1.card, mds.null.card))
+#convert to dataframe
+mds.null.card.df <- as.data.frame(mds.null.card,
+                             attr(x = mds.null.card,
+                                which = "dimnames"))
+mds.1.card.df <- as.data.frame(mds.1.card, 
+                          attr(x = mds.1.card, 
+                              which = "dimnames"))
+
+mds.1.card$points %>% rownames() -> mds.1.card.df$Name
+mds.1.card.df <- left_join(mds.1.card.df, mds.metadata)
+
+mds.1.card.df$ST <- as.factor(mds.1.card.df$ST)
+
+#Virulence by Sequence Type
+res_b1 <- ggplot() +
+  geom_point(data=mds.1.card.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = Collection), 
+             size = 1) + # add the point markers
+  stat_ellipse(aes(x=mds.1.card.df$points.1,
+                   y=mds.1.card.df$points.2, 
+                   color = mds.1.card.df$Collection)) +
+  scale_color_manual(breaks = collection_names, values = collection_colours)+
+  ggtitle("Nonmetric MDS - Resistance Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal(xlim = c(-1, 1), ylim = c(-1, 1)) +
+  theme(plot.title = element_text(hjust = 0.5), legend.position = "bottom")
+
+res_b2 <- ggplot() +
+  geom_point(data=mds.1.card.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = ST_other), 
+             size = 1) + # add the point markers
+  stat_ellipse(aes(x=mds.1.card.df$points.1,
+                   y=mds.1.card.df$points.2, 
+                   color = mds.1.card.df$ST_other)) +
+  scale_color_manual(breaks = ST_other_names, values = ST_other_cols)+
+  ggtitle("Nonmetric MDS - Resistance Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal(xlim = c(-1, 1), ylim = c(-1, 1)) +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "bottom",
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+res_b3 <- ggplot() +
+  geom_point(data=mds.1.card.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = `intI1 carriage`), 
+             size = 1) + # add the point markers
+  stat_ellipse(aes(x=mds.1.card.df$points.1,
+                   y=mds.1.card.df$points.2, 
+                   color = mds.1.card.df$`intI1 carriage`)) +
+  scale_color_manual(breaks = c('0','1'), values = c('red', 'black'))+
+  ggtitle("Nonmetric MDS - Resistance Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal(xlim = c(-1, 1), ylim = c(-1, 1)) +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "bottom",
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+ggpubr::ggarrange(res_b1, res_b2, res_b3, nrow = 1, legend = "bottom")
+
+```
+
+```{r}
+
+fit.mds <- vegan::metaMDS(comm = dist(vir_df), distance = "jaccard")
+
+
+data.scores <- as.data.frame(scores(fit.mds))  #Using the scores function from vegan to extract the site scores and convert to a data.frame
+data.scores$name <- rownames(data.scores)  # create a column of site names, from the rownames of data.scores
+
+data.scores <- genometa %>% dplyr::select(1:13, ST_other) %>% inner_join(data.scores)
+
+head(data.scores) #look at the data
+
+ggplot() +
+  geom_point(data=data.scores,
+             aes(x=NMDS1,
+                 y=NMDS2,
+                 color = ST_other), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=data.scores$NMDS1,
+                   y=data.scores$NMDS2, 
+                   color = data.scores$ST_other)) +
+  scale_color_manual(breaks = ST_other_names, values = ST_other_cols)+
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggplot() +
+  geom_point(data=data.scores,
+             aes(x=NMDS1,
+                 y=NMDS2,
+                 color = Collection), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=data.scores$NMDS1,
+                   y=data.scores$NMDS2, 
+                   color = data.scores$Collection)) +
+  scale_color_manual(breaks = collection_names, values = collection_colours)+ 
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+
+
+
+```{r}
+
+fit.mds <- vegan::metaMDS(comm = dist(vir_df), distance = "jaccard")
+
+
+data.scores <- as.data.frame(scores(fit.mds))  #Using the scores function from vegan to extract the site scores and convert to a data.frame
+data.scores$name <- rownames(data.scores)  # create a column of site names, from the rownames of data.scores
+
+data.scores <- genometa %>% dplyr::select(1:13, ST_other) %>% inner_join(data.scores)
+
+head(data.scores) #look at the data
+
+ggplot() +
+  geom_point(data=data.scores,
+             aes(x=NMDS1,
+                 y=NMDS2,
+                 color = ST_other), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=data.scores$NMDS1,
+                   y=data.scores$NMDS2, 
+                   color = data.scores$ST_other)) +
+  scale_color_manual(breaks = ST_other_names, values = ST_other_cols)+
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggplot() +
+  geom_point(data=data.scores,
+             aes(x=NMDS1,
+                 y=NMDS2,
+                 color = Collection), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=data.scores$NMDS1,
+                   y=data.scores$NMDS2, 
+                   color = data.scores$Collection)) +
+  scale_color_manual(breaks = collection_names, values = collection_colours) +
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+```{r}
+
+#read data into variable data
+mds.data <- genometa
+rownames(mds.data) <- genometa %>% pull(name)
+mds.metadata <- mds.data %>% dplyr::select(1:13, ST_other) %>% rename('Name' = 'name')
+
+is_df <- genometa %>% dplyr::select(starts_with("ISfinder"))
+
+rownames(is_df) <- genometa$name
+
+is_df_MDS <- unique.data.frame(is_df)
+
+#VIRULENCE
+#create distance object 
+ISdist <- vegdist(wisconsin(is_df_MDS), method = "jaccard")
+# Get the baseline solution: start with cmdscale
+mds.null.IS <- isoMDS(ISdist, tol=1e-7)
+## See if you can get any better.
+  repeat{
+    mds.1.IS <- isoMDS(ISdist, k=2, initMDS(ISdist, k = 2), maxit=200, trace=FALSE, tol=1e-7)
+    print(mds.1.IS$stress)
+    print(mds.null.IS$stress)
+    if(mds.1.IS$stress < mds.null.IS$stress) break
+  }
+
+# Scale solutions ("fix translation, rotation and scale")
+mds.null.IS <- postMDS(mds.null.IS, ISdist)
+mds.1.IS <- postMDS(mds.1.IS, ISdist)
+# Compare solutions
+plot(procrustes(mds.1.IS, mds.null.IS))
+#convert to dataframe
+mds.null.IS.df <- as.data.frame(mds.null.IS,
+                             attr(x = mds.null.IS,
+                                which = "dimnames"))
+mds.1.IS.df <- as.data.frame(mds.1.IS, 
+                          attr(x = mds.1.IS, 
+                              which = "dimnames"))
+
+mds.1.IS$points %>% rownames() -> mds.1.IS.df$Name
+mds.1.IS.df <- left_join(mds.1.IS.df, mds.metadata)
+
+mds.1.IS.df$ST <- as.factor(mds.1.IS.df$ST)
+
+#Virulence by Sequence Type
+b1 <- ggplot() +
+  geom_point(data=mds.1.IS.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = Collection), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=mds.1.IS.df$points.1,
+                   y=mds.1.IS.df$points.2, 
+                   color = mds.1.IS.df$Collection)) +
+  scale_color_manual(breaks = collection_names, values = collection_colours)+
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+b2 <- ggplot() +
+  geom_point(data=mds.1.IS.df,
+             aes(x=points.1,
+                 y=points.2,
+                 color = ST_other), 
+             size = 1.5) + # add the point markers
+  stat_ellipse(aes(x=mds.1.IS.df$points.1,
+                   y=mds.1.IS.df$points.2, 
+                   color = mds.1.IS.df$ST_other)) +
+  scale_color_manual(breaks = ST_other_names, values = ST_other_cols)+
+  ggtitle("Nonmetric MDS Virulence Profile")+
+  xlab("Dimension 1")+
+  ylab("Dimension 2")+
+  coord_equal() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+

@@ -1,4 +1,0 @@
-#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
-FH9.fasta	contig00060	111	212	-	hlyF	326-427/1754	..==...........	0/0	5.82	99.02	colV_zoetis		hlyF	
-FH9.fasta	contig00117	109	1440	+	hlyF	422-1754/1754	...=====/======	1/1	75.94	99.10	colV_zoetis		hlyF	
-FH9.fasta	contig00117	2201	3154	+	ompT	1-954/954	===============	0/0	100.00	99.89	colV_zoetis		ompT	

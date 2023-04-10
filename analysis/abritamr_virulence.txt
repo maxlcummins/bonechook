@@ -1,0 +1,310 @@
+name	Virulence	Acid	Biocide	Metal	Heat
+AVC191	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	arsA	
+FH138	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH171	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH88	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH212	astA,cvaC,espX1,fdeC,focG,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchB,mchF,tsh	ymgB	emrE		
+FH97	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH19	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+AVC219	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC237	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,mchF	ymgB	emrE		
+AVC7	astA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchB,mchF	ymgB	emrE	arsA,arsD,arsR,merC,merP,merR,merT	
+FH22	cvaC,eilA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,mchB,mchF	ymgB			
+FH144	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC64	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH25	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH92	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH37	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH69	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC38	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH52	espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+AVC201	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB	emrE		
+FH104	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH180	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH61	air,cvaC,eilA,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH142	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC5	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH58	espX1,etpD,iss,lpfA	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC98	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+AVC235	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+AVC20	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC256	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC97	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH83	cif,cvaC,eae,espA,espB,espF,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,nleA,nleB,nleB2,tir,tsh	ymgB	emrE		
+FH132	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH203	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC123	astA	ymgB	emrE	merC,merP,merR,merT,pcoA,pcoB,pcoC,pcoD,pcoE,pcoR,pcoS,silA,silB,silC,silE,silF,silP,silR,silS,terD,terW,terZ	
+FH166	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC51	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,mchF		emrE		
+FH65	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH62	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH125	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,ybtP,ybtQ	ymgB	emrE		hsp20,kefB-GI,psi-GI,trxLHR
+FH21	cvaC,eilA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,mchB,mchF	ymgB			
+AVC60	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH150	espX1,fdeC,iss,iucA,iucB,iucC,iucD,iutA,lpfA,ybtP,ybtQ	ymgB	emrE		
+AVC148	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH207	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+FH67	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH148	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH113	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH165	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+FH161	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH31	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE	merC,merP,merR,merT	
+FH28	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+AVC61	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH101	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH36	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+FH206	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+FH59	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE		
+FH46	cvaC,espX1,fdeC,iroB,iroC,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH9	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+FH146	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH127	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH111	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH204	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH123	air,capU,cvaC,eilA,espX1,fdeC,iroB,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh,ybtP	ymgB	emrE	arsD	
+FH38	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH174	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH209	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+AVC216	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+FH30	air,cvaC,eilA,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB	emrE	arsD	
+FH109	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC242	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH210	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF	ymgB			
+FH98	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC29	cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE	merC,merP,merR,merT	
+AVC106	air,astA,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,tsh	ymgB	emrE	arsD	
+AVC179	astA,eilA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,tsh	ymgB	emrE,qacEdelta1		
+FH76	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC65	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+FH192	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH156	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH15	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+FH213	astA,cvaC,espX1,fdeC,focG,iha,iroB,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchB,mchF,tsh	ymgB	emrE		
+FH27	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH91	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC113	astA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA	ymgB	emrE,qacEdelta1		
+FH214	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+AVC224	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH1	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+AVC156	air,astA,eilA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,tsh	ymgB	emrE,qacEdelta1		
+FH182	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH162	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+AVC91	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+AVC195	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC252	cvaC,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC176	astA,cvaC,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,ybtP,ybtQ	ymgB	qacEdelta1	arsD,merC,merP,merR,merT	
+FH14	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,mchF	ymgB			
+FH163	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+AVC154	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH44	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC251	cvaC,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchB,mchF,sfaF,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH80	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH181	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH18	capU,cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,mchF	ymgB			
+FH47	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC12	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH35	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE	merC,merP,merR,merT	
+AVC186	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH10	fdeC	ymgB	emrE	arsA,arsD,arsR	
+AVC30	cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE	merC,merP,merR,merT	
+AVC19	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH211	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+FH114	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+AVC209	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH124	capU,cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,tsh,ybtP,ybtQ		emrE		
+AVC233	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC171	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH141	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH178	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC246	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC161	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,tsh	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH48	capU,cvaC,espX1,ireA,iroB,iroC,iroD,iroE,iss,mchF	ymgB	emrE		
+AVC25	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH126	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC26	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH39	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH159	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC207	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC79	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,papA,papC,papE,papF,papG-II,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH201	cvaC,eilA,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF	ymgB		merC,merP,merR,merT	
+FH175	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss	ymgB	emrE		
+FH193	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH5	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH187	cvaC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC249	cvaC,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox				
+FH134	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC183	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,mchF,sslE,ybtP,ybtQ	ymgB	emrE		
+FH50	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC153	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,mchF	ymgB	emrE		
+FH196	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH63	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH157	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH190	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH137	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC213	espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE		
+FH167	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH75	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD,terD,terZ	
+FH56	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH155	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH64	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH23	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH45	cvaC,espX1,fdeC,iroB,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH93	astA,cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH84	cif,cvaC,eae,espA,espB,espF,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,nleA,nleB,nleB2,tir,tsh	ymgB	emrE		
+AVC160	astA,fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC10	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH154	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+AVC221	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+AVC184	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH200	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh,ybtP,ybtQ	ymgB	emrE		
+FH96	astA,cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH185	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH71	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH121	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH68	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH77	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH195	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH168	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+FH8	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+AVC159	astA,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,tsh	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH16	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+AVC80	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merR,merT,terD,terW,terZ	
+FH78	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH60	capU,cvaC,espX1,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchB,mchF,papA,papC,papH,tsh,ybtP,ybtQ		emrE,qacEdelta1	merC,merP,merR,merT,terD,terW,terZ	
+FH34	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE	merC,merP,merR,merT	
+AVC177	eilA,espX1,fdeC,iha,iucA,iucB,iucC,iucD,iutA,lpfA,ybtP,ybtQ	ymgB	qacEdelta1	merC,merP,merR,merT	
+FH55	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH12	espX1,fdeC,lpfA	ymgB	emrE		
+FH173	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH186	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH51	espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+AVC196	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+AVC4	astA,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH53	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH119	espX1,fdeC,iss,iucA,iucB,iucC,iucD,iutA,lpfA,ybtP,ybtQ	ymgB	emrE		
+FH128	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH130	cdtB,cif,cvaC,eae,espA,espB,espF,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,nleA,nleB2,sslE,tccP,tir,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC211	astA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,tsh	ymgB	emrE		
+FH135	capU,cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,tsh,ybtP,ybtQ		emrE		
+FH99	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH89	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH120	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH87	fdeC,hlyE,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC111	air,astA,eilA,fdeC,ibeA,iha,iucA,iucB,iucC,iucD,iutA,lpfA	ymgB		silE,silS	
+AVC210	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+FH94	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH20	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH82	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH151	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+AVC34	cvaC,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+AVC59	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC215	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH106	fdeC,iha,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,vactox,ybtP,ybtQ	ymgB	emrE	terD,terW,terZ	
+FH136	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH57	air,astA,eilA,espX1,fdeC,iha,iss,iucA,iucB,iucC,iucD,iutA,lpfA	ymgB	emrE	arsD	
+AVC218	cvaC,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,mchB,mchF,sfaF,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH172	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+AVC228	cvaC,fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC227	cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH95	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH49	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC21	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC155	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	arsA	
+AVC234	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,tsh	ymgB	emrE		
+FH108	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH169	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+FH2	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+FH149	espX1,fdeC,iss,iucA,iucB,iucC,iucD,iutA,lpfA,ybtP,ybtQ	ymgB	emrE		
+AVC173	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH176	astA,cvaC,eilA,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,lpfA1,lpfA2	ymgB	emrE	terD,terW,terZ	
+AVC198	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH110	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH85	cif,cvaC,eae,espA,espB,espF,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,nleA,nleB,nleB2,tir,tsh	ymgB	emrE		
+AVC107	cvaC,fdeC,iha,iucA,iucB,iucC,iucD,iutA,lpfA,sslE	ymgB	emrE,qacL	merC,merP,merR,merT,pcoS,terD,terW,terZ	
+FH7	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH158	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC223	astA,fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE	terD,terW,terZ	
+FH160	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH3	fdeC	ymgB	emrE	arsA,arsD,arsR	
+FH24	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH100	astA,cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH26	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH189	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH41	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+AVC11	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH4	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH73	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH122	capU,cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,tsh,ybtP,ybtQ		emrE		
+FH74	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH164	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+FH116	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH72	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH6	fdeC	ymgB	emrE	arsA,arsD,arsR	
+FH11	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+FH103	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC204	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH179	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH133	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH184	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+AVC94	espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+AVC197	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH40	astA,espX1,fdeC,iha,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,tsh	ymgB	emrE		
+AVC96	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,vactox	ymgB	emrE,qacE		
+FH42	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH152	fdeC,hlyE,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,sslE,tsh,vactox	ymgB	emrE		
+FH183	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox	ymgB	emrE		
+FH202	astA,espX1,fdeC,iha,iss,iucA,iucB,iucC,iucD,iutA	ymgB	emrE		
+FH198	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH145	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH170	espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+FH117	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH81	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH43	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH188	cvaC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH107	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH66	air,capU,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1	arsD,merC,merP,merR,merT,terD,terW,terZ	
+FH140	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC58	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+FH177	cvaC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH153		ymgB	emrE		
+FH79	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH147	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC167	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE		
+FH70	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH139	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH143	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+FH105	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,ybtP,ybtQ	ymgB	emrE		
+FH208	espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,papA,papC,papE,papF,papG-II,tsh	ymgB	emrE,qacEdelta1		
+AVC226	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF	ymgB	emrE		
+FH33	cvaC,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,ybtP,ybtQ	ymgB	emrE		hsp20,kefB-GI,psi-GI,trxLHR
+FH29	air,cvaC,eilA,espX1,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB	emrE	arsD	
+AVC126	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1		
+AVC222	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	arsA	
+AVC220	fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papA,papC,papE,papF,papG-II,pic,sslE,tsh,ybtP,ybtQ	ymgB	emrE,qacEdelta1		
+AVC35	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+AVC200	air,cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,tsh	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH102	astA,cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+FH199	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH13	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		
+FH131	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,tsh	ymgB	emrE		
+FH205	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH54	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH32	astA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,tsh	ymgB	emrE		
+AVC8	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH112	cvaC,fdeC,ibeA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC109		ymgB	qacEdelta1		
+AVC77	fdeC,hlyE,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE,qacEdelta1	terD,terW,terZ	
+FH191	fdeC,ireA,iss,iucA,iucB,iucC,iucD,iutA,lpfA,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH194	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+FH115	fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchB,mchF,pic,sslE,vactox	ymgB	emrE		
+FH90	cvaC,fdeC,ibeA,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,tsh,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC105	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+FH118	air,cvaC,eilA,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,lpfA,mchF,ybtP,ybtQ	ymgB		arsD	
+AVC39	cvaC,eilA,espX1,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,sslE	ymgB	emrE,qacEdelta1	arsA,arsD,arsR	
+FH197	cvaC,fdeC,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,pic,sslE,vactox,ybtP,ybtQ	ymgB	emrE		
+AVC232	cvaC,espX1,fdeC,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA1,mchF,sfaF	ymgB	emrE	merC,merP,merR,merT	
+FH129					
+FH86	air,cif,cvaC,eae,eilA,espA,espB,espF,espX1,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,lpfA,mchF,nleA,nleB,nleB2,tir,tsh,ybtP,ybtQ	ymgB	emrE	arsD	
+AVC103	astA,cvaC,fdeC,iha,ireA,iroB,iroC,iroD,iroE,iroN,iss,iucA,iucB,iucC,iucD,iutA,mchF,papA,papC,papE,papF,papG-II,sslE,vactox	ymgB	emrE,qacEdelta1	merC,merP,merR,merT	
+FH17	espX1,etpD,fdeC,iss,lpfA	ymgB	emrE		

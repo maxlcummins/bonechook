@@ -1,0 +1,310 @@
+name	Efflux	Fosfomycin	ESBL (AmpC type)	Other antimicrobial	Streptomycin	Tetracycline	Sulfonamide	Trimethoprim	Ampicillin/Chloramphenicol/Quinolone/Rifampin/Tetracycline	Beta-lactamase (narrow-spectrum)	Quinolone	Beta-lactamase (not ESBL or carbapenemase)	Lincosamides	Kanamycin	Gentamicin/Tobramycin/Apramycin	Other aminoglycoside resistance (non-RMT)	Chloramphenicol	Macrolide	Gentamicin	Colistin
+AVC191	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5												
+FH138	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH171	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH88	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+FH212	acrF*,mdtM*	glpT_E448K								blaEC*										
+FH97	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH19	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+AVC219	acrF*,mdtM	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1,sul2	dfrA1,dfrA5		blaEC*		blaTEM-1								
+AVC237	acrF*,mdtM*		blaEC-15*			tet(A)*														
+AVC7	acrF*,mdtM*	glpT_E448K	blaEC-15*			tet(A)		dfrA5					lnu(C)*	aph(3')-Ia						
+FH22	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH144	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC64	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+FH25	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+FH92	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+FH37	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH69	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+AVC38	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*		aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1	marR_S3N			blaTEM-1								
+FH52	acrF*,mdtM	glpT_E448K								blaEC*		blaTEM-1								
+AVC201	acrF*,mdtM*	glpT_E448K	blaEC-15*			tet(A)						blaTEM-1								
+FH104	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH180	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH61	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH142	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC5	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)	sul1,sul2	dfrA5												
+FH58	acrF*,mdtM*	glpT_E448K	blaEC-15*		aph(3'')-Ib,aph(6)-Id		sul1,sul2	dfrA5				blaTEM-1								
+AVC98	acrF*,mdtM*	glpT_E448K				tet(C)				blaEC*										
+AVC235	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+AVC20	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1				blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+AVC256	acrF*,emrD*	glpT_E448K	blaEC-5*			tet(B)			marR_S3N											
+AVC97	acrF*,emrD*	glpT_E448K	blaEC-5*		aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA5	marR_S3N			blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH83	acrF,mdtM*				aph(3'')-Ib,aph(6)-Id	tet(B)				blaEC										
+FH132	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH203	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC123	mdtM*				aph(3'')-Ib,aph(6)-Id		sul2	dfrA5		blaEC		blaTEM-1		aph(3')-Ia						
+FH166	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC51	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(A)		dfrA5				blaTEM-1								
+FH65	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH62	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH125	acrF,mdtM*									blaEC										
+FH21	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC60	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)	sul1,sul2	dfrA5												
+FH150	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
+AVC148	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH207	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+FH67	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH148	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH113	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+FH165	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH161	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH31	acrF*,mdtM	glpT_E448K			aph(3'')-Ib,aph(6)-Id		sul2	dfrA5		blaEC*		blaTEM-1								
+FH28	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+AVC61	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH101	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH36	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH206	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+FH59	acrF*,emrD,mdtM*	glpT_E448K				tet(C)				blaEC*										
+FH46	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+FH9	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH146	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH127	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH111	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+FH204	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH123	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T		tet(A)														
+FH38	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH174	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH209	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+AVC216	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5				blaTEM-1								
+FH30	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)														
+FH109	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+AVC242	acrF*,emrD*	glpT_E448K	blaEC-5*			tet(B)			marR_S3N											
+FH210	acrF*,mdtM*	glpT_E448K	blaEC-15*			tet(A)						blaTEM-1								
+FH98	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+AVC29	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id			dfrA5				blaTEM-1		aph(3')-Ia						
+AVC106	acrF*,emrD*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-8*	cyaA_S352T		tet(C)					parC_S57T									
+AVC179	acrF*,emrD*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-8*	cyaA_S352T			sul1	dfrA5												
+FH76	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC65	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5												
+FH192	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH156	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2*													
+FH15	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
+FH213	acrF*,mdtM*	glpT_E448K								blaEC*										
+FH27	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH91	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+AVC113	acrF*,mdtM*	glpT_E448K	blaEC-15*			tet(A)*	sul1	dfrA5				blaTEM-1								
+FH214	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+AVC224	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib*,aph(6)-Id	tet(A),tet(C)	sul1,sul2	dfrA1		blaEC*		blaTEM-1								
+FH1	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+AVC156	acrF*,emrD*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-8*	cyaA_S352T			sul1	dfrA5												
+FH182	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH162	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+AVC91	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5												
+AVC195	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC252	acrF*,mdtM*	glpT_E448K	blaEC-15*		aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1				blaTEM-1								
+AVC176	acrF*,emrD*,mdtM	glpT_E448K,uhpT_E350Q	blaEC-8*	cyaA_S352T	aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1				blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH14	acrF*,mdtM*		blaEC-15*			tet(A)		dfrA5												
+FH163	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+AVC154	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul1	dfrA5				blaTEM-1								
+FH44	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC251	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+FH80	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH181	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH18	acrF,mdtM*		blaEC-15*			tet(A),tet(B)						blaTEM-1								
+FH47	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC12	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1,sul2	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH35	acrF*,mdtM	glpT_E448K			aph(3'')-Ib,aph(6)-Id		sul2	dfrA5		blaEC*		blaTEM-1								
+AVC186	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH10	acrF,mdtM*									blaEC										
+AVC30	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(A)		dfrA5				blaTEM-1		aph(3')-Ia						
+AVC19	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH211	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+FH114	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC209	acrF*,mdtM	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1,sul2	dfrA1,dfrA5		blaEC*		blaTEM-1								
+FH124	mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T		tet(A)						blaTEM-1								
+AVC233	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC171	acrF*,emrD*	glpT_E448K	blaEC-5*				sul1	dfrA5	marR_S3N											
+FH141	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH178	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC246	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC161	acrF*,mdtM*	glpT_E448K	blaEC-15*		aadA1,aadA2	tet(A)	sul1	dfrA12				blaTEM-1								
+FH48	acrF,mdtM*			sat2	aadA1			dfrA1		blaEC		blaTEM-1								
+AVC25	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH126	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+AVC26	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH39	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH159	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC207	acrF*,mdtM*	glpT_E448K	blaEC-15*		aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1				blaTEM-1								
+AVC79	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5				blaTEM-1								
+FH201	acrF*,emrD*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-19*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul2	dfrA5				blaTEM-1								
+FH175	acrF*,mdtM*		blaEC-15*			tet(A)						blaTEM-1								
+FH193	acrF*,emrD*	glpT_E448K	blaEC-5*			tet(B)			marR_S3N											
+FH5	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5				blaTEM-1		aph(3')-Ia*						
+FH187	acrF*,emrD*	glpT_E448K	blaEC-5*	cyaA_S352T					marR_S3N											
+AVC249	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T				dfrA5				blaTEM-1								
+FH134	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+AVC183	acrF*,emrD*	glpT_E448K,ptsI_V25I,uhpT_E350Q	blaEC-5*																	
+FH50	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC153	acrF*,mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T		tet(A)*		dfrA5				blaTEM-1								
+FH196	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH63	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH157	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH190	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH137	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+AVC213	acrF*,mdtM*	glpT_E448K	blaEC-15*		aadA1,aph(3'')-Ib,aph(6)-Id		sul2	dfrA5				blaTEM-1								
+FH167	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH75	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T,sat2	aadA1	tet(J)*		dfrA1				blaTEM-1					catA*			
+FH56	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH155	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH64	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH23	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+FH45	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+FH93	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH84	acrF,mdtM*				aph(3'')-Ib,aph(6)-Id	tet(B)				blaEC										
+AVC160	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(A)	sul2	dfrA14										mph(A)		
+AVC10	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH154	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+AVC221	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5				blaTEM-1								
+AVC184	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)	sul1,sul2	dfrA5												
+FH200	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH96	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH185	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH71	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+FH121	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH68	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+FH77	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH195	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH168	mdtM*	glpT_E448K								blaEC*										
+FH8	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5				blaTEM-1		aph(3')-Ia*						
+AVC159	acrF*,emrD*,mdtM*	glpT_E448K		cyaA_S352T	aadA2	tet(A)	sul1,sul2*	dfrA12,dfrA5												
+FH16	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
+AVC80	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aadA2,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1,sul2	dfrA12				blaTEM-1		aph(3')-Ia						
+FH78	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH60	acrF*,mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T	aadA1		sul1					blaTEM-1								
+FH34	acrF*,mdtM	glpT_E448K			aph(3'')-Ib,aph(6)-Id		sul2	dfrA5		blaEC*		blaTEM-1								
+AVC177	acrF*,emrD*,mdtM*	glpT_E448K,uhpT_E350Q			aadA1		sul1			blaEC*										
+FH55	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH12	acrF*,mdtM*	glpT_E448K	blaEC-18*																	
+FH173	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH186	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T										aph(3')-IIa*						
+FH51	acrF*,mdtM	glpT_E448K								blaEC*		blaTEM-1								
+AVC196	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul2	dfrA5				blaTEM-1								
+AVC4	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul1	dfrA5												
+FH53	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH119	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
+FH128	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH130	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5																	
+AVC211	mdtM*	glpT_E448K				tet(C)				blaEC										
+FH135	mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T		tet(A)						blaTEM-1								
+FH99	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH89	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+FH120	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH87	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+AVC111	emrD*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-5*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)*	sul2	dfrA17			gyrA_D87N,gyrA_S83L,parC_E84G,parC_S80I,parE_I355T	blaTEM-1							aac(3)-IId	
+AVC210	acrF*,mdtM	glpT_E448K			aadA1	tet(C)	sul1,sul2	dfrA5		blaEC*										
+FH94	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2*		marR_S3N											
+FH20	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+FH82	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH151	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+AVC34	acrF*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-18*			tet(A)		dfrA5				blaTEM-1								
+AVC59	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(C)	sul1,sul2	dfrA5				blaTEM-1		aph(3')-Ia						
+AVC215	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul1	dfrA5												
+FH106	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH136	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH57	acrF*,emrD*,mdtM	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC218	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+FH172	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+AVC228	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC227	acrF*,emrD*	glpT_E448K	blaEC-5*			tet(B)			marR_S3N											
+FH95	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH49	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC21	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+AVC155	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5												
+AVC234	acrF*,mdtM	glpT_E448K			aadA1		sul2			blaEC*										
+FH108	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH169	mdtM*	glpT_E448K								blaEC*										
+FH2	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH149	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
+AVC173	acrF*,emrD*	glpT_E448K	blaEC-5*				sul1	dfrA5	marR_S3N											
+FH176	acrF*,emrD,mdtM*	glpT_E448K	blaEC-15*				sul1,sul2					blaTEM-1								
+AVC198	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH110	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+FH85	acrF,mdtM*				aph(3'')-Ib,aph(6)-Id	tet(B)				blaEC										
+AVC107	acrF*,emrD,mdtM*	glpT_E448K	blaEC-5*	cyaA_S352T	aadA1,aadA2		sul3				parE_D475E,parE_I355T			aph(3')-Ia			cmlA1			mcr-9
+FH7	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5				blaTEM-1		aph(3')-Ia*						
+FH158	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC223	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH160	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH3	acrF,mdtM*									blaEC										
+FH24	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+FH100	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH26	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T							gyrA_S83L									
+FH189	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH41	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+AVC11	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH4	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5				blaTEM-1		aph(3')-Ia*						
+FH73	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH122	mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T		tet(A)						blaTEM-1								
+FH74	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH164	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH116	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH72	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+FH6	acrF,mdtM*									blaEC										
+FH11	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH103	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+AVC204	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH179	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH133	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+FH184	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC94	acrF*,mdtM*	glpT_E448K	blaEC-18*		aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1				blaTEM-1								
+AVC197	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A),tet(C)	sul1	dfrA1		blaEC*		blaTEM-1								
+FH40	mdtM*	glpT_E448K								blaEC										
+AVC96	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1					blaCARB-2								
+FH42	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+FH152	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul2													
+FH183	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH202	acrF*,mdtM*	glpT_E448K	blaEC-15*	cyaA_S352T																
+FH198	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH145	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH170	mdtM*	glpT_E448K								blaEC*										
+FH117	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH81	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH43	acrF*,mdtM*	glpT_E448K				tet(A)		dfrA5		blaEC*										
+FH188	acrF*,emrD*	glpT_E448K	blaEC-5*	cyaA_S352T					marR_S3N											
+FH107	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH66	mdtM*	glpT_E448K	blaEC-15*		aadA1		sul1,sul2					blaTEM-1								
+FH140	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC58	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(C)	sul1	dfrA5												
+FH177	acrF*,emrD*	glpT_E448K	blaEC-5*	cyaA_S352T					marR_S3N											
+FH153	acrF,mdtM*									blaEC										
+FH79	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-5*						marR_S3N											
+FH147	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC167	acrF*,emrD,mdtM*	glpT_E448K			aadA1		sul2			blaEC*										
+FH70	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(B)														
+FH139	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH143	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+FH105	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH208	acrF*,mdtM	glpT_E448K					sul1,sul2	dfrA5		blaEC*										
+AVC226	mdtM*	glpT_E448K								blaEC										
+FH33	acrF,mdtM*									blaEC										
+FH29	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)														
+AVC126	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(C)	sul1	dfrA1		blaEC*		blaTEM-1								
+AVC222	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(B)	sul1,sul2	dfrA5												
+AVC220	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T			sul1	dfrA5												
+AVC35	acrF*,mdtM*	glpT_E448K,uhpT_E350Q	blaEC-18*					dfrA5												
+AVC200	acrF*,emrD,mdtM*	glpT_E448K			aadA1,aph(3'')-Ib,aph(6)-Id	tet(A)	sul1	dfrA1		blaEC*		blaTEM-1			aac(3)-IVa	aph(4)-Ia				
+FH102	acrF*,emrD*	glpT_E448K	blaEC-5*				sul2		marR_S3N											
+FH199	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH13	acrF*,mdtM*	glpT_E448K	blaEC-15*																	
+FH131	acrF*,mdtM*	glpT_E448K	blaEC-15*				sul2													
+FH205	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH54	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH32	acrF*,mdtM	glpT_E448K				tet(C)				blaEC*										
+AVC8	acrF*,emrD*	glpT_E448K,uhpT_E350Q	blaEC-5*		aadA1	tet(A)	sul1	dfrA1				blaTEM-1								
+FH112	acrF*,emrD*	glpT_E448K	blaEC-5*								parE_D475E									
+AVC109	acrF*,mdtM*	glpT_E448K				tet(A)	sul1	dfrA5		blaEC*		blaTEM-1								
+AVC77	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T		tet(A),tet(B)	sul1,sul2	dfrA5				blaTEM-1								
+FH191	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH194	acrF*,emrD*	glpT_E448K	blaEC-5*			tet(B)			marR_S3N											
+FH115	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+FH90	acrF*,emrD*	glpT_E448K	blaEC-5*						marR_S3N											
+AVC105	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5												
+FH118	acrF*,emrD*	glpT_E448K	blaEC-8*	cyaA_S352T								blaTEM-1								
+AVC39	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T	aph(3'')-Ib,aph(6)-Id	tet(A)	sul1,sul2	dfrA5				blaTEM-1								
+FH197	acrF*,emrD*,mdtM*	glpT_E448K	blaEC-8*	cyaA_S352T																
+AVC232	acrF*,mdtM*	glpT_E448K						dfrA5		blaEC*										
+FH129																				
+FH86	acrF,mdtM*				aph(3'')-Ib,aph(6)-Id	tet(B)				blaEC		blaTEM-1								
+AVC103	acrF*,emrD*	glpT_E448K	blaEC-5*				sul1	dfrA5	marR_S3N											
+FH17	acrF*,mdtM*	glpT_E448K	blaEC-15*									blaTEM-1								
