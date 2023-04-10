@@ -7,7 +7,6 @@ output:
         theme: spacelab
         toc: true
         toc_float: true
-        code_folding: hide
 editor_options: 
   markdown: 
     wrap: 72
@@ -31,14 +30,6 @@ library(paletteer)
 
 #Define our not in function
 `%nin%` <- Negate(`%in%`)
-
-########## Remember to change this so you have a copy of these files somewhere intelligent
-##########
-if(!file.exists("delims/species_genome_size.txt")){
-        dir.create("delims", showWarnings = FALSE)
-        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/species_genome_size.txt", "delims/species_genome_size.txt")
-        file.copy("~/Dropbox/PostDoc/2022/Fiji/Fiji_phase1/delims/taxid_to_scientific_name.txt", "delims/taxid_to_scientific_name.txt")
-}
 ```
 
 ## Outline
@@ -511,10 +502,10 @@ QC_pass <- QC_data %>% filter(`Escherichia coli` > 0.5 & scheme == "ecoli", name
 QC_data <- QC_data %>% mutate(QC_status = if_else(name %in% QC_pass$name, "Pass", "Fail"))
 
 #Write the names of the samples which passed QC
-#write_delim(QC_pass, "delims/QC_data.txt", delim = "\t")
+write_delim(QC_pass, "delims/QC_data.txt", delim = "\t")
 
 #Write the names of the samples which passed QC
-#write_delim(QC_pass, "delims/QC_pass.txt")
+write_delim(QC_pass, "delims/QC_pass.txt")
 
 #Plot our table
 knitr::kable(pass_QC_table, align = 'c')
@@ -646,7 +637,7 @@ set.seed(1)
 
 sample_bone_sites <- metadata %>% filter(bone_site == "bone") %>% group_by(Bird_Gross_Necropsy_ID) %>% slice_sample(n = 1) %>% pull(name) %>% as.data.frame() %>% rename("name" = ".")
 
-#write_delim(sample_bone_sites, "delims/sampled_bone_site_names.txt", delim = "\t")
+write_delim(sample_bone_sites, "delims/sampled_bone_site_names.txt", delim = "\t")
 ```
 
 
